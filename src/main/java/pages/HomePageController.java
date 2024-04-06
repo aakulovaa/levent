@@ -34,7 +34,7 @@ public class HomePageController {
             System.out.println("Search Event Working!");
         });
         chooseEvent.setOnAction(event -> {
-            dateEvents.getScene().getWindow().hide();
+            chooseEvent.getScene().getWindow().hide();
 
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/pages/EventsPage.fxml"));

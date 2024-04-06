@@ -1,7 +1,14 @@
 package pages;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class EventsPageController {
     @FXML
@@ -21,5 +28,31 @@ public class EventsPageController {
 
     @FXML
     private Button theatreButton;
+    @FXML
+    void clickBackButton(ActionEvent event) {
+
+    }
+    @FXML
+    void initialize() {
+        backButton.setOnAction(event1 -> {
+            backButton.getScene().getWindow().hide();
+
+            //FXMLLoader fxmlLoader = new FXMLLoader(HomePage.class.getResource("HomePage.fxml"));
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("HomePage.fxml"));
+
+            try {
+                loader.load();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+            Parent root = loader.getRoot();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.showAndWait();
+        });
+    }
+
 
 }
