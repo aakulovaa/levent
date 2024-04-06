@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с страницами&#10;&#10;добавление названий страниц">
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с страницами">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/EventsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/EventsPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchResultPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchResultPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/HomePage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/pages/SearchResultPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/SearchResultPage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -237,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712441055656</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="работа с страницами">
+      <option name="closed" value="true" />
+      <created>1712441791425</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1712441791425</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -248,11 +258,11 @@
     <MESSAGE value="работа с страницей выбора мероприятия&#10;&#10;добавление возможности возврата на предыдущую страницу" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление возможности возврата на предыдущую страницу" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление поддержки изображений" />
-    <MESSAGE value="работа с страницами" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление страниц мероприятий" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление возможности перемещения по страницам" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление страницы для отображения результатов поиска" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление названий страниц" />
-    <option name="LAST_COMMIT_MESSAGE" value="работа с страницами&#10;&#10;добавление названий страниц" />
+    <MESSAGE value="работа с страницами" />
+    <option name="LAST_COMMIT_MESSAGE" value="работа с страницами" />
   </component>
 </project>

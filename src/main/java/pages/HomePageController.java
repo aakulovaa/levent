@@ -1,5 +1,6 @@
 package pages;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -21,6 +22,11 @@ public class HomePageController {
 
     @FXML
     private TextField searchEvent;
+
+    @FXML
+    void clickChooseEvent(ActionEvent event) {
+
+    }
 
     @FXML
     void initialize(){
