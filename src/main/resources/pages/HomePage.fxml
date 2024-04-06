@@ -20,7 +20,7 @@
                </font>
             </Text>
          </children></AnchorPane>
-      <TextField id="searchEvent" fx:id="searchEvent" layoutX="28.0" layoutY="55.0" onAction="#enterEvent" prefHeight="29.0" prefWidth="552.0" promptText="введите мероприятие" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="20.0">
+      <TextField id="searchEvent" fx:id="searchEvent" layoutX="28.0" layoutY="55.0" prefHeight="29.0" prefWidth="552.0" promptText="введите мероприятие" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="20.0">
          <font>
             <Font name="Avenir Roman" size="14.0" />
          </font></TextField>
