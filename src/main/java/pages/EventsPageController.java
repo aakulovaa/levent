@@ -28,10 +28,7 @@ public class EventsPageController {
 
     @FXML
     private Button theatreButton;
-    @FXML
-    void clickBackButton(ActionEvent event) {
 
-    }
     @FXML
     void initialize() {
         backButton.setOnAction(event1 -> {
