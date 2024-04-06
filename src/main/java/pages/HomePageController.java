@@ -24,15 +24,11 @@ public class HomePageController {
     private TextField searchEvent;
 
     @FXML
-    void enterEvent(ActionEvent actionEvent) {
+    void initialize(){
+
         searchEvent.setOnAction(event -> {
             System.out.println("Search Event Working!");
         });
-    }
-
-
-    @FXML
-    void initialize(){
 
         dateEvents.setOnAction(event -> {
             dateEvents.getScene().getWindow().hide();
