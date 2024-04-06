@@ -40,6 +40,7 @@ public class HomePageController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("Search Result");
             stage.show();
         });
 
@@ -58,6 +59,7 @@ public class HomePageController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("Date sort");
             stage.show();
         });
 
@@ -76,6 +78,7 @@ public class HomePageController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("Event");
             stage.show();
         });
 

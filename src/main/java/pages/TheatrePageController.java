@@ -30,6 +30,7 @@ public class TheatrePageController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("Events");
             stage.show();
         });
     }

@@ -44,6 +44,7 @@ public class EventsPageController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("Let's Event!");
             stage.show();
         });
 
@@ -61,6 +62,7 @@ public class EventsPageController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("Cinema");
             stage.show();
         });
 
@@ -78,6 +80,7 @@ public class EventsPageController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("Theatre");
             stage.show();
         });
 
@@ -95,6 +98,7 @@ public class EventsPageController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("Concerts");
             stage.show();
         });
 
@@ -112,6 +116,7 @@ public class EventsPageController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("Quests");
             stage.show();
         });
 
@@ -129,6 +134,7 @@ public class EventsPageController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("Sport");
             stage.show();
         });
 
