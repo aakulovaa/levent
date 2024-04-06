@@ -3,7 +3,7 @@ module homePage {
     requires javafx.fxml;
 
 
-    opens homePage to javafx.fxml;
-    exports homePage;
+    opens pages to javafx.fxml;
+    exports pages;
 
 }
