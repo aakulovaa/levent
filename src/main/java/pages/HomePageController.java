@@ -26,7 +26,21 @@ public class HomePageController {
     void initialize(){
 
         searchEvent.setOnAction(event -> {
-            System.out.println("Search Event Working!");
+            searchEvent.getScene().getWindow().hide();
+
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/pages/SearchResultPage.fxml"));
+
+            try {
+                loader.load();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+            Parent root = loader.getRoot();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
         });
 
         dateEvents.setOnAction(event -> {

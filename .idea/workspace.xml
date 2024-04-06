@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с страницами&#10;&#10;добавление страниц мероприятий">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/QuestsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/QuestsPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SportPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SportPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/TheatrePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/TheatrePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/CinemaPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/CinemaPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/ConcertsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/ConcertsPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/QuestsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/QuestsPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/SportPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/SportPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/TheatrePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/TheatrePage.fxml" afterDir="false" />
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с страницами&#10;&#10;добавление страницы для отображения результатов поиска">
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/SearchResultPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/SearchResultPage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,19 +45,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HomePage.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;first&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pathVariables&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Application.HomePage.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "first",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/annakulova/IdeaProjects/levent/src/main/resources/pages",
+    "settings.editor.selected.configurable": "preferences.pathVariables"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/pages" />
       <recent name="$PROJECT_DIR$/src/main/resources/assets" />
@@ -76,6 +70,9 @@
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="homePage" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pages" />
     </key>
   </component>
   <component name="RunManager">
@@ -207,7 +204,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712438511945</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="работа с страницами&#10;&#10;добавление возможности перемещения по страницам">
+      <option name="closed" value="true" />
+      <created>1712439555490</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712439555490</updated>
+    </task>
+    <task id="LOCAL-00015" summary="работа с страницами&#10;&#10;добавление страницы для отображения результатов поиска">
+      <option name="closed" value="true" />
+      <created>1712439652130</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712439652130</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -220,6 +233,8 @@
     <MESSAGE value="работа с страницами&#10;&#10;добавление поддержки изображений" />
     <MESSAGE value="работа с страницами" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление страниц мероприятий" />
-    <option name="LAST_COMMIT_MESSAGE" value="работа с страницами&#10;&#10;добавление страниц мероприятий" />
+    <MESSAGE value="работа с страницами&#10;&#10;добавление возможности перемещения по страницам" />
+    <MESSAGE value="работа с страницами&#10;&#10;добавление страницы для отображения результатов поиска" />
+    <option name="LAST_COMMIT_MESSAGE" value="работа с страницами&#10;&#10;добавление страницы для отображения результатов поиска" />
   </component>
 </project>

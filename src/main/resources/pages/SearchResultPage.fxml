@@ -5,16 +5,16 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.CinemaPageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.SearchResultPageController">
    <children>
       <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #AFEEEE;">
          <children>
-            <Text fill="#1e6f4f" layoutX="265.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КИНО">
+            <Text fill="#1e6f4f" layoutX="200.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Результаты поиска">
                <font>
                   <Font name="Avenir Black" size="24.0" />
                </font>
             </Text>
-            <Button fx:id="cinemaBackButton" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" style="-fx-background-color: #B0E0E6;" text="Назад">
+            <Button fx:id="backButton" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" style="-fx-background-color: #B0E0E6;" text="Назад">
                <font>
                   <Font name="Avenir Roman" size="14.0" />
                </font>
