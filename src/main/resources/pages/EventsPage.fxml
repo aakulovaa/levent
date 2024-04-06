@@ -10,7 +10,7 @@
    <children>
       <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #AFEEEE;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Text fill="#1e6f4f" layoutX="253.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EVENTS" AnchorPane.bottomAnchor="4.0" AnchorPane.topAnchor="4.0">
+            <Text fill="#1e6f4f" layoutX="206.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МЕРОПРИЯТИЯ" AnchorPane.bottomAnchor="4.215999603271484" AnchorPane.topAnchor="4.0">
                <font>
                   <Font name="Avenir Black" size="24.0" />
                </font>

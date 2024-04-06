@@ -9,7 +9,7 @@
    <children>
       <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #AFEEEE;">
          <children>
-            <Text fill="#1e6f4f" layoutX="200.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Результаты поиска">
+            <Text fill="#1e6f4f" layoutX="183.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Результаты поиска">
                <font>
                   <Font name="Avenir Black" size="24.0" />
                </font>
