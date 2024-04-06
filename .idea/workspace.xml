@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с страницами">
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с страницами&#10;&#10;добавление страниц мероприятий">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/HomePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/QuestsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/QuestsPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SportPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SportPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/TheatrePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/TheatrePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/CinemaPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/CinemaPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/ConcertsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/ConcertsPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/QuestsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/QuestsPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/SportPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/SportPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/pages/TheatrePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/TheatrePage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712437626285</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="работа с страницами&#10;&#10;добавление страниц мероприятий">
+      <option name="closed" value="true" />
+      <created>1712438511945</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1712438511945</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -203,6 +219,7 @@
     <MESSAGE value="работа с страницами&#10;&#10;добавление возможности возврата на предыдущую страницу" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление поддержки изображений" />
     <MESSAGE value="работа с страницами" />
-    <option name="LAST_COMMIT_MESSAGE" value="работа с страницами" />
+    <MESSAGE value="работа с страницами&#10;&#10;добавление страниц мероприятий" />
+    <option name="LAST_COMMIT_MESSAGE" value="работа с страницами&#10;&#10;добавление страниц мероприятий" />
   </component>
 </project>
