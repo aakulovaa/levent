@@ -33,8 +33,6 @@ public class EventsPageController {
     void initialize() {
         backButton.setOnAction(event1 -> {
             backButton.getScene().getWindow().hide();
-
-            //FXMLLoader fxmlLoader = new FXMLLoader(HomePage.class.getResource("HomePage.fxml"));
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("HomePage.fxml"));
 
@@ -47,7 +45,7 @@ public class EventsPageController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-            stage.showAndWait();
+            stage.show();
         });
     }
 

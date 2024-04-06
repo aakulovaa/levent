@@ -1,5 +1,6 @@
 package pages;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -20,19 +21,20 @@ public class HomePageController {
     private DatePicker dateEvents;
 
     @FXML
-    private Button searchButton;
-
-    @FXML
     private TextField searchEvent;
 
     @FXML
-    void initialize(){
-        searchButton.setOnAction(event -> {
-            System.out.println("Search Button Working!");
-        });
-        searchEvent.setOnAction(event -> {
+    void enterEvent(ActionEvent event) {
+        searchEvent.setOnAction(event1 -> {
             System.out.println("Search Event Working!");
         });
+    }
+
+    @FXML
+    void initialize(){
+//        searchEvent.setOnAction(event -> {
+//            System.out.println("Search Event Working!");
+//        });
         chooseEvent.setOnAction(event -> {
             chooseEvent.getScene().getWindow().hide();
 
@@ -48,7 +50,7 @@ public class HomePageController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-            stage.showAndWait();
+            stage.show();
         });
         dateEvents.setOnAction(event -> {
             dateEvents.getScene().getWindow().hide();
@@ -65,7 +67,7 @@ public class HomePageController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-            stage.showAndWait();
+            stage.show();
         });
     }
 
