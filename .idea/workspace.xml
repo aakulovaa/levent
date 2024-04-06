@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с главной страницей&#10;&#10;проверка работоспособности элементов страницы">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DateSortController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pages/sortDatePage.fxml" afterDir="false" />
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с страницей выбора по дате">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pages/EventsPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homePage/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homePage/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/levent/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/homePage/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/HomePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,12 +117,21 @@
       <option name="project" value="LOCAL" />
       <updated>1712420124274</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="работа с страницей выбора по дате">
+      <option name="closed" value="true" />
+      <created>1712424830414</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712424830414</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="работа с главной страницей" />
     <MESSAGE value="работа с главной страницей&#10;&#10;проверка работоспособности элементов страницы" />
-    <option name="LAST_COMMIT_MESSAGE" value="работа с главной страницей&#10;&#10;проверка работоспособности элементов страницы" />
+    <MESSAGE value="работа с страницей выбора по дате" />
+    <option name="LAST_COMMIT_MESSAGE" value="работа с страницей выбора по дате" />
   </component>
 </project>

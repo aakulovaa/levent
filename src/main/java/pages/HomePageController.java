@@ -34,7 +34,21 @@ public class HomePageController {
             System.out.println("Search Event Working!");
         });
         chooseEvent.setOnAction(event -> {
-            System.out.println("Choose Event Button Working!");
+            dateEvents.getScene().getWindow().hide();
+
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/pages/EventsPage.fxml"));
+
+            try {
+                loader.load();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+            Parent root = loader.getRoot();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.showAndWait();
         });
         dateEvents.setOnAction(event -> {
             dateEvents.getScene().getWindow().hide();
