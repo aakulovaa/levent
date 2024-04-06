@@ -1,8 +1,9 @@
-module com.example.levent {
+module homePage {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.levent to javafx.fxml;
-    exports com.example.levent;
+    opens homePage to javafx.fxml;
+    exports homePage;
+
 }
