@@ -35,17 +35,17 @@
          </font></Label>
       <ImageView fitHeight="200.0" fitWidth="171.0" layoutX="14.0" layoutY="186.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
          <image>
-            <Image url="@../assets/e.jpeg" />
+            <Image url="@../image/e.jpeg" />
          </image>
       </ImageView>
       <ImageView fitHeight="200.0" fitWidth="171.0" layoutX="404.0" layoutY="186.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
          <image>
-            <Image url="@../assets/event.jpeg" />
+            <Image url="@../image/event.jpeg" />
          </image>
       </ImageView>
       <ImageView fitHeight="200.0" fitWidth="197.0" layoutX="203.0" layoutY="186.0" AnchorPane.bottomAnchor="14.0">
          <image>
-            <Image url="@../assets/world.jpeg" />
+            <Image url="@../image/world.jpeg" />
          </image>
       </ImageView>
       <Label layoutX="140.0" layoutY="95.0" prefHeight="20.0" prefWidth="108.0" text="Выбор по дате:">

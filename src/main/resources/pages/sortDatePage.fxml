@@ -33,7 +33,7 @@
                      <children>
                         <ImageView fitHeight="190.0" fitWidth="180.0">
                            <image>
-                              <Image url="@../assets/event.jpeg" />
+                              <Image url="@../image/event.jpeg" />
                            </image>
                         </ImageView>
                         <Label prefHeight="18.0" prefWidth="188.0" text="Название" />
