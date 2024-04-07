@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с страницами">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/e.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/image/e.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/event.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/image/event.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/events.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/image/events.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/world.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/image/world.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/HomePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/sortDatePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/sortDatePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712446252169</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="работа с страницами">
+      <option name="closed" value="true" />
+      <created>1712484877604</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1712484877604</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
