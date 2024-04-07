@@ -16,7 +16,7 @@ public class CinemaPageController {
 
     @FXML
     void initialize() {
-        cinemaBackButton.setOnAction(event1 -> {
+        cinemaBackButton.setOnAction(event -> {
             cinemaBackButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("EventsPage.fxml"));
