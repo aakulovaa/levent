@@ -7,7 +7,11 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
 
 public class EventsPageController {
     @FXML
@@ -49,6 +53,11 @@ public class EventsPageController {
         });
 
         cinemaButton.setOnAction(event -> {
+
+            String output = getUrlContent("https://www.afisha.ru/voronezh/schedule_cinema/");
+            System.out.println("All working!!");
+            System.out.println(output);
+
             cinemaButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("CinemaPage.fxml"));
@@ -67,6 +76,11 @@ public class EventsPageController {
         });
 
         theatreButton.setOnAction(event1 -> {
+
+            String output = getUrlContent("https://www.afisha.ru/voronezh/theatre/");
+            System.out.println("All working!!");
+            System.out.println(output);
+
             theatreButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("TheatrePage.fxml"));
@@ -85,6 +99,11 @@ public class EventsPageController {
         });
 
         concertsButton.setOnAction(event1 -> {
+
+            String output = getUrlContent("https://www.afisha.ru/voronezh/concerts/");
+            System.out.println("All working!!");
+            System.out.println(output);
+
             concertsButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("ConcertsPage.fxml"));
@@ -138,5 +157,24 @@ public class EventsPageController {
             stage.show();
         });
 
+    }
+
+    private static String getUrlContent(String urlAddress){
+        StringBuffer content = new StringBuffer();
+        try {
+            URL url = new URL(urlAddress);
+            URLConnection urlConn = url.openConnection();
+
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConn.getInputStream()));
+            String line;
+
+            while((line = bufferedReader.readLine()) != null){
+                content.append(line + '\n');
+            }
+            bufferedReader.close();
+        } catch(Exception e){
+            System.out.println("not found");
+        }
+        return content.toString();
     }
 }

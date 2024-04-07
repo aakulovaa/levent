@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с бд&#10;&#10;подключение">
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/CinemasConst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/ConcertsConst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/MatchesConst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/QuestsConts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/TheatersConst.java" afterDir="false" />
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с бд&#10;&#10;добавлние классов для таблиц бд">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/CinemaPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/CinemaPage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712495116165</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="работа с бд&#10;&#10;добавлние классов для таблиц бд">
+      <option name="closed" value="true" />
+      <created>1712497999141</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1712497999141</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,6 +364,7 @@
     <MESSAGE value="подключение бд" />
     <MESSAGE value="работа с бд&#10;&#10;добавление таблиц" />
     <MESSAGE value="работа с бд&#10;&#10;подключение" />
-    <option name="LAST_COMMIT_MESSAGE" value="работа с бд&#10;&#10;подключение" />
+    <MESSAGE value="работа с бд&#10;&#10;добавлние классов для таблиц бд" />
+    <option name="LAST_COMMIT_MESSAGE" value="работа с бд&#10;&#10;добавлние классов для таблиц бд" />
   </component>
 </project>
