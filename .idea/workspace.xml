@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="подключение бд">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/JavaPostgreSql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1322bbef-5648-433a-bd04-378aa89b67a4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1322bbef-5648-433a-bd04-378aa89b67a4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1322bbef-5648-433a-bd04-378aa89b67a4/storage_v2/_src_/database/levent_db.r5RynQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1322bbef-5648-433a-bd04-378aa89b67a4/storage_v2/_src_/database/levent_db.r5RynQ/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с бд&#10;&#10;подключение">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +109,7 @@
       <updated>1712057864367</updated>
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
-      <workItem from="1712490511868" duration="2901000" />
+      <workItem from="1712490511868" duration="4534000" />
     </task>
     <task id="LOCAL-00001" summary="работа с главной страницей">
       <option name="closed" value="true" />
@@ -293,7 +287,31 @@
       <option name="project" value="LOCAL" />
       <updated>1712490378522</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="работа с бд&#10;&#10;добавление таблиц">
+      <option name="closed" value="true" />
+      <created>1712493600418</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1712493600418</updated>
+    </task>
+    <task id="LOCAL-00024" summary="работа с бд&#10;&#10;добавление таблиц">
+      <option name="closed" value="true" />
+      <created>1712493606675</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1712493606675</updated>
+    </task>
+    <task id="LOCAL-00025" summary="работа с бд&#10;&#10;подключение">
+      <option name="closed" value="true" />
+      <created>1712495059663</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1712495059663</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +342,8 @@
     <MESSAGE value="работа с страницами&#10;&#10;добавление названий страниц" />
     <MESSAGE value="работа с страницами" />
     <MESSAGE value="подключение бд" />
-    <option name="LAST_COMMIT_MESSAGE" value="подключение бд" />
+    <MESSAGE value="работа с бд&#10;&#10;добавление таблиц" />
+    <MESSAGE value="работа с бд&#10;&#10;подключение" />
+    <option name="LAST_COMMIT_MESSAGE" value="работа с бд&#10;&#10;подключение" />
   </component>
 </project>
