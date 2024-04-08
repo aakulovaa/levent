@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MovieParser {
+    private int yearIndex;
     public void parser(){
         try {
             List<MoviePost> posts = new ArrayList<>();
@@ -27,9 +28,11 @@ public class MovieParser {
                 moviePost.setTitle(title.text());
 
                 Element genre = postDeteilsDoc.getElementsByClass("eNJOm").first();
-                Elements genreDetails = genre.getElementsByAttributeValue("data-test", "LINK");
-                moviePost.setGenreDetailsLink(genreDetails.attr("href"));
-                moviePost.setGenre(genreDetails.text());
+                Elements genreDetails = genre != null ? genre.getElementsByAttributeValue("data-test", "LINK") : null;
+                if (genreDetails != null) {
+                    moviePost.setGenreDetailsLink(genreDetails.attr("href"));
+                    moviePost.setGenre(genreDetails.text());
+                }
 
                 Element age = postDeteilsDoc.getElementsByClass("eNJOm").get(1);
                 Elements ageDetails = age.getElementsByAttributeValue("data-test", "META-FIELD-VALUE");
@@ -40,17 +43,18 @@ public class MovieParser {
                 moviePost.setDirectorDetailsLink(directorDetails.attr("href"));
                 moviePost.setDirector(directorDetails.text());
 
-                Element year = postDeteilsDoc.getElementsByClass("eNJOm").get(3);
+                yearIndex = moviePost.getDirector().isEmpty() ? 2 : 3;
+
+                Element year = postDeteilsDoc.getElementsByClass("eNJOm").get(yearIndex);
                 Elements yearDetails = year.getElementsByAttributeValue("data-test", "META-FIELD-VALUE");
                 moviePost.setYearRelease(yearDetails.text());
 
                 Element length = postDeteilsDoc.getElementsByClass("eNJOm").last();
                 Elements lengthDetails = length.getElementsByAttributeValue("data-test", "META-FIELD-VALUE");
-                moviePost.setYearRelease(lengthDetails.text());
+                moviePost.setLength(lengthDetails.text());
 
                 String description = postDeteilsDoc.getElementsByClass("aEVDY t1V2l").text();
-                //Elements lengthDetails = length.getElementsByAttributeValue("data-test", "META-FIELD-VALUE");
-                moviePost.setYearRelease(description);
+                moviePost.setDescription(description);
 
                 posts.add(moviePost);
             }
