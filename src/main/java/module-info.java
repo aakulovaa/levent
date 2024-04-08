@@ -10,5 +10,7 @@ module homePage {
     exports pages;
     exports db;
     opens db to javafx.fxml;
+    exports posts;
+    opens posts to javafx.fxml;
 
 }

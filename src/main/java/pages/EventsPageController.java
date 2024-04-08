@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.BufferedReader;
@@ -15,6 +16,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
+import java.util.List;
 
 public class EventsPageController {
     @FXML
@@ -56,21 +59,6 @@ public class EventsPageController {
         });
 
         cinemaButton.setOnAction(event -> {
-//
-//            String output = getUrlContent("https://www.afisha.ru/voronezh/schedule_cinema/");
-//            System.out.println("All working!!");
-//            System.out.println(output);
-            try {
-                Document doc = Jsoup.connect("https://www.afisha.ru/voronezh/schedule_cinema/").get();
-                Elements movieTitleElements = doc.getElementsByAttributeValue("data-test", "ITEM");
-                movieTitleElements.forEach(movieTitleElement -> System.out.println(movieTitleElement.attr("title")));
-                Elements movieLinkElements = doc.getElementsByAttributeValue("data-test", "LINK ITEM-URL");
-                movieLinkElements.forEach(movieLinkElement -> System.out.println(movieLinkElement.attr("href")));
-
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-
             cinemaButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("CinemaPage.fxml"));

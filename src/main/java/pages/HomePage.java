@@ -4,6 +4,8 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import posts.MovieParser;
+
 import java.io.IOException;
 
 public class HomePage extends Application {
@@ -18,6 +20,8 @@ public class HomePage extends Application {
     }
 
     public static void main(String[] args) {
+        MovieParser parser = new MovieParser();
+        parser.parser();
         launch();
     }
 }
