@@ -6,18 +6,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class EventsPageController {
     @FXML
@@ -161,7 +155,7 @@ public class EventsPageController {
     }
 
     private static String getUrlContent(String urlAddress){
-        StringBuffer content = new StringBuffer();
+        StringBuilder content = new StringBuilder();
         try {
             URL url = new URL(urlAddress);
             URLConnection urlConn = url.openConnection();
@@ -170,7 +164,7 @@ public class EventsPageController {
             String line;
 
             while((line = bufferedReader.readLine()) != null){
-                content.append(line + '\n');
+                content.append(line).append('\n');
             }
             bufferedReader.close();
         } catch(Exception e){
