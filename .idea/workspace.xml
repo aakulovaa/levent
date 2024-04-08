@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="page parsing&#10;&#10;вывод фильма + ссылки на него">
-      <change afterPath="$PROJECT_DIR$/src/main/java/posts/MovieParser.java" afterDir="false" />
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="page parsing&#10;&#10;вывод деталей фильма">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/posts/MovieParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posts/MovieParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,7 +351,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712587929284</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="page parsing&#10;&#10;вывод деталей фильма">
+      <option name="closed" value="true" />
+      <created>1712598554422</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1712598554422</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,6 +396,7 @@
     <MESSAGE value="работа с бд&#10;&#10;добавлние метода обработки страницы сайта" />
     <MESSAGE value="page parsing" />
     <MESSAGE value="page parsing&#10;&#10;вывод фильма + ссылки на него" />
-    <option name="LAST_COMMIT_MESSAGE" value="page parsing&#10;&#10;вывод фильма + ссылки на него" />
+    <MESSAGE value="page parsing&#10;&#10;вывод деталей фильма" />
+    <option name="LAST_COMMIT_MESSAGE" value="page parsing&#10;&#10;вывод деталей фильма" />
   </component>
 </project>
