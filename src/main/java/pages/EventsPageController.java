@@ -6,6 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -53,10 +55,17 @@ public class EventsPageController {
         });
 
         cinemaButton.setOnAction(event -> {
-
-            String output = getUrlContent("https://www.afisha.ru/voronezh/schedule_cinema/");
-            System.out.println("All working!!");
-            System.out.println(output);
+//
+//            String output = getUrlContent("https://www.afisha.ru/voronezh/schedule_cinema/");
+//            System.out.println("All working!!");
+//            System.out.println(output);
+            try {
+                Document doc = Jsoup.connect("https://www.afisha.ru/voronezh/schedule_cinema/").get();
+                System.out.println(doc.title());
+                System.out.println(doc.toString());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
 
             cinemaButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();

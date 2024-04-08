@@ -3,6 +3,7 @@ module homePage {
     requires javafx.fxml;
     requires java.sql;
     requires jdk.jdi;
+    requires org.jsoup;
 
 
     opens pages to javafx.fxml;
