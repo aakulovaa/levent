@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -61,8 +62,11 @@ public class EventsPageController {
 //            System.out.println(output);
             try {
                 Document doc = Jsoup.connect("https://www.afisha.ru/voronezh/schedule_cinema/").get();
-                System.out.println(doc.title());
-                System.out.println(doc.toString());
+                Elements movieTitleElements = doc.getElementsByAttributeValue("data-test", "ITEM");
+                movieTitleElements.forEach(movieTitleElement -> System.out.println(movieTitleElement.attr("title")));
+                Elements movieLinkElements = doc.getElementsByAttributeValue("data-test", "LINK ITEM-URL");
+                movieLinkElements.forEach(movieLinkElement -> System.out.println(movieLinkElement.attr("href")));
+
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

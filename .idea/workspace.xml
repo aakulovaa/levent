@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с бд&#10;&#10;добавлние метода обработки страницы сайта">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="page parsing">
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -337,7 +334,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712513375844</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="page parsing">
+      <option name="closed" value="true" />
+      <created>1712587249021</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1712587249021</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,6 +377,7 @@
     <MESSAGE value="работа с бд&#10;&#10;подключение" />
     <MESSAGE value="работа с бд&#10;&#10;добавлние классов для таблиц бд" />
     <MESSAGE value="работа с бд&#10;&#10;добавлние метода обработки страницы сайта" />
-    <option name="LAST_COMMIT_MESSAGE" value="работа с бд&#10;&#10;добавлние метода обработки страницы сайта" />
+    <MESSAGE value="page parsing" />
+    <option name="LAST_COMMIT_MESSAGE" value="page parsing" />
   </component>
 </project>
