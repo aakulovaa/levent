@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="page parsing&#10;&#10;вывод деталей фильма">
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="исправление предупреждений">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/CinemasConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/CinemasConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/posts/MovieParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posts/MovieParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/posts/MoviePost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posts/MoviePost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/pages/CinemaPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/CinemaPage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -377,7 +381,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712602034336</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="page parsing&#10;&#10;вывод деталей фильма">
+      <option name="closed" value="true" />
+      <created>1712604382845</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1712604382845</updated>
+    </task>
+    <task id="LOCAL-00035" summary="исправление предупреждений">
+      <option name="closed" value="true" />
+      <created>1712604554446</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1712604554446</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,6 +435,7 @@
     <MESSAGE value="page parsing" />
     <MESSAGE value="page parsing&#10;&#10;вывод фильма + ссылки на него" />
     <MESSAGE value="page parsing&#10;&#10;вывод деталей фильма" />
-    <option name="LAST_COMMIT_MESSAGE" value="page parsing&#10;&#10;вывод деталей фильма" />
+    <MESSAGE value="исправление предупреждений" />
+    <option name="LAST_COMMIT_MESSAGE" value="исправление предупреждений" />
   </component>
 </project>

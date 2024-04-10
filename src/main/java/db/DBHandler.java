@@ -1,9 +1,6 @@
 package db;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class DBHandler extends Configs{
 
@@ -20,13 +17,36 @@ public class DBHandler extends Configs{
     }
 
     public void cinemasFilling(String cinemaName, String cinemaAddress){
-        String insert = "INSERT INTO " + CinemasConst.CINEMAS_TABLE + "(" +
+        String insertCinema = "INSERT INTO " + CinemasConst.CINEMAS_TABLE + "(" +
                 CinemasConst.CINEMA_NAME + "," + CinemasConst.CINEMA_ADDRESS + ")" +
                 "VALUES(?,?)";
         try {
-            PreparedStatement prSt = getDBConnection().prepareStatement(insert);
+            PreparedStatement prSt = getDBConnection().prepareStatement(insertCinema);
             prSt.setString(1,cinemaName);
             prSt.setString(2,cinemaAddress);
+
+            prSt.executeUpdate();
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public void moviesFilling(String movieName, Date movieYearRelease, Time movieLength,
+                              String movieAgeLimit, String movieGenre, String movieDescription){
+        String insertMovie = "INSERT INTO " + CinemasConst.MOVIES_TABLE + "(" +
+                CinemasConst.MOVIE_NAME + "," + CinemasConst.MOVIE_YEAR_RELEASE +
+                CinemasConst.MOVIE_LENGTH  + "," +  CinemasConst.MOVIE_AGE_LIMIT + "," +
+                CinemasConst.MOVIE_GENRE + "," + CinemasConst.MOVIE_DESCRIPTION + "," + ")" +
+                "VALUES(?,?,?,?,?,?)";
+        try {
+            PreparedStatement prSt = getDBConnection().prepareStatement(insertMovie);
+            prSt.setString(1,movieName);
+            prSt.setDate(2, movieYearRelease);
+            prSt.setTime(3,movieLength);
+            prSt.setString(4,movieAgeLimit);
+            prSt.setString(5,movieGenre);
+            prSt.setString(6,movieDescription);
 
             prSt.executeUpdate();
         } catch (SQLException | ClassNotFoundException e) {

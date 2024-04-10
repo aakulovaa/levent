@@ -15,7 +15,6 @@ public class CinemasConst {
     public static final String MOVIE_NAME = "movie_name";
     public static final String MOVIE_YEAR_RELEASE = "movie_year_release";
     public static final String MOVIE_DIRECTOR_ID = "movie_director_id";
-    public static final String MOVIE_SLOGAN = "movie_slogan";
     public static final String MOVIE_LENGTH = "movie_length";
     public static final String MOVIE_AGE_LIMIT = "movie_age_limit";
     public static final String MOVIE_GENRE = "movie_genre";

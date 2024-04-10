@@ -4,7 +4,6 @@ public class MoviePost {
     private String title;
     private String detailsLink;
     private String genre;
-    private String genreDetailsLink;
     private String age;
     private String yearRelease;
     private String length;
@@ -76,14 +75,6 @@ public class MoviePost {
         this.genre = genre;
     }
 
-    public String getGenreDetailsLink() {
-        return genreDetailsLink;
-    }
-
-    public void setGenreDetailsLink(String genreDetailsLink) {
-        this.genreDetailsLink = genreDetailsLink;
-    }
-
     public String getAge() {
         return age;
     }
@@ -98,7 +89,6 @@ public class MoviePost {
                 "title='" + title + '\'' +
                 ", detailsLink='" + detailsLink + '\'' +
                 ", genre='" + genre + '\'' +
-                ", genreDetailsLink='" + genreDetailsLink + '\'' +
                 ", age='" + age + '\'' +
                 ", yearRelease='" + yearRelease + '\'' +
                 ", length='" + length + '\'' +

@@ -5,13 +5,19 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import posts.MovieParser;
+
 import java.io.IOException;
 
 public class CinemaPageController {
 
     @FXML
     private Button cinemaBackButton;
+
+    @FXML
+    private Label cinemaText;
 
 
     @FXML
@@ -33,8 +39,8 @@ public class CinemaPageController {
             stage.setTitle("Events");
             stage.show();
         });
-
-
+        MovieParser movieParser = new MovieParser();
+        cinemaText.setText(String.valueOf(movieParser.parser().getFirst().getTitle()));
     }
 
 }

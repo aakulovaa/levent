@@ -19,9 +19,9 @@ public class HomePage extends Application {
         stage.show();
     }
 
-    public static void main(String[] args) {
-        MovieParser parser = new MovieParser();
-        parser.parser();
+    public static void main(String[] args){
+//        MovieParser parser = new MovieParser();
+//        parser.parser();
         launch();
     }
 }
