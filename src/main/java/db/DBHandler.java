@@ -32,7 +32,7 @@ public class DBHandler extends Configs{
 
     }
 
-    public void moviesFilling(String movieName, Date movieYearRelease, Time movieLength,
+    public void moviesFilling(String movieName, String movieYearRelease, String movieLength,
                               String movieAgeLimit, String movieGenre, String movieDescription){
         String insertMovie = "INSERT INTO " + CinemasConst.MOVIES_TABLE + "(" +
                 CinemasConst.MOVIE_NAME + "," + CinemasConst.MOVIE_YEAR_RELEASE +
@@ -42,8 +42,8 @@ public class DBHandler extends Configs{
         try {
             PreparedStatement prSt = getDBConnection().prepareStatement(insertMovie);
             prSt.setString(1,movieName);
-            prSt.setDate(2, movieYearRelease);
-            prSt.setTime(3,movieLength);
+            prSt.setString(2, movieYearRelease);
+            prSt.setString(3,movieLength);
             prSt.setString(4,movieAgeLimit);
             prSt.setString(5,movieGenre);
             prSt.setString(6,movieDescription);

@@ -39,7 +39,8 @@ public class MovieParser {
 
                 Element director = postDetailsDoc.getElementsByClass("eNJOm").get(2);
                 Elements directorDetails = director.getElementsByAttributeValue("data-test", "LINK");
-                moviePost.setDirectorDetailsLink(directorDetails.attr("href"));
+                String directorLink = directorDetails.attr("href");
+                moviePost.setDirectorDetailsLink(directorLink);
                 moviePost.setDirector(directorDetails.text());
 
                 yearIndex = moviePost.getDirector().isEmpty() ? 2 : 3;
@@ -57,7 +58,7 @@ public class MovieParser {
 
                 posts.add(moviePost);
             }
-            //posts.forEach(System.out::println);
+            posts.forEach(System.out::println);
 
         } catch (IOException e) {
             throw new RuntimeException(e);
