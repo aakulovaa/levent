@@ -6,7 +6,9 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class MovieParser {
@@ -42,6 +44,13 @@ public class MovieParser {
                 String directorLink = directorDetails.attr("href");
                 moviePost.setDirectorDetailsLink(directorLink);
                 moviePost.setDirector(directorDetails.text());
+                if(!directorDetails.text().isEmpty()) {
+                    String[] arrayDirector = directorDetails.text().split(" ");
+                    moviePost.setDirectorFirstName(arrayDirector[0]);
+                    moviePost.setDirectorLastName(arrayDirector[arrayDirector.length-1]);
+                }
+                Document directorDetailsDoc = Jsoup.connect("https://www.afisha.ru" + directorLink).get();
+                moviePost.setCountDirectorMovies(directorDetailsDoc.getElementsByClass("YWGaZ").size());
 
                 yearIndex = moviePost.getDirector().isEmpty() ? 2 : 3;
 
@@ -55,6 +64,7 @@ public class MovieParser {
 
                 String description = postDetailsDoc.getElementsByClass("aEVDY t1V2l").text();
                 moviePost.setDescription(description);
+
 
                 posts.add(moviePost);
             }
