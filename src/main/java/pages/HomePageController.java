@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 
 public class HomePageController {
 
@@ -53,7 +54,10 @@ public class HomePageController {
 
         dateEvents.setOnAction(event -> {
             dateEvents.getScene().getWindow().hide();
+            String datePicker = dateEvents.getValue().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
             System.out.println(dateEvents.getValue().format(DateTimeFormatter.ofPattern("dd-MM-yyyy")));
+            //https://www.afisha.ru/voronezh/schedule_cinema/06-maya/
+            System.out.println("https://www.afisha.ru/voronezh/schedule_cinema/" + datePicker +'/');
 
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/pages/sortDatePage.fxml"));
