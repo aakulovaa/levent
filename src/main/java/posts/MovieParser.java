@@ -6,9 +6,9 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.List;
 
 public class MovieParser {
@@ -74,5 +74,36 @@ public class MovieParser {
             throw new RuntimeException(e);
         }
         return posts;
+    }
+
+    public List<DirectorPost> directorParser(){
+        List<DirectorPost> directorPosts;
+        try {
+            directorPosts = new ArrayList<>();
+            Document doc = Jsoup.connect("https://www.afisha.ru/voronezh/schedule_cinema/").get();
+            Elements movieLinkElements = doc.getElementsByAttributeValue("data-test", "LINK ITEM-URL");
+            for (Element movieLinkElement : movieLinkElements) {
+                DirectorPost directorPost = new DirectorPost();
+                String detailsLink = movieLinkElement.attr("href");
+                Document postDetailsDoc = Jsoup.connect("https://www.afisha.ru" + detailsLink).get();
+                Element director = postDetailsDoc.getElementsByClass("eNJOm").get(2);
+                Elements directorDetails = director.getElementsByAttributeValue("data-test", "LINK");
+                String directorLink = directorDetails.attr("href");
+                directorPost.setDirectorDetailsLink(directorLink);
+                if(!directorDetails.text().isEmpty()) {
+                    String[] arrayDirector = directorDetails.text().split(" ");
+                    directorPost.setDirectorFirstName(arrayDirector[0]);
+                    directorPost.setDirectorLastName(arrayDirector[arrayDirector.length-1]);
+                }
+                Document directorDetailsDoc = Jsoup.connect("https://www.afisha.ru" + directorLink).get();
+                directorPost.setCountDirectorMovies(directorDetailsDoc.getElementsByClass("YWGaZ").size());
+                directorPosts.add(directorPost);
+            }
+            directorPosts.forEach(System.out::println);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return directorPosts;
     }
 }
