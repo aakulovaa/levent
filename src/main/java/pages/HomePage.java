@@ -21,7 +21,7 @@ public class HomePage extends Application {
 
     public static void main(String[] args){
         MovieParser parser = new MovieParser();
-        parser.parser();
+        //parser.parser();
         launch();
     }
 }

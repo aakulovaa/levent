@@ -11,6 +11,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.time.format.DateTimeFormatter;
 
 public class HomePageController {
 
@@ -52,6 +53,7 @@ public class HomePageController {
 
         dateEvents.setOnAction(event -> {
             dateEvents.getScene().getWindow().hide();
+            System.out.println(dateEvents.getValue().format(DateTimeFormatter.ofPattern("dd-MM-yyyy")));
 
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/pages/sortDatePage.fxml"));

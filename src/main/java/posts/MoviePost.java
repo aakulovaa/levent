@@ -9,6 +9,7 @@ public class MoviePost {
     private String length;
     private String description;
     private String director;
+    private String[] SheduleMovie;
 
 
      public String getDirector() {
