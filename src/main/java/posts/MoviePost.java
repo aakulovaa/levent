@@ -9,44 +9,9 @@ public class MoviePost {
     private String length;
     private String description;
     private String director;
-    private String directorFirstName;
-    private String directorLastName;
-    private Integer countDirectorMovies;
-    private String directorDetailsLink;
 
-    public Integer getCountDirectorMovies() {
-        return countDirectorMovies;
-    }
 
-    public void setCountDirectorMovies(Integer countDirectorMovies) {
-        this.countDirectorMovies = countDirectorMovies;
-    }
-
-    public String getDirectorFirstName() {
-        return directorFirstName;
-    }
-
-    public void setDirectorFirstName(String directorFirstName) {
-        this.directorFirstName = directorFirstName;
-    }
-
-    public String getDirectorLastName() {
-        return directorLastName;
-    }
-
-    public void setDirectorLastName(String directorLastName) {
-        this.directorLastName = directorLastName;
-    }
-
-    public String getDirectorDetailsLink() {
-        return directorDetailsLink;
-    }
-
-    public void setDirectorDetailsLink(String directorDetailsLink) {
-        this.directorDetailsLink = directorDetailsLink;
-    }
-
-    public String getDirector() {
+     public String getDirector() {
         return director;
     }
 
@@ -121,10 +86,6 @@ public class MoviePost {
                 ", length='" + length + '\'' +
                 ", description='" + description + '\'' +
                 ", director='" + director + '\'' +
-                ", directorFirstName='" + directorFirstName + '\'' +
-                ", directorLastName='" + directorLastName + '\'' +
-                ", countDirectorMovies=" + countDirectorMovies +
-                ", directorDetailsLink='" + directorDetailsLink + '\'' +
                 '}';
     }
 }

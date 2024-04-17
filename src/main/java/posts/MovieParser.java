@@ -41,16 +41,7 @@ public class MovieParser {
 
                 Element director = postDetailsDoc.getElementsByClass("eNJOm").get(2);
                 Elements directorDetails = director.getElementsByAttributeValue("data-test", "LINK");
-                String directorLink = directorDetails.attr("href");
-                moviePost.setDirectorDetailsLink(directorLink);
                 moviePost.setDirector(directorDetails.text());
-                if(!directorDetails.text().isEmpty()) {
-                    String[] arrayDirector = directorDetails.text().split(" ");
-                    moviePost.setDirectorFirstName(arrayDirector[0]);
-                    moviePost.setDirectorLastName(arrayDirector[arrayDirector.length-1]);
-                }
-                Document directorDetailsDoc = Jsoup.connect("https://www.afisha.ru" + directorLink).get();
-                moviePost.setCountDirectorMovies(directorDetailsDoc.getElementsByClass("YWGaZ").size());
 
                 yearIndex = moviePost.getDirector().isEmpty() ? 2 : 3;
 
