@@ -10,7 +10,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -24,11 +26,15 @@ public class CinemaPageController {
     @FXML
     private Button cinemaBackButton;
 
+
     @FXML
-    private ListView<?> cinemaText;
+    private GridPane grid;
 
     @FXML
     private AnchorPane pane;
+
+    @FXML
+    private ScrollPane scroll;
 
 
     @FXML

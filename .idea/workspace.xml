@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с базой данных + страницы расписания&#10;&#10;заполнение бд с фильмами при выборе мероприятия &quot;кино&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cinema/Movie.java" afterDir="false" />
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с базой данных + страницы расписания">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/CinemasConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cinemaDB/CinemasConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DateSortController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DateSortController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/pages/CinemaPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/CinemaPage.fxml" afterDir="false" />
@@ -463,7 +458,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713516656444</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="работа с базой данных + страницы расписания">
+      <option name="closed" value="true" />
+      <created>1713527760765</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1713527760765</updated>
+    </task>
+    <task id="LOCAL-00045" summary="работа с базой данных + страницы расписания">
+      <option name="closed" value="true" />
+      <created>1713527766509</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1713527766509</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +492,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="работа с главной страницей&#10;&#10;проверка работоспособности элементов страницы" />
     <MESSAGE value="работа с страницей выбора по дате" />
     <MESSAGE value="работа с страницей выбора мероприятия" />
     <MESSAGE value="работа с страницей выбора мероприятия&#10;&#10;добавление возможности возврата на предыдущую страницу" />
@@ -506,6 +516,7 @@
     <MESSAGE value="обработка календаря&#10;&#10;получение выбраной даты в подходящем для парсинга формате" />
     <MESSAGE value="обработка календаря&#10;&#10;получение ссылки на страницу расписания кино с заданой датой" />
     <MESSAGE value="работа с базой данных + страницы расписания&#10;&#10;заполнение бд с фильмами при выборе мероприятия &quot;кино&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="работа с базой данных + страницы расписания&#10;&#10;заполнение бд с фильмами при выборе мероприятия &quot;кино&quot;" />
+    <MESSAGE value="работа с базой данных + страницы расписания" />
+    <option name="LAST_COMMIT_MESSAGE" value="работа с базой данных + страницы расписания" />
   </component>
 </project>
