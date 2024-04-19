@@ -1,5 +1,9 @@
 package db;
 
+import cinema.Movie;
+import cinemaDB.CinemasConst;
+import cinemaDB.MoviesConst;
+
 import java.sql.*;
 
 public class DBHandler extends Configs{
@@ -33,30 +37,57 @@ public class DBHandler extends Configs{
 
     }
 
-    public void moviesFilling(Integer movieID, String movieName, String movieYearRelease, String movieLength,
-                              String movieAgeLimit, String movieGenre, String movieDirector, String movieDescription){
-        String insertMovie = "INSERT INTO " + CinemasConst.MOVIES_TABLE + "(" +
-                CinemasConst.MOVIE_ID + "," + CinemasConst.MOVIE_NAME +
-                "," + CinemasConst.MOVIE_YEAR_RELEASE +"," + CinemasConst.MOVIE_LENGTH  +
-                "," +  CinemasConst.MOVIE_AGE_LIMIT + "," + CinemasConst.MOVIE_GENRE +
-                "," + CinemasConst.MOVIE_DIRECTOR + "," + CinemasConst.MOVIE_DESCRIPTION + ")" +
-                "VALUES(?,?,?,?,?,?,?,?)";
+    public void moviesFilling(Movie movie){
+        String insertMovie = "INSERT INTO " + MoviesConst.MOVIES_TABLE + "(" +
+                MoviesConst.MOVIE_NAME +
+                "," + MoviesConst.MOVIE_YEAR_RELEASE +"," + MoviesConst.MOVIE_LENGTH  +
+                "," +  MoviesConst.MOVIE_AGE_LIMIT + "," + MoviesConst.MOVIE_GENRE +
+                "," + MoviesConst.MOVIE_DIRECTOR + "," + MoviesConst.MOVIE_DESCRIPTION + ")" +
+                "VALUES(?,?,?,?,?,?,?)";
         try {
             PreparedStatement prSt = getDBConnection().prepareStatement(insertMovie);
-            prSt.setInt(1,movieID);
-            prSt.setString(2,movieName);
-            prSt.setString(3, movieYearRelease);
-            prSt.setString(4,movieLength);
-            prSt.setString(5,movieAgeLimit);
-            prSt.setString(6,movieGenre);
-            prSt.setString(7,movieDirector);
-            prSt.setString(8,movieDescription);
+            prSt.setString(1,movie.getMovieName());
+            prSt.setString(2, movie.getMovieDateRelease());
+            prSt.setString(3,movie.getMovieLength());
+            prSt.setString(4,movie.getMovieAgeLimit());
+            prSt.setString(5,movie.getMovieGenre());
+            prSt.setString(6,movie.getMovieDirector());
+            prSt.setString(7,movie.getMovieDescription());
 
             prSt.executeUpdate();
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
 
+    }
+
+    public ResultSet moviesGetting(){
+
+        ResultSet resSet = null;
+
+        String select = "SELECT * FROM " + MoviesConst.MOVIES_TABLE;
+        try {
+            PreparedStatement prSt = getDBConnection().prepareStatement(select);
+
+            resSet = prSt.executeQuery();
+
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+        return resSet;
+    }
+
+    public void moviesCleaning(){
+
+        String delete = "DELETE FROM " + MoviesConst.MOVIES_TABLE;
+        try {
+            PreparedStatement prSt = getDBConnection().prepareStatement(delete);
+
+            prSt.executeUpdate();
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }

@@ -1,15 +1,23 @@
 package pages;
 
+import cinema.Movie;
+import cinemaDB.MoviesConst;
+import db.DBHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import posts.MovieParser;
 
 import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import cinemaDB.MoviesConst;
 
 public class CinemaPageController {
 
@@ -17,11 +25,18 @@ public class CinemaPageController {
     private Button cinemaBackButton;
 
     @FXML
-    private Label cinemaText;
+    private ListView<?> cinemaText;
+
+    @FXML
+    private AnchorPane pane;
 
 
     @FXML
     void initialize() {
+        Movie movie = new Movie();
+        gettingMovie(movie);
+        //cinemaText.setItems();
+        //cinemaText.setText(movie.getMovieName());
         cinemaBackButton.setOnAction(event -> {
             cinemaBackButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
@@ -39,8 +54,19 @@ public class CinemaPageController {
             stage.setTitle("Events");
             stage.show();
         });
-//        MovieParser movieParser = new MovieParser();
-//        cinemaText.setText(String.valueOf(movieParser.parser().getFirst().getTitle()));
     }
 
+    public void gettingMovie(Movie movie){
+        DBHandler db = new DBHandler();
+        ResultSet resultSet = db.moviesGetting();
+
+        try {
+            while(resultSet.next()) {
+                movie.setMovieName(resultSet.getString(MoviesConst.MOVIE_NAME));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
 }

@@ -66,10 +66,13 @@ public class HomePageController {
                 throw new RuntimeException(e);
             }
 
+            DateSortController dateSortController = loader.getController();
+            dateSortController.displayName(datePicker);
+
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-            stage.setTitle(datePicker);
+            stage.setTitle("Date Picker");
             stage.show();
         });
 

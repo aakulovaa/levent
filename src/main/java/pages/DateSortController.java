@@ -18,6 +18,10 @@ public class DateSortController {
     @FXML
     private Button dateBackButton;
 
+    public void displayName(String choiceDate){
+        dateText.setText(choiceDate);
+    }
+
     @FXML
     void initialize() {
         dateBackButton.setOnAction(event1 -> {
