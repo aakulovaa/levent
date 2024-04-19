@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="обработка календаря&#10;&#10;получение выбраной даты в подходящем для парсинга формате">
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="обработка календаря&#10;&#10;получение ссылки на страницу расписания кино с заданой датой">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/CinemasConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/CinemasConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/posts/MovieParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posts/MovieParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/posts/MoviePost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posts/MoviePost.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -439,7 +445,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713341389925</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="обработка календаря&#10;&#10;получение ссылки на страницу расписания кино с заданой датой">
+      <option name="closed" value="true" />
+      <created>1713346183405</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1713346183405</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,6 +495,7 @@
     <MESSAGE value="обработка значений для добавления в бд" />
     <MESSAGE value="обработка значений для добавления в бд&#10;&#10;значения для таблицы режиссеров" />
     <MESSAGE value="обработка календаря&#10;&#10;получение выбраной даты в подходящем для парсинга формате" />
-    <option name="LAST_COMMIT_MESSAGE" value="обработка календаря&#10;&#10;получение выбраной даты в подходящем для парсинга формате" />
+    <MESSAGE value="обработка календаря&#10;&#10;получение ссылки на страницу расписания кино с заданой датой" />
+    <option name="LAST_COMMIT_MESSAGE" value="обработка календаря&#10;&#10;получение ссылки на страницу расписания кино с заданой датой" />
   </component>
 </project>

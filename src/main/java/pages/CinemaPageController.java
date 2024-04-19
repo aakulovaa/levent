@@ -39,8 +39,8 @@ public class CinemaPageController {
             stage.setTitle("Events");
             stage.show();
         });
-        MovieParser movieParser = new MovieParser();
-        cinemaText.setText(String.valueOf(movieParser.parser().getFirst().getTitle()));
+//        MovieParser movieParser = new MovieParser();
+//        cinemaText.setText(String.valueOf(movieParser.parser().getFirst().getTitle()));
     }
 
 }

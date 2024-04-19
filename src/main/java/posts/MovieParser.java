@@ -8,11 +8,13 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 
 import java.util.ArrayList;
-
 import java.util.List;
+
 
 public class MovieParser {
     private int yearIndex;
+    private int countMovie = 0;
+    private String directorMovie;
     public List<MoviePost> parser() {
         List<MoviePost> posts;
         try {
@@ -29,6 +31,9 @@ public class MovieParser {
                 Elements title = postDetailsDoc.getElementsByAttributeValue("data-test", "ITEM-NAME");
                 moviePost.setTitle(title.text());
 
+                countMovie++;
+                moviePost.setMovieID(countMovie);
+
                 Element genre = postDetailsDoc.getElementsByClass("eNJOm").first();
                 Elements genreDetails = genre != null ? genre.getElementsByAttributeValue("data-test", "LINK") : null;
                 if (genreDetails != null) {
@@ -41,7 +46,12 @@ public class MovieParser {
 
                 Element director = postDetailsDoc.getElementsByClass("eNJOm").get(2);
                 Elements directorDetails = director.getElementsByAttributeValue("data-test", "LINK");
-                moviePost.setDirector(directorDetails.text());
+                directorMovie = directorDetails.text();
+                if (directorDetails.text().isEmpty())
+                {
+                    directorMovie = "";
+                }
+                moviePost.setDirector(directorMovie);
 
                 yearIndex = moviePost.getDirector().isEmpty() ? 2 : 3;
 
@@ -59,7 +69,7 @@ public class MovieParser {
 
                 posts.add(moviePost);
             }
-            posts.forEach(System.out::println);
+            //posts.forEach(System.out::println);
 
         } catch (IOException e) {
             throw new RuntimeException(e);

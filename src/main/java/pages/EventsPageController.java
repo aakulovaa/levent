@@ -1,16 +1,21 @@
 package pages;
 
+import db.DBHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import posts.MovieParser;
+import posts.MoviePost;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.List;
 
 
 public class EventsPageController {
@@ -34,6 +39,9 @@ public class EventsPageController {
 
     @FXML
     void initialize() {
+
+        DBHandler db = new DBHandler();
+
         backButton.setOnAction(event1 -> {
             backButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
@@ -53,6 +61,20 @@ public class EventsPageController {
         });
 
         cinemaButton.setOnAction(event -> {
+
+            MovieParser movieParser = new MovieParser();
+            List<MoviePost> parser = movieParser.parser();
+            for (int i = 0; i<parser.getLast().getMovieID(); i++)
+            {
+                MoviePost parsingCounting = parser.get(i);
+
+                db.moviesFilling(parsingCounting.getMovieID(),parsingCounting.getTitle().replaceAll("\u0000", ""),
+                        parsingCounting.getYearRelease().replaceAll("\u0000", ""),parsingCounting.getLength().replaceAll("\u0000", ""),
+                        parsingCounting.getAge().replaceAll("\u0000", ""),parsingCounting.getGenre().replaceAll("\u0000", ""),
+                        parsingCounting.getDirector().replaceAll("\u0000", ""),parsingCounting.getDescription().replaceAll("\u0000", ""));
+
+            }
+
             cinemaButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("CinemaPage.fxml"));

@@ -1,6 +1,9 @@
 package posts;
 
+import java.util.Arrays;
+
 public class MoviePost {
+    private Integer movieID;
     private String title;
     private String detailsLink;
     private String genre;
@@ -11,8 +14,15 @@ public class MoviePost {
     private String director;
     private String[] SheduleMovie;
 
+    public Integer getMovieID() {
+        return movieID;
+    }
 
-     public String getDirector() {
+    public void setMovieID(Integer movieID) {
+        this.movieID = movieID;
+    }
+
+    public String getDirector() {
         return director;
     }
 
@@ -79,7 +89,8 @@ public class MoviePost {
     @Override
     public String toString() {
         return "MoviePost{" +
-                "title='" + title + '\'' +
+                "movieID=" + movieID +
+                ", title='" + title + '\'' +
                 ", detailsLink='" + detailsLink + '\'' +
                 ", genre='" + genre + '\'' +
                 ", age='" + age + '\'' +
@@ -87,6 +98,7 @@ public class MoviePost {
                 ", length='" + length + '\'' +
                 ", description='" + description + '\'' +
                 ", director='" + director + '\'' +
+                ", SheduleMovie=" + Arrays.toString(SheduleMovie) +
                 '}';
     }
 }

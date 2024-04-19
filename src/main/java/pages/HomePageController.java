@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -55,10 +56,7 @@ public class HomePageController {
         dateEvents.setOnAction(event -> {
             dateEvents.getScene().getWindow().hide();
             String datePicker = dateEvents.getValue().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
-            System.out.println(dateEvents.getValue().format(DateTimeFormatter.ofPattern("dd-MM-yyyy")));
-            //https://www.afisha.ru/voronezh/schedule_cinema/06-maya/
             System.out.println("https://www.afisha.ru/voronezh/schedule_cinema/" + datePicker +'/');
-
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/pages/sortDatePage.fxml"));
 
@@ -71,7 +69,7 @@ public class HomePageController {
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-            stage.setTitle("Date sort");
+            stage.setTitle(datePicker);
             stage.show();
         });
 

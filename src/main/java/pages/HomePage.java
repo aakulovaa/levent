@@ -1,12 +1,15 @@
 package pages;
 
+import db.DBHandler;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import posts.MovieParser;
+import posts.MoviePost;
 
 import java.io.IOException;
+import java.util.List;
 
 public class HomePage extends Application {
     @Override
@@ -20,8 +23,10 @@ public class HomePage extends Application {
     }
 
     public static void main(String[] args){
-        MovieParser parser = new MovieParser();
+        //MovieParser parser = new MovieParser();
         //parser.parser();
+        //parser.directorParser();
+
         launch();
     }
 }
