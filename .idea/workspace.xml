@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с базой данных + страницы расписания">
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с базой данных &#10;&#10;изменение места обновления данных">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ItemController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/CinemaPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/CinemaPage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -474,7 +473,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713527766509</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="работа с базой данных &#10;&#10;изменение места обновления данных">
+      <option name="closed" value="true" />
+      <created>1713535403856</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1713535403856</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="работа с страницей выбора по дате" />
     <MESSAGE value="работа с страницей выбора мероприятия" />
     <MESSAGE value="работа с страницей выбора мероприятия&#10;&#10;добавление возможности возврата на предыдущую страницу" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление возможности возврата на предыдущую страницу" />
@@ -517,6 +523,7 @@
     <MESSAGE value="обработка календаря&#10;&#10;получение ссылки на страницу расписания кино с заданой датой" />
     <MESSAGE value="работа с базой данных + страницы расписания&#10;&#10;заполнение бд с фильмами при выборе мероприятия &quot;кино&quot;" />
     <MESSAGE value="работа с базой данных + страницы расписания" />
-    <option name="LAST_COMMIT_MESSAGE" value="работа с базой данных + страницы расписания" />
+    <MESSAGE value="работа с базой данных &#10;&#10;изменение места обновления данных" />
+    <option name="LAST_COMMIT_MESSAGE" value="работа с базой данных &#10;&#10;изменение места обновления данных" />
   </component>
 </project>

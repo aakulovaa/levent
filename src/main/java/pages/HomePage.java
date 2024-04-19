@@ -49,16 +49,16 @@ public class HomePage extends Application {
     }
 
     public static void main(String[] args){
-        System.out.println("Обновить данные приложения? 1 - Да /2 - Нет");
-        Scanner choiceAction = new Scanner(System.in);
-        int choice;
-        choice = choiceAction.nextInt();
-        if(choice == 1){
-            DBHandler db = new DBHandler();
-            db.moviesCleaning();
-            fillingMovies();
-            System.out.println("Update!");
-        }
+//        System.out.println("Обновить данные приложения? 1 - Да /2 - Нет");
+//        Scanner choiceAction = new Scanner(System.in);
+//        int choice;
+//        choice = choiceAction.nextInt();
+//        if(choice == 1){
+//            DBHandler db = new DBHandler();
+//            db.moviesCleaning();
+//            fillingMovies();
+//            System.out.println("Update!");
+//        }
         launch();
     }
 }
