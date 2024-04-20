@@ -2,9 +2,16 @@ package pages;
 
 import cinema.Movie;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 
 public class MovieItemController {
@@ -16,7 +23,7 @@ public class MovieItemController {
     private ImageView movieImage;
 
     @FXML
-    private Label movieName;
+    private Button movieName;
 
     @FXML
     private Label movieYear;
@@ -34,8 +41,32 @@ public class MovieItemController {
         movieGenre.setText(genre[0]);
         Image image = new Image(getClass().getResourceAsStream(movie.getMovieImageSource()));
         movieImage.setImage(image);
-        movieImage.setFitHeight(150);
-        movieImage.setFitWidth(180);
+
+    }
+
+    @FXML
+    void initialize() {
+
+        movieName.setOnAction(event -> {
+            movieName.getScene().getWindow().hide();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("MoviePage.fxml"));
+
+            try {
+                loader.load();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+            MoviePageController moviePageController = loader.getController();
+            moviePageController.movieName(movieName.getText());
+
+            Parent root = loader.getRoot();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Movie");
+            stage.show();
+        });
 
     }
 
