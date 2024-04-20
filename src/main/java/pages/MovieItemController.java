@@ -1,6 +1,8 @@
 package pages;
 
 import cinema.Movie;
+import cinemaDB.MoviesConst;
+import db.DBHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,6 +14,8 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 
 public class MovieItemController {
@@ -47,6 +51,11 @@ public class MovieItemController {
     @FXML
     void initialize() {
 
+        loadPage();
+
+    }
+
+    private void loadPage(){
         movieName.setOnAction(event -> {
             movieName.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
@@ -60,6 +69,15 @@ public class MovieItemController {
 
             MoviePageController moviePageController = loader.getController();
             moviePageController.movieName(movieName.getText());
+            moviePageController.movieGenre(movie.getMovieGenre());
+            moviePageController.movieAge(movie.getMovieAgeLimit());
+            moviePageController.movieLength(movie.getMovieLength());
+            moviePageController.movieDate(movie.getMovieDateRelease());
+            moviePageController.movieDirector(movie.getMovieDirector());
+            moviePageController.movieDescription(movie.getMovieDescription());
+            Image image = new Image(getClass().getResourceAsStream(movie.getMovieImageSource()));
+            moviePageController.movieImage(image);
+
 
             Parent root = loader.getRoot();
             Stage stage = new Stage();
@@ -67,7 +85,6 @@ public class MovieItemController {
             stage.setTitle("Movie");
             stage.show();
         });
-
     }
 
 }

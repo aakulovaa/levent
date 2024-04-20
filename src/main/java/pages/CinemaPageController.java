@@ -36,7 +36,6 @@ public class CinemaPageController {
     private List<Movie> getData() {
         List<Movie> movies = new ArrayList<>();
         Movie movie;
-//        String imgSource;
         DBHandler db = new DBHandler();
         ResultSet resultSet = db.moviesGetting();
         try {
@@ -45,8 +44,12 @@ public class CinemaPageController {
                     movie = new Movie();
 
                     movie.setMovieName(resultSet.getString(MoviesConst.MOVIE_NAME));
-                    movie.setMovieDateRelease(resultSet.getString(MoviesConst.MOVIE_YEAR_RELEASE));
                     movie.setMovieGenre(resultSet.getString(MoviesConst.MOVIE_GENRE));
+                    movie.setMovieDateRelease(resultSet.getString(MoviesConst.MOVIE_YEAR_RELEASE));
+                    movie.setMovieLength(resultSet.getString(MoviesConst.MOVIE_LENGTH));
+                    movie.setMovieAgeLimit(resultSet.getString(MoviesConst.MOVIE_AGE_LIMIT));
+                    movie.setMovieDirector(resultSet.getString(MoviesConst.MOVIE_DIRECTOR));
+                    movie.setMovieDescription(resultSet.getString(MoviesConst.MOVIE_DESCRIPTION));
                     movie.setMovieImageSource(resultSet.getString(MoviesConst.MOVIE_IMAGE_SOURCE));
                     movies.add(movie);
 

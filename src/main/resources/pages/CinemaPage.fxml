@@ -24,7 +24,7 @@
             </Button>
          </children>
       </AnchorPane>
-      <ScrollPane fx:id="scroll" layoutX="6.0" layoutY="40.0" prefHeight="357.0" prefWidth="589.0" style="-fx-background-color: #AFEEEE;">
+      <ScrollPane fx:id="scroll" layoutX="5.0" layoutY="40.0" prefHeight="358.0" prefWidth="590.0" style="-fx-background-color: #E0FFFF;">
          <content>
             <GridPane fx:id="grid">
               <columnConstraints>

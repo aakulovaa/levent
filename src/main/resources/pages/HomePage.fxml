@@ -29,10 +29,6 @@
          <font>
             <Font name="Avenir Roman" size="13.0" />
          </font></Button>
-      <Label layoutX="214.0" layoutY="161.0" prefHeight="19.0" prefWidth="186.0" text="Рекомендуемые мероприятия">
-         <font>
-            <Font name="Avenir Roman" size="13.0" />
-         </font></Label>
       <ImageView fitHeight="200.0" fitWidth="171.0" layoutX="14.0" layoutY="186.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
          <image>
             <Image url="@../image/e.jpeg" />

@@ -90,6 +90,17 @@ public class Movie {
         this.movieDescription = movieDescription;
     }
 
+    public Movie(String movieName, String movieDateRelease, String movieLength, String movieAgeLimit, String movieGenre, String movieDirector, String movieDescription, String movieImageSource) {
+        this.movieName = movieName;
+        this.movieDateRelease = movieDateRelease;
+        this.movieLength = movieLength;
+        this.movieAgeLimit = movieAgeLimit;
+        this.movieGenre = movieGenre;
+        this.movieDirector = movieDirector;
+        this.movieDescription = movieDescription;
+        this.movieImageSource = movieImageSource;
+    }
+
     public Movie(String movieName, String movieDateRelease, String movieLength, String movieAgeLimit, String movieGenre, String movieDirector, String movieDescription, String movieImageLink, String movieImageSource) {
         this.movieName = movieName;
         this.movieDateRelease = movieDateRelease;
