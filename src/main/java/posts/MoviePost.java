@@ -12,7 +12,16 @@ public class MoviePost {
     private String length;
     private String description;
     private String director;
+    private String imageLink;
     private String[] SheduleMovie;
+
+    public String getImageLink() {
+        return imageLink;
+    }
+
+    public void setImageLink(String imageLink) {
+        this.imageLink = imageLink;
+    }
 
     public Integer getMovieID() {
         return movieID;
@@ -98,7 +107,7 @@ public class MoviePost {
                 ", length='" + length + '\'' +
                 ", description='" + description + '\'' +
                 ", director='" + director + '\'' +
-                ", SheduleMovie=" + Arrays.toString(SheduleMovie) +
+                ", imageLink='" + imageLink + '\'' +
                 '}';
     }
 }

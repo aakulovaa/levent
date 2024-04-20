@@ -25,6 +25,10 @@ public class MovieParser {
                 MoviePost moviePost = new MoviePost();
                 String detailsLink = movieLinkElement.attr("href");
                 moviePost.setDetailsLink(detailsLink);
+                Elements imageLinkElement = movieLinkElement.getElementsByAttributeValue("data-test", "IMAGE ITEM-IMAGE");
+                String imageDetailsLink = imageLinkElement.attr("src");
+                moviePost.setImageLink(imageDetailsLink);
+
 
                 Document postDetailsDoc = Jsoup.connect("https://www.afisha.ru" + detailsLink).get();
 

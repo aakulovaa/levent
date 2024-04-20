@@ -9,6 +9,16 @@ public class Movie {
     private String movieDirector;
     private String movieDescription;
 
+    private String movieImageLink;
+
+    public String getMovieImageLink() {
+        return movieImageLink;
+    }
+
+    public void setMovieImageLink(String movieImageLink) {
+        this.movieImageLink = movieImageLink;
+    }
+
     public Movie() {
 
     }
@@ -78,5 +88,16 @@ public class Movie {
         this.movieGenre = movieGenre;
         this.movieDirector = movieDirector;
         this.movieDescription = movieDescription;
+    }
+
+    public Movie(String movieName, String movieDateRelease, String movieLength, String movieAgeLimit, String movieGenre, String movieDirector, String movieDescription, String movieImageLink) {
+        this.movieName = movieName;
+        this.movieDateRelease = movieDateRelease;
+        this.movieLength = movieLength;
+        this.movieAgeLimit = movieAgeLimit;
+        this.movieGenre = movieGenre;
+        this.movieDirector = movieDirector;
+        this.movieDescription = movieDescription;
+        this.movieImageLink = movieImageLink;
     }
 }

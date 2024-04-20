@@ -9,7 +9,7 @@ import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.ScrollPane;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
@@ -28,13 +28,6 @@ public class CinemaPageController {
 
     @FXML
     private GridPane grid;
-
-    @FXML
-    private AnchorPane pane;
-
-    @FXML
-    private ScrollPane scroll;
-
     private List<Movie> movies = new ArrayList<>();
 
     private Integer iterator = gettingID();
@@ -52,6 +45,7 @@ public class CinemaPageController {
                     movie.setMovieName(resultSet.getString(MoviesConst.MOVIE_NAME));
                     movie.setMovieDateRelease(resultSet.getString(MoviesConst.MOVIE_YEAR_RELEASE));
                     movie.setMovieGenre(resultSet.getString(MoviesConst.MOVIE_GENRE));
+                    movie.setMovieImageLink("/image/e.jpeg");
                     movies.add(movie);
 
                 }
@@ -103,23 +97,22 @@ public class CinemaPageController {
 
     public void createMovieChoice() {
         movies.addAll(getData());
-        int column = 0;
-        int row = 0;
+        int column = 1;
+        int row = 1;
         try {
-            for (int i = 0; i < movies.size(); i++) {
+            for(int i = 0; i < movies.size(); i++) {
                 FXMLLoader fxmlLoader = new FXMLLoader();
                 fxmlLoader.setLocation(getClass().getResource("movieForChoice.fxml"));
 
                 AnchorPane anchorPane = fxmlLoader.load();
 
-                ItemController itemController = fxmlLoader.getController();
+                MovieItemController itemController = fxmlLoader.getController();
                 itemController.setData(movies.get(i));
-
                 if (column == 3) {
-                    column = 0;
+                    column = 1;
                     row++;
                 }
-
+                itemController.loadImage();
                 grid.add(anchorPane, column++, row);
 
                 grid.setMinWidth(Region.USE_COMPUTED_SIZE);
@@ -135,25 +128,6 @@ public class CinemaPageController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
-
-
-    public List<Movie> gettingMovie(Movie movie) {
-        DBHandler db = new DBHandler();
-        ResultSet resultSet = db.moviesGetting();
-        List<Movie> movies = new ArrayList<>();
-        try {
-            while (resultSet.next()) {
-                movie.setMovieName(resultSet.getString(MoviesConst.MOVIE_NAME));
-                movie.setMovieDateRelease(resultSet.getString(MoviesConst.MOVIE_YEAR_RELEASE));
-                movie.setMovieGenre(resultSet.getString(MoviesConst.MOVIE_GENRE));
-                movies.add(movie);
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-
-        return movies;
     }
 
 }

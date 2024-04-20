@@ -11,4 +11,5 @@ public class MoviesConst {
     public static final String MOVIE_AGE_LIMIT = "movie_age_limit";
     public static final String MOVIE_GENRE = "movie_genre";
     public static final String MOVIE_DESCRIPTION = "movie_description";
+    public static final String MOVIE_IMAGE_LINK = "movie_image_link";
 }

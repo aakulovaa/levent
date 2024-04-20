@@ -39,9 +39,10 @@ public class HomePage extends Application {
             String movieGenre = parsingCounting.getGenre().replaceAll("\u0000", "");
             String movieDirector = parsingCounting.getDirector().replaceAll("\u0000", "");
             String movieDescription = parsingCounting.getDescription().replaceAll("\u0000", "");
+            String movieImageLink = parsingCounting.getImageLink().replaceAll("\u0000", "");
 
             Movie movie = new Movie(movieName,movieDateRelease,
-                    movieLength,movieAgeLimit,movieGenre,movieDirector,movieDescription);
+                    movieLength,movieAgeLimit,movieGenre,movieDirector,movieDescription,movieImageLink);
 
             db.moviesFilling(movie);
 
@@ -59,6 +60,7 @@ public class HomePage extends Application {
 //            fillingMovies();
 //            System.out.println("Update!");
 //        }
+
         launch();
     }
 }

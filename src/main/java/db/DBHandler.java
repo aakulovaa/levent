@@ -42,8 +42,9 @@ public class DBHandler extends Configs{
                 MoviesConst.MOVIE_NAME +
                 "," + MoviesConst.MOVIE_YEAR_RELEASE +"," + MoviesConst.MOVIE_LENGTH  +
                 "," +  MoviesConst.MOVIE_AGE_LIMIT + "," + MoviesConst.MOVIE_GENRE +
-                "," + MoviesConst.MOVIE_DIRECTOR + "," + MoviesConst.MOVIE_DESCRIPTION + ")" +
-                "VALUES(?,?,?,?,?,?,?)";
+                "," + MoviesConst.MOVIE_DIRECTOR + "," + MoviesConst.MOVIE_DESCRIPTION +","
+                + MoviesConst.MOVIE_IMAGE_LINK + ")" +
+                "VALUES(?,?,?,?,?,?,?,?)";
         try {
             PreparedStatement prSt = getDBConnection().prepareStatement(insertMovie);
             prSt.setString(1,movie.getMovieName());
@@ -53,6 +54,7 @@ public class DBHandler extends Configs{
             prSt.setString(5,movie.getMovieGenre());
             prSt.setString(6,movie.getMovieDirector());
             prSt.setString(7,movie.getMovieDescription());
+            prSt.setString(8,movie.getMovieImageLink());
 
             prSt.executeUpdate();
         } catch (SQLException | ClassNotFoundException e) {
