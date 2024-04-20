@@ -29,7 +29,6 @@ public class HomePage extends Application {
     private static void fillingMovies() {
         DBHandler db = new DBHandler();
         String imgSource;
-        int countImage = 0;
         MovieParser movieParser = new MovieParser();
         List<MoviePost> parser = movieParser.parser();
         for (int i = 0; i<parser.getLast().getMovieID(); i++)
@@ -44,9 +43,7 @@ public class HomePage extends Application {
             String movieDescription = parsingCounting.getDescription().replaceAll("\u0000", "");
             String movieImageLink = parsingCounting.getImageLink().replaceAll("\u0000", "");
             LoadMovieImage loadMovieImage = new LoadMovieImage();
-            imgSource = loadMovieImage.loadImage(movieImageLink,countImage);
-            countImage++;
-            System.out.println(imgSource);
+            imgSource = loadMovieImage.loadImage(movieImageLink,i);
             String movieImageSource = imgSource;
 
             Movie movie = new Movie(movieName,movieDateRelease,
@@ -59,16 +56,16 @@ public class HomePage extends Application {
 
 
     public static void main(String[] args){
-        System.out.println("Обновить данные приложения? 1 - Да /2 - Нет");
-        Scanner choiceAction = new Scanner(System.in);
-        int choice;
-        choice = choiceAction.nextInt();
-        if(choice == 1){
-            DBHandler db = new DBHandler();
-            db.moviesCleaning();
-            fillingMovies();
-            System.out.println("Updated!");
-        }
+//        System.out.println("Обновить данные приложения? 1 - Да /2 - Нет");
+//        Scanner choiceAction = new Scanner(System.in);
+//        int choice;
+//        choice = choiceAction.nextInt();
+//        if(choice == 1){
+//            DBHandler db = new DBHandler();
+//            db.moviesCleaning();
+//            fillingMovies();
+//            System.out.println("Updated!");
+//        }
 
         launch();
     }

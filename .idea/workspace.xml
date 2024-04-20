@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="добавление возможности скачивать фотографии фильмов">
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с бд и страницей с каталогом фильмов&#10;&#10;возможность скачивать файл, путь к файлу записывается в бд, вывод фотографий фильмов на странице с каталогом">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cinema/LoadMovieImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cinema/LoadMovieImage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cinema/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cinema/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cinemaDB/MoviesConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cinemaDB/MoviesConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MovieItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MovieItemController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,14 +111,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00001" summary="работа с главной страницей">
-      <option name="closed" value="true" />
-      <created>1712417932407</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1712417932407</updated>
     </task>
     <task id="LOCAL-00002" summary="работа с главной страницей&#10;&#10;проверка работоспособности элементов страницы">
       <option name="closed" value="true" />
@@ -509,7 +496,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713622121158</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="работа с бд и страницей с каталогом фильмов&#10;&#10;возможность скачивать файл, путь к файлу записывается в бд, вывод фотографий фильмов на странице с каталогом">
+      <option name="closed" value="true" />
+      <created>1713629123622</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1713629123622</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +522,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="работа с страницами&#10;&#10;добавление поддержки изображений" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление страниц мероприятий" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление возможности перемещения по страницам" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление страницы для отображения результатов поиска" />
@@ -552,6 +546,7 @@
     <MESSAGE value="работа с каталогом фильмов" />
     <MESSAGE value="работа с каталогом фильмов&#10;&#10;парсинг страниц для получения ссылки на фото фильма и занесение ее в бд" />
     <MESSAGE value="добавление возможности скачивать фотографии фильмов" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление возможности скачивать фотографии фильмов" />
+    <MESSAGE value="работа с бд и страницей с каталогом фильмов&#10;&#10;возможность скачивать файл, путь к файлу записывается в бд, вывод фотографий фильмов на странице с каталогом" />
+    <option name="LAST_COMMIT_MESSAGE" value="работа с бд и страницей с каталогом фильмов&#10;&#10;возможность скачивать файл, путь к файлу записывается в бд, вывод фотографий фильмов на странице с каталогом" />
   </component>
 </project>
