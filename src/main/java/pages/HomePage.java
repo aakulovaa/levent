@@ -1,5 +1,6 @@
 package pages;
 
+import cinema.LoadMovieImage;
 import cinema.Movie;
 import db.DBHandler;
 import javafx.application.Application;
@@ -49,6 +50,7 @@ public class HomePage extends Application {
         }
     }
 
+
     public static void main(String[] args){
 //        System.out.println("Обновить данные приложения? 1 - Да /2 - Нет");
 //        Scanner choiceAction = new Scanner(System.in);
@@ -60,7 +62,8 @@ public class HomePage extends Application {
 //            fillingMovies();
 //            System.out.println("Update!");
 //        }
-
+        LoadMovieImage loadMovieImage = new LoadMovieImage();
+        loadMovieImage.loadImage();
         launch();
     }
 }

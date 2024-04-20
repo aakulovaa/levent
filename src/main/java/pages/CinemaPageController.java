@@ -112,7 +112,6 @@ public class CinemaPageController {
                     column = 1;
                     row++;
                 }
-                itemController.loadImage();
                 grid.add(anchorPane, column++, row);
 
                 grid.setMinWidth(Region.USE_COMPUTED_SIZE);
