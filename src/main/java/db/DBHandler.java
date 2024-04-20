@@ -81,24 +81,6 @@ public class DBHandler extends Configs{
         return resSet;
     }
 
-    public ResultSet gettingMovie(Movie movie){
-
-        ResultSet resSet = null;
-
-        String select = "SELECT * FROM " + MoviesConst.MOVIES_TABLE + " WHERE " + MoviesConst.MOVIE_NAME +"=?";
-        try {
-            PreparedStatement prSt = getDBConnection().prepareStatement(select);
-            prSt.setString(1,movie.getMovieName());
-
-            resSet = prSt.executeQuery();
-
-        } catch (SQLException | ClassNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-
-        return resSet;
-    }
-
     public void moviesCleaning(){
 
         String delete = "DELETE FROM " + MoviesConst.MOVIES_TABLE;

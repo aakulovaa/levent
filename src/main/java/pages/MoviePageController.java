@@ -49,7 +49,6 @@ public class MoviePageController {
 
     @FXML
     private Label director;
-    private Movie movie;
 
     public void movieName(String choiceMovie) {
         movieName.setText(choiceMovie);
@@ -82,58 +81,8 @@ public class MoviePageController {
         movieImage.setImage(movieImageChoisedMovie);
     }
 
-
-//    private Movie fillMovie() {
-//        movie = new Movie();
-//        movie.setMovieName(movieName.getText());
-//        DBHandler db = new DBHandler();
-//        ResultSet resultSet = db.gettingMovie(movie);
-//        int counter = 0;
-//        try {
-//            while (resultSet.next()){
-//                counter++;
-//            }
-//        } catch (SQLException e) {
-//                throw new RuntimeException(e);
-//        }
-//        if(counter>=1) {
-//            try {
-//                movie.setMovieGenre(resultSet.getString(MoviesConst.MOVIE_GENRE));
-//                movie.setMovieDateRelease(resultSet.getString(MoviesConst.MOVIE_YEAR_RELEASE));
-//                movie.setMovieLength(resultSet.getString(MoviesConst.MOVIE_LENGTH));
-//                movie.setMovieAgeLimit(resultSet.getString(MoviesConst.MOVIE_AGE_LIMIT));
-//                movie.setMovieDirector(resultSet.getString(MoviesConst.MOVIE_DIRECTOR));
-//                movie.setMovieDescription(resultSet.getString(MoviesConst.MOVIE_DESCRIPTION));
-//                movie.setMovieImageSource(resultSet.getString(MoviesConst.MOVIE_IMAGE_SOURCE));
-//            } catch (SQLException e) {
-//                throw new RuntimeException(e);
-//            }
-//        }
-//        return movie;
-//    }
-//
-//    public void setData(Movie movie) {
-//        this.movie = movie;
-//        movieGenre.setText(movie.getMovieGenre());
-//        date.setText(movie.getMovieDateRelease());
-//        length.setText(movie.getMovieLength());
-//        age.setText(movie.getMovieAgeLimit());
-//        director.setText(movie.getMovieDirector());
-//        description.setText(movie.getMovieDescription());
-//        Image image = null;
-//        try {
-//            image = new Image(new FileInputStream(movie.getMovieImageSource()));
-//        } catch (FileNotFoundException e) {
-//            throw new RuntimeException(e);
-//        }
-//        movieImage.setImage(image);
-//    }
-
     @FXML
     void initialize() {
-
-        //setData(fillMovie());
-        //movieGenre.setText(fillMovie().getMovieGenre());
 
         backButton.setOnAction(event -> {
             backButton.getScene().getWindow().hide();
