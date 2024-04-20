@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с каталогом фильмов&#10;&#10;парсинг страниц для получения ссылки на фото фильма и занесение ее в бд">
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="добавление возможности скачивать фотографии фильмов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cinema/LoadMovieImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cinema/LoadMovieImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cinema/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cinema/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cinemaDB/MoviesConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cinemaDB/MoviesConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/MovieItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MovieItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/movieForChoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/movieForChoice.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -498,7 +501,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713611453376</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="добавление возможности скачивать фотографии фильмов">
+      <option name="closed" value="true" />
+      <created>1713622121158</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1713622121158</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +527,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="работа с страницами&#10;&#10;добавление возможности возврата на предыдущую страницу" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление поддержки изображений" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление страниц мероприятий" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление возможности перемещения по страницам" />
@@ -541,6 +551,7 @@
     <MESSAGE value="работа с базой данных &#10;&#10;изменение места обновления данных" />
     <MESSAGE value="работа с каталогом фильмов" />
     <MESSAGE value="работа с каталогом фильмов&#10;&#10;парсинг страниц для получения ссылки на фото фильма и занесение ее в бд" />
-    <option name="LAST_COMMIT_MESSAGE" value="работа с каталогом фильмов&#10;&#10;парсинг страниц для получения ссылки на фото фильма и занесение ее в бд" />
+    <MESSAGE value="добавление возможности скачивать фотографии фильмов" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление возможности скачивать фотографии фильмов" />
   </component>
 </project>

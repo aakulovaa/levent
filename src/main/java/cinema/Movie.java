@@ -10,6 +10,15 @@ public class Movie {
     private String movieDescription;
 
     private String movieImageLink;
+    private String movieImageSource;
+
+    public String getMovieImageSource() {
+        return movieImageSource;
+    }
+
+    public void setMovieImageSource(String movieImageSource) {
+        this.movieImageSource = movieImageSource;
+    }
 
     public String getMovieImageLink() {
         return movieImageLink;
@@ -80,16 +89,6 @@ public class Movie {
         this.movieDescription = movieDescription;
     }
 
-    public Movie(String movieName, String movieDateRelease, String movieLength, String movieAgeLimit, String movieGenre, String movieDirector, String movieDescription) {
-        this.movieName = movieName;
-        this.movieDateRelease = movieDateRelease;
-        this.movieLength = movieLength;
-        this.movieAgeLimit = movieAgeLimit;
-        this.movieGenre = movieGenre;
-        this.movieDirector = movieDirector;
-        this.movieDescription = movieDescription;
-    }
-
     public Movie(String movieName, String movieDateRelease, String movieLength, String movieAgeLimit, String movieGenre, String movieDirector, String movieDescription, String movieImageLink) {
         this.movieName = movieName;
         this.movieDateRelease = movieDateRelease;
@@ -99,5 +98,17 @@ public class Movie {
         this.movieDirector = movieDirector;
         this.movieDescription = movieDescription;
         this.movieImageLink = movieImageLink;
+    }
+
+    public Movie(String movieName, String movieDateRelease, String movieLength, String movieAgeLimit, String movieGenre, String movieDirector, String movieDescription, String movieImageLink, String movieImageSource) {
+        this.movieName = movieName;
+        this.movieDateRelease = movieDateRelease;
+        this.movieLength = movieLength;
+        this.movieAgeLimit = movieAgeLimit;
+        this.movieGenre = movieGenre;
+        this.movieDirector = movieDirector;
+        this.movieDescription = movieDescription;
+        this.movieImageLink = movieImageLink;
+        this.movieImageSource = movieImageSource;
     }
 }

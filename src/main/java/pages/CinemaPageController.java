@@ -1,5 +1,6 @@
 package pages;
 
+import cinema.LoadMovieImage;
 import cinema.Movie;
 import cinemaDB.MoviesConst;
 import db.DBHandler;
@@ -35,6 +36,7 @@ public class CinemaPageController {
     private List<Movie> getData() {
         List<Movie> movies = new ArrayList<>();
         Movie movie;
+//        String imgSource;
         DBHandler db = new DBHandler();
         ResultSet resultSet = db.moviesGetting();
         try {
@@ -45,7 +47,7 @@ public class CinemaPageController {
                     movie.setMovieName(resultSet.getString(MoviesConst.MOVIE_NAME));
                     movie.setMovieDateRelease(resultSet.getString(MoviesConst.MOVIE_YEAR_RELEASE));
                     movie.setMovieGenre(resultSet.getString(MoviesConst.MOVIE_GENRE));
-                    movie.setMovieImageLink("/image/e.jpeg");
+                    movie.setMovieImageSource(resultSet.getString(MoviesConst.MOVIE_IMAGE_SOURCE));
                     movies.add(movie);
 
                 }

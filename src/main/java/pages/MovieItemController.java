@@ -5,12 +5,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import posts.MovieParser;
-
-import java.io.BufferedInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.net.URL;
 
 
 public class MovieItemController {
@@ -38,8 +32,10 @@ public class MovieItemController {
         movieYear.setText(date[date.length - 1]);
         genre = movie.getMovieGenre().split(" ");
         movieGenre.setText(genre[0]);
-        Image image = new Image(getClass().getResourceAsStream(movie.getMovieImageLink()));
+        Image image = new Image(getClass().getResourceAsStream(movie.getMovieImageSource()));
         movieImage.setImage(image);
+        movieImage.setFitHeight(150);
+        movieImage.setFitWidth(180);
 
     }
 

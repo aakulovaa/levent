@@ -12,4 +12,5 @@ public class MoviesConst {
     public static final String MOVIE_GENRE = "movie_genre";
     public static final String MOVIE_DESCRIPTION = "movie_description";
     public static final String MOVIE_IMAGE_LINK = "movie_image_link";
+    public static final String MOVIE_IMAGE_SOURCE = "movie_image_source";
 }

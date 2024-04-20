@@ -2,6 +2,7 @@ package pages;
 
 import cinema.LoadMovieImage;
 import cinema.Movie;
+import cinemaDB.MoviesConst;
 import db.DBHandler;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -27,7 +28,8 @@ public class HomePage extends Application {
 
     private static void fillingMovies() {
         DBHandler db = new DBHandler();
-
+        String imgSource;
+        int countImage = 0;
         MovieParser movieParser = new MovieParser();
         List<MoviePost> parser = movieParser.parser();
         for (int i = 0; i<parser.getLast().getMovieID(); i++)
@@ -41,9 +43,14 @@ public class HomePage extends Application {
             String movieDirector = parsingCounting.getDirector().replaceAll("\u0000", "");
             String movieDescription = parsingCounting.getDescription().replaceAll("\u0000", "");
             String movieImageLink = parsingCounting.getImageLink().replaceAll("\u0000", "");
+            LoadMovieImage loadMovieImage = new LoadMovieImage();
+            imgSource = loadMovieImage.loadImage(movieImageLink,countImage);
+            countImage++;
+            System.out.println(imgSource);
+            String movieImageSource = imgSource;
 
             Movie movie = new Movie(movieName,movieDateRelease,
-                    movieLength,movieAgeLimit,movieGenre,movieDirector,movieDescription,movieImageLink);
+                    movieLength,movieAgeLimit,movieGenre,movieDirector,movieDescription,movieImageLink,movieImageSource);
 
             db.moviesFilling(movie);
 
@@ -52,18 +59,17 @@ public class HomePage extends Application {
 
 
     public static void main(String[] args){
-//        System.out.println("Обновить данные приложения? 1 - Да /2 - Нет");
-//        Scanner choiceAction = new Scanner(System.in);
-//        int choice;
-//        choice = choiceAction.nextInt();
-//        if(choice == 1){
-//            DBHandler db = new DBHandler();
-//            db.moviesCleaning();
-//            fillingMovies();
-//            System.out.println("Update!");
-//        }
-        LoadMovieImage loadMovieImage = new LoadMovieImage();
-        loadMovieImage.loadImage();
+        System.out.println("Обновить данные приложения? 1 - Да /2 - Нет");
+        Scanner choiceAction = new Scanner(System.in);
+        int choice;
+        choice = choiceAction.nextInt();
+        if(choice == 1){
+            DBHandler db = new DBHandler();
+            db.moviesCleaning();
+            fillingMovies();
+            System.out.println("Updated!");
+        }
+
         launch();
     }
 }
