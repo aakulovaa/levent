@@ -1,4 +1,4 @@
-package posts;
+package parser;
 
 import java.io.BufferedInputStream;
 import java.io.FileOutputStream;

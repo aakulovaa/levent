@@ -1,13 +1,13 @@
 package pages;
 
-import posts.LoadImage;
+import parser.LoadImage;
 import cinema.Movie;
 import db.cinemaDB.DBHandlerCinema;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import posts.MovieParser;
+import parser.MovieParser;
 import posts.MoviePost;
 
 import java.io.IOException;

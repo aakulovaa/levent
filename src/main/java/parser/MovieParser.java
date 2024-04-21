@@ -1,9 +1,11 @@
-package posts;
+package parser;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import posts.DirectorPost;
+import posts.MoviePost;
 
 import java.io.IOException;
 

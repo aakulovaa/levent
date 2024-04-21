@@ -14,5 +14,7 @@ module homePage {
     opens posts to javafx.fxml;
     exports db.cinemaDB;
     opens db.cinemaDB to javafx.fxml;
+    exports parser;
+    opens parser to javafx.fxml;
 
 }
