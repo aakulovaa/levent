@@ -59,7 +59,7 @@ public class PerformanceItemController {
 
             PerformancePageController performancePageController = getPerformancePageController(loader);
             Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream(performance.getPerformanceImageSource())));
-            performancePageController.performanceImage(image);
+            performancePageController.performanceGetImage(image);
 
 
             Parent root = loader.getRoot();
@@ -72,12 +72,12 @@ public class PerformanceItemController {
 
     private PerformancePageController getPerformancePageController(FXMLLoader loader) {
         PerformancePageController performancePageController = loader.getController();
-        performancePageController.movieName(performanceName.getText());
-        performancePageController.movieGenre(performance.getPerformanceGenre());
-        performancePageController.movieAge(performance.getPerformanceAgeLimit());
-        performancePageController.movieLength(performance.getPerformanceLength());
-        performancePageController.movieDirector(performance.getPerformanceDirector());
-        performancePageController.movieDescription(performance.getPerformanceDescription());
+        performancePageController.performanceGetName(performanceName.getText());
+        performancePageController.performanceGetGenre(performance.getPerformanceGenre());
+        performancePageController.performanceGetAge(performance.getPerformanceAgeLimit());
+        performancePageController.performanceGetLength(performance.getPerformanceLength());
+        performancePageController.performanceGetDirector(performance.getPerformanceDirector());
+        performancePageController.performanceGetDescription(performance.getPerformanceDescription());
         return performancePageController;
     }
 

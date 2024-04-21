@@ -1,4 +1,4 @@
-package db;
+package db.concertDB;
 
 public class ConcertsConst {
     public static final String CONCERTS_HALLS_TABLE = "concerts_halls";
@@ -16,7 +16,8 @@ public class ConcertsConst {
     public static final String CONCERT_GENRE = "concert_genre";
     public static final String CONCERT_AGE_LIMIT = "concert_age_limit";
     public static final String CONCERT_DESCRIPTION = "concert_description";
-    public static final String CONCERT_HALL_ID = "concert_hall_id";
+    public static final String CONCERT_IMAGE_LINK = "concert_image_link";
+    public static final String CONCERT_IMAGE_SOURCE = "concert_image_source";
 
     public static final String CONCERTS_SESSIONS_TABLE = "concerts_sessions";
 

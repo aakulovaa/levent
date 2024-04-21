@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.PerformancePageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.ConcertPageController">
     <children>
         <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #AFEEEE;">
             <children>
@@ -23,30 +23,22 @@
             <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="362.0" prefWidth="592.0" style="-fx-background-color: #F0FFFF;">
                     <children>
-                        <ImageView fx:id="performanceImage" fitHeight="150.0" fitWidth="528.0" layoutX="35.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="concertImage" fitHeight="150.0" fitWidth="528.0" layoutX="35.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                         </ImageView>
-                        <Label fx:id="performanceName" layoutX="15.0" layoutY="160.0" prefHeight="35.0" prefWidth="563.0" text="Name">
+                        <Label fx:id="concertName" layoutX="15.0" layoutY="160.0" prefHeight="35.0" prefWidth="563.0" text="Name">
                             <font>
                                 <Font name="Avenir Black" size="24.0" />
                             </font>
                         </Label>
-                        <Label fx:id="performanceGenre" layoutX="14.0" layoutY="216.0" prefHeight="17.0" prefWidth="275.0" text="Genre">
+                        <Label fx:id="concertGenre" layoutX="14.0" layoutY="216.0" prefHeight="17.0" prefWidth="275.0" text="Genre">
                             <font>
                                 <Font name="Avenir Roman" size="13.0" />
                             </font></Label>
-                        <Label fx:id="age" layoutX="440.0" layoutY="250.0" prefHeight="17.0" prefWidth="79.0" text="Age">
+                        <Label fx:id="age" layoutX="417.0" layoutY="216.0" prefHeight="17.0" prefWidth="79.0" text="Age">
                             <font>
                                 <Font name="Avenir Roman" size="13.0" />
                             </font></Label>
-                        <Label fx:id="length" layoutX="238.0" layoutY="250.0" prefHeight="17.0" prefWidth="202.0" text="Length">
-                            <font>
-                                <Font name="Avenir Roman" size="13.0" />
-                            </font></Label>
-                        <Label fx:id="director" layoutX="15.0" layoutY="250.0" prefHeight="17.0" prefWidth="202.0" text="Director">
-                            <font>
-                                <Font name="Avenir Roman" size="13.0" />
-                            </font></Label>
-                        <Text fx:id="description" layoutX="16.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="546.21630859375">
+                        <Text fx:id="description" layoutX="13.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="546.21630859375">
                             <font>
                                 <Font name="Avenir Roman" size="13.0" />
                             </font></Text>
@@ -54,19 +46,11 @@
                             <font>
                                 <Font name="Avenir Roman" size="13.0" />
                             </font></Label>
-                        <Label layoutX="241.0" layoutY="232.0" text="Продолжительность" textFill="DARKGRAY">
+                        <Label layoutX="417.0" layoutY="199.0" text="Возрастное ограничение" textFill="DARKGRAY">
                             <font>
                                 <Font name="Avenir Roman" size="13.0" />
                             </font></Label>
-                        <Label layoutX="420.0" layoutY="233.0" text="Возрастное ограничение" textFill="DARKGRAY">
-                            <font>
-                                <Font name="Avenir Roman" size="13.0" />
-                            </font></Label>
-                        <Label layoutX="14.0" layoutY="232.0" text="Режиссер" textFill="DARKGRAY">
-                            <font>
-                                <Font name="Avenir Roman" size="13.0" />
-                            </font></Label>
-                        <Label layoutX="14.0" layoutY="266.0" text="Описание" textFill="DARKGRAY">
+                        <Label layoutX="14.0" layoutY="235.0" text="О концерте" textFill="DARKGRAY">
                             <font>
                                 <Font name="Avenir Roman" size="18.0" />
                             </font>

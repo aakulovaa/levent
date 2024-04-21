@@ -20,5 +20,9 @@ module homePage {
     opens db.theatreDB to javafx.fxml;
     exports posts.theatre;
     opens posts.theatre to javafx.fxml;
+    exports db.concertDB;
+    opens db.concertDB to javafx.fxml;
+    exports posts.concert;
+    opens posts.concert to javafx.fxml;
 
 }

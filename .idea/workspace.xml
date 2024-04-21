@@ -5,10 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с театром&#10;&#10;отображение информации о мероприятиях &quot;театр&quot;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/db/concertDB/DBHandlerConcert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/concert/Concert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ConcertItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ConcertPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/parser/ConcertParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/posts/concert/ConcertPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pages/ConcertPage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pages/concertForChoice.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/theatre/Performance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/theatre/Performance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/ConcertsConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/concertDB/ConcertsConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/theatreDB/DBHandlerTheatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/theatreDB/DBHandlerTheatre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/TheatrePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/TheatrePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PerformanceItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PerformanceItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PerformancePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PerformancePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/ConcertsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/ConcertsPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/PerformancePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/PerformancePage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -114,14 +128,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00013" summary="работа с страницами&#10;&#10;добавление страниц мероприятий">
-      <option name="closed" value="true" />
-      <created>1712438511945</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1712438511945</updated>
     </task>
     <task id="LOCAL-00014" summary="работа с страницами&#10;&#10;добавление возможности перемещения по страницам">
       <option name="closed" value="true" />
@@ -507,7 +513,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713698596372</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="работа с театром&#10;&#10;отображение информации о мероприятиях &quot;театр&quot;">
+      <option name="closed" value="true" />
+      <created>1713701274206</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1713701274206</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

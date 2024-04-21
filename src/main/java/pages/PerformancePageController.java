@@ -39,33 +39,33 @@ public class PerformancePageController {
     @FXML
     private Label performanceName;
 
-    public void performanceImage(Image image) {
+    public void performanceGetImage(Image image) {
         performanceImage.setImage(image);
         performanceImage.setFitWidth(528);
         performanceImage.setFitHeight(150);
     }
 
-    public void movieName(String text) {
+    public void performanceGetName(String text) {
         performanceName.setText(text);
     }
 
-    public void movieGenre(String performanceGenreForFill) {
+    public void performanceGetGenre(String performanceGenreForFill) {
         performanceGenre.setText(performanceGenreForFill);
     }
 
-    public void movieAge(String performanceAgeLimit) {
+    public void performanceGetAge(String performanceAgeLimit) {
         age.setText(performanceAgeLimit);
     }
 
-    public void movieLength(String performanceLength) {
+    public void performanceGetLength(String performanceLength) {
         length.setText(performanceLength);
     }
 
-    public void movieDirector(String performanceDirector) {
+    public void performanceGetDirector(String performanceDirector) {
         director.setText(performanceDirector);
     }
 
-    public void movieDescription(String performanceDescription) {
+    public void performanceGetDescription(String performanceDescription) {
         description.setText(performanceDescription);
     }
 

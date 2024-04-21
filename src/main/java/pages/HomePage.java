@@ -1,6 +1,9 @@
 package pages;
 
+import db.concertDB.DBHandlerConcert;
 import db.theatreDB.DBHandlerTheatre;
+import models.concert.Concert;
+import parser.ConcertParser;
 import parser.LoadImage;
 import models.cinema.Movie;
 import db.cinemaDB.DBHandlerCinema;
@@ -11,6 +14,7 @@ import javafx.stage.Stage;
 import parser.MovieParser;
 import parser.PerformanceParser;
 import posts.cinema.MoviePost;
+import posts.concert.ConcertPost;
 import posts.theatre.PerformancePost;
 import models.theatre.Performance;
 
@@ -88,6 +92,33 @@ public class HomePage extends Application {
         }
     }
 
+    private static void fillingConcerts() {
+        DBHandlerConcert db = new DBHandlerConcert();
+        String imgSource;
+        String pageName = "concert/";
+        ConcertParser concertParser = new ConcertParser();
+        List<ConcertPost> parser = concertParser.parser();
+        for (int i = 0; i<parser.getLast().getConcertID(); i++)
+        {
+            ConcertPost parsingCounting = parser.get(i);
+            String concertName = parsingCounting.getName().replaceAll("\u0000", "");
+            String concertGenre = parsingCounting.getGenre().replaceAll("\u0000", "");
+            String concertAgeLimit = parsingCounting.getAge().replaceAll("\u0000", "");
+            String concertDescription = parsingCounting.getDescription().replaceAll("\u0000", "");
+            String concertImageLink = parsingCounting.getImageLink().replaceAll("\u0000", "");
+            LoadImage loadTheatreImage = new LoadImage();
+            imgSource = loadTheatreImage.loadImage(concertImageLink,i,pageName);
+            String concertImageSource = imgSource;
+            System.out.println(imgSource);
+
+            Concert concert = new Concert(concertName,concertGenre,
+                    concertAgeLimit,concertDescription,concertImageLink,concertImageSource);
+
+            db.concertsFilling(concert);
+
+        }
+    }
+
 
     public static void main(String[] args){
         System.out.println("Обновить данные приложения? 1 - Да /2 - Нет");
@@ -95,6 +126,7 @@ public class HomePage extends Application {
         int choice;
         choice = choiceAction.nextInt();
         if(choice == 1){
+
             DBHandlerCinema dbHandlerCinema = new DBHandlerCinema();
             dbHandlerCinema.moviesCleaning();
             fillingMovies();
@@ -102,6 +134,10 @@ public class HomePage extends Application {
             DBHandlerTheatre dbHandlerTheatre = new DBHandlerTheatre();
             dbHandlerTheatre.performancesCleaning();
             fillingPerformances();
+
+            DBHandlerConcert dbHandlerConcert = new DBHandlerConcert();
+            dbHandlerConcert.concertsCleaning();
+            fillingConcerts();
 
             System.out.println("Updated!");
         }
