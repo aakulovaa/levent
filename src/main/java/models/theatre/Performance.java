@@ -2,7 +2,6 @@ package models.theatre;
 
 public class Performance {
     private String performanceName;
-    private String performanceDateRelease;
     private String performanceLength;
     private String performanceAgeLimit;
     private String performanceGenre;
@@ -18,14 +17,6 @@ public class Performance {
 
     public void setPerformanceName(String performanceName) {
         this.performanceName = performanceName;
-    }
-
-    public String getPerformanceDateRelease() {
-        return performanceDateRelease;
-    }
-
-    public void setPerformanceDateRelease(String performanceDateRelease) {
-        this.performanceDateRelease = performanceDateRelease;
     }
 
     public String getPerformanceLength() {
@@ -87,9 +78,8 @@ public class Performance {
     public Performance(){
 
     }
-    public Performance(String performanceName, String performanceDateRelease, String performanceLength, String performanceAgeLimit, String performanceGenre, String performanceDirector, String performanceDescription, String performanceImageLink, String performanceImageSource) {
+    public Performance(String performanceName, String performanceLength, String performanceAgeLimit, String performanceGenre, String performanceDirector, String performanceDescription, String performanceImageLink, String performanceImageSource) {
         this.performanceName = performanceName;
-        this.performanceDateRelease = performanceDateRelease;
         this.performanceLength = performanceLength;
         this.performanceAgeLimit = performanceAgeLimit;
         this.performanceGenre = performanceGenre;

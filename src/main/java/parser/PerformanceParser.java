@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PerformanceParser {
-    private int yearIndex;
     private int countPerformance = 0;
     private String directorPerformance;
     public List<PerformancePost> parser() {
@@ -55,12 +54,6 @@ public class PerformanceParser {
                     directorPerformance = "";
                 }
                 performancePost.setDirector(directorPerformance);
-
-                yearIndex = performancePost.getDirector().isEmpty() ? 2 : 3;
-
-                Element year = postDetailsDoc.getElementsByClass("eNJOm").get(yearIndex);
-                Elements yearDetails = year.getElementsByAttributeValue("data-test", "META-FIELD-VALUE");
-                performancePost.setYearRelease(yearDetails.text());
 
                 Element length = postDetailsDoc.getElementsByClass("eNJOm").last();
                 Elements lengthDetails = length.getElementsByAttributeValue("data-test", "META-FIELD-VALUE");

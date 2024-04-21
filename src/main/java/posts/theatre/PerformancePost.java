@@ -6,7 +6,6 @@ public class PerformancePost {
     private String detailsLink;
     private String genre;
     private String age;
-    private String yearRelease;
     private String length;
     private String description;
     private String director;
@@ -52,14 +51,6 @@ public class PerformancePost {
         this.age = age;
     }
 
-    public String getYearRelease() {
-        return yearRelease;
-    }
-
-    public void setYearRelease(String yearRelease) {
-        this.yearRelease = yearRelease;
-    }
-
     public String getLength() {
         return length;
     }
@@ -100,7 +91,6 @@ public class PerformancePost {
                 ", detailsLink='" + detailsLink + '\'' +
                 ", genre='" + genre + '\'' +
                 ", age='" + age + '\'' +
-                ", yearRelease='" + yearRelease + '\'' +
                 ", length='" + length + '\'' +
                 ", description='" + description + '\'' +
                 ", director='" + director + '\'' +

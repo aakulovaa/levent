@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="редактирование кода&#10;&#10;расширение кода для других мероприятий">
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/theatre/Performance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/parser/PerformanceParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/posts/theatre/PerformancePost.java" afterDir="false" />
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с театром&#10;&#10;парсинг страниц с представлениями, заполнение бд">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cinema/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/cinema/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/cinemaDB/DBHandlerCinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/cinemaDB/DBHandlerCinema.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/db/theatreDB/DBHandlerTheatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/theatreDB/DBHandlerTheatre.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/db/theatreDB/PerformancesConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/theatreDB/PerformancesConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/theatre/Performance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/theatre/Performance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MovieItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MovieItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/MovieParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/MovieParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/posts/DirectorPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posts/cinema/DirectorPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/posts/MoviePost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posts/cinema/MoviePost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/PerformanceParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/PerformanceParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/posts/theatre/PerformancePost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posts/theatre/PerformancePost.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,14 +117,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00010" summary="работа с страницами&#10;&#10;добавление поддержки изображений">
-      <option name="closed" value="true" />
-      <created>1712436976675</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1712436976675</updated>
     </task>
     <task id="LOCAL-00011" summary="работа с страницами">
       <option name="closed" value="true" />
@@ -517,7 +502,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713688977575</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="работа с театром&#10;&#10;парсинг страниц с представлениями, заполнение бд">
+      <option name="closed" value="true" />
+      <created>1713691492947</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1713691492947</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,7 +528,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="работа с страницами" />
     <MESSAGE value="подключение бд" />
     <MESSAGE value="работа с бд&#10;&#10;добавление таблиц" />
     <MESSAGE value="работа с бд&#10;&#10;подключение" />
@@ -560,6 +552,7 @@
     <MESSAGE value="добавление возможности просмотра полной информации" />
     <MESSAGE value="редактирование внешнего вида + изменения для отображения результатов поиска" />
     <MESSAGE value="редактирование кода&#10;&#10;расширение кода для других мероприятий" />
-    <option name="LAST_COMMIT_MESSAGE" value="редактирование кода&#10;&#10;расширение кода для других мероприятий" />
+    <MESSAGE value="работа с театром&#10;&#10;парсинг страниц с представлениями, заполнение бд" />
+    <option name="LAST_COMMIT_MESSAGE" value="работа с театром&#10;&#10;парсинг страниц с представлениями, заполнение бд" />
   </component>
 </project>

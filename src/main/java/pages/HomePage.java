@@ -69,7 +69,6 @@ public class HomePage extends Application {
         {
             PerformancePost parsingCounting = parser.get(i);
             String performanceName = parsingCounting.getName().replaceAll("\u0000", "");
-            String performanceDateRelease = parsingCounting.getYearRelease().replaceAll("\u0000", "");
             String performanceLength = parsingCounting.getLength().replaceAll("\u0000", "");
             String performanceAgeLimit = parsingCounting.getAge().replaceAll("\u0000", "");
             String performanceGenre = parsingCounting.getGenre().replaceAll("\u0000", "");
@@ -81,7 +80,7 @@ public class HomePage extends Application {
             String performanceImageSource = imgSource;
             System.out.println(imgSource);
 
-            Performance performance = new Performance(performanceName,performanceDateRelease,
+            Performance performance = new Performance(performanceName,
                     performanceLength,performanceAgeLimit,performanceGenre,performanceDirector,performanceDescription,performanceImageLink,performanceImageSource);
 
             db.performancesFilling(performance);

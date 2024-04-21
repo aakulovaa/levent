@@ -10,8 +10,6 @@ module homePage {
     exports pages;
     exports db;
     opens db to javafx.fxml;
-    exports posts;
-    opens posts to javafx.fxml;
     exports db.cinemaDB;
     opens db.cinemaDB to javafx.fxml;
     exports parser;
@@ -20,5 +18,7 @@ module homePage {
     opens posts.cinema to javafx.fxml;
     exports db.theatreDB;
     opens db.theatreDB to javafx.fxml;
+    exports posts.theatre;
+    opens posts.theatre to javafx.fxml;
 
 }
