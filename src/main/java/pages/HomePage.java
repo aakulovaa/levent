@@ -80,8 +80,8 @@ public class HomePage extends Application {
             String performanceImageSource = imgSource;
             System.out.println(imgSource);
 
-            Performance performance = new Performance(performanceName,
-                    performanceLength,performanceAgeLimit,performanceGenre,performanceDirector,performanceDescription,performanceImageLink,performanceImageSource);
+            Performance performance = new Performance(performanceName,performanceGenre,
+                    performanceLength,performanceAgeLimit,performanceDirector,performanceDescription,performanceImageLink,performanceImageSource);
 
             db.performancesFilling(performance);
 

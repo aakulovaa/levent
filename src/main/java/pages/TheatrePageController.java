@@ -1,9 +1,7 @@
 package pages;
 
-import db.cinemaDB.DBHandlerCinema;
 import db.theatreDB.DBHandlerTheatre;
 import db.theatreDB.PerformancesConst;
-import db.theatreDB.TheatersConst;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
@@ -16,6 +14,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
 import javafx.stage.Stage;
 import models.theatre.Performance;
+import pages.PerformanceItemController;
 
 import java.io.IOException;
 import java.sql.ResultSet;
