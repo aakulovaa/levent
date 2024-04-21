@@ -69,14 +69,14 @@ public class HomePage extends Application {
         {
             PerformancePost parsingCounting = parser.get(i);
             String performanceName = parsingCounting.getName().replaceAll("\u0000", "");
+            String performanceGenre = parsingCounting.getGenre().replaceAll("\u0000", "");
             String performanceLength = parsingCounting.getLength().replaceAll("\u0000", "");
             String performanceAgeLimit = parsingCounting.getAge().replaceAll("\u0000", "");
-            String performanceGenre = parsingCounting.getGenre().replaceAll("\u0000", "");
             String performanceDirector = parsingCounting.getDirector().replaceAll("\u0000", "");
             String performanceDescription = parsingCounting.getDescription().replaceAll("\u0000", "");
             String performanceImageLink = parsingCounting.getImageLink().replaceAll("\u0000", "");
-            LoadImage loadMovieImage = new LoadImage();
-            imgSource = loadMovieImage.loadImage(performanceImageLink,i,pageName);
+            LoadImage loadTheatreImage = new LoadImage();
+            imgSource = loadTheatreImage.loadImage(performanceImageLink,i,pageName);
             String performanceImageSource = imgSource;
             System.out.println(imgSource);
 
@@ -95,9 +95,14 @@ public class HomePage extends Application {
         int choice;
         choice = choiceAction.nextInt();
         if(choice == 1){
-            DBHandlerCinema db = new DBHandlerCinema();
-            db.moviesCleaning();
+            DBHandlerCinema dbHandlerCinema = new DBHandlerCinema();
+            dbHandlerCinema.moviesCleaning();
             fillingMovies();
+
+            DBHandlerTheatre dbHandlerTheatre = new DBHandlerTheatre();
+            dbHandlerTheatre.performancesCleaning();
+            fillingPerformances();
+
             System.out.println("Updated!");
         }
 

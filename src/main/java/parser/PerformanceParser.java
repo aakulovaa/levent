@@ -18,12 +18,13 @@ public class PerformanceParser {
         try {
             posts = new ArrayList<>();
             Document doc = Jsoup.connect("https://www.afisha.ru/voronezh/schedule_theatre/").get();
-            Elements movieLinkElements = doc.getElementsByAttributeValue("data-test", "LINK ITEM-NAME ITEM-URL");
-            for (Element movieLinkElement : movieLinkElements) {
+            Elements performLinkElements = doc.getElementsByAttributeValue("data-test", "LINK ITEM-URL");
+            for (Element performLinkElement : performLinkElements) {
                 PerformancePost performancePost = new PerformancePost();
-                String detailsLink = movieLinkElement.attr("href");
+                String detailsLink = performLinkElement.attr("href");
                 performancePost.setDetailsLink(detailsLink);
-                Elements imageLinkElement = movieLinkElement.getElementsByAttributeValue("data-test", "IMAGE ITEM-IMAGE");
+
+                Elements imageLinkElement = performLinkElement.getElementsByAttributeValue("data-test", "IMAGE ITEM-IMAGE");
                 String imageDetailsLink = imageLinkElement.attr("src");
                 performancePost.setImageLink(imageDetailsLink);
 
@@ -65,7 +66,7 @@ public class PerformanceParser {
 
                 posts.add(performancePost);
             }
-            posts.forEach(System.out::println);
+            //posts.forEach(System.out::println);
 
         } catch (IOException e) {
             throw new RuntimeException(e);

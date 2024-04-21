@@ -75,10 +75,6 @@ public class EventsPageController {
 
         theatreButton.setOnAction(event1 -> {
 
-            String output = getUrlContent("https://www.afisha.ru/voronezh/theatre/");
-            System.out.println("All working!!");
-            System.out.println(output);
-
             theatreButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("TheatrePage.fxml"));
@@ -97,10 +93,6 @@ public class EventsPageController {
         });
 
         concertsButton.setOnAction(event1 -> {
-
-            String output = getUrlContent("https://www.afisha.ru/voronezh/concerts/");
-            System.out.println("All working!!");
-            System.out.println(output);
 
             concertsButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
@@ -157,23 +149,4 @@ public class EventsPageController {
 
     }
 
-
-    private static String getUrlContent(String urlAddress){
-        StringBuilder content = new StringBuilder();
-        try {
-            URL url = new URL(urlAddress);
-            URLConnection urlConn = url.openConnection();
-
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConn.getInputStream()));
-            String line;
-
-            while((line = bufferedReader.readLine()) != null){
-                content.append(line).append('\n');
-            }
-            bufferedReader.close();
-        } catch(Exception e){
-            System.out.println("not found");
-        }
-        return content.toString();
-    }
 }

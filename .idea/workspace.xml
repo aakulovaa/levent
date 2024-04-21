@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с театром&#10;&#10;парсинг страниц с представлениями, заполнение бд">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/PerformanceItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/PerformancePageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pages/PerformancePage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pages/performanceForChoice.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/db/theatreDB/DBHandlerTheatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/theatreDB/DBHandlerTheatre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/theatreDB/PerformancesConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/theatreDB/PerformancesConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/theatre/Performance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/theatre/Performance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/TheatrePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/TheatrePageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/parser/PerformanceParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/PerformanceParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/posts/theatre/PerformancePost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posts/theatre/PerformancePost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/TheatrePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/TheatrePage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -117,14 +120,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00011" summary="работа с страницами">
-      <option name="closed" value="true" />
-      <created>1712437463337</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1712437463337</updated>
     </task>
     <task id="LOCAL-00012" summary="работа с страницами">
       <option name="closed" value="true" />
@@ -510,7 +505,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713691492947</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="работа с театром&#10;&#10;парсинг страниц с представлениями, заполнение бд">
+      <option name="closed" value="true" />
+      <created>1713693862457</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1713693862457</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
