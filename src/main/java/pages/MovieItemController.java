@@ -12,6 +12,7 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 
 public class MovieItemController {
@@ -39,7 +40,7 @@ public class MovieItemController {
         movieYear.setText(date[date.length - 1]);
         genre = movie.getMovieGenre().split(" ");
         movieGenre.setText(genre[0]);
-        Image image = new Image(getClass().getResourceAsStream(movie.getMovieImageSource()));
+        Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream(movie.getMovieImageSource())));
         movieImage.setImage(image);
 
     }
@@ -63,15 +64,8 @@ public class MovieItemController {
                 throw new RuntimeException(e);
             }
 
-            MoviePageController moviePageController = loader.getController();
-            moviePageController.movieName(movieName.getText());
-            moviePageController.movieGenre(movie.getMovieGenre());
-            moviePageController.movieAge(movie.getMovieAgeLimit());
-            moviePageController.movieLength(movie.getMovieLength());
-            moviePageController.movieDate(movie.getMovieDateRelease());
-            moviePageController.movieDirector(movie.getMovieDirector());
-            moviePageController.movieDescription(movie.getMovieDescription());
-            Image image = new Image(getClass().getResourceAsStream(movie.getMovieImageSource()));
+            MoviePageController moviePageController = getMoviePageController(loader);
+            Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream(movie.getMovieImageSource())));
             moviePageController.movieImage(image);
 
 
@@ -81,6 +75,18 @@ public class MovieItemController {
             stage.setTitle("Movie");
             stage.show();
         });
+    }
+
+    private MoviePageController getMoviePageController(FXMLLoader loader) {
+        MoviePageController moviePageController = loader.getController();
+        moviePageController.movieName(movieName.getText());
+        moviePageController.movieGenre(movie.getMovieGenre());
+        moviePageController.movieAge(movie.getMovieAgeLimit());
+        moviePageController.movieLength(movie.getMovieLength());
+        moviePageController.movieDate(movie.getMovieDateRelease());
+        moviePageController.movieDirector(movie.getMovieDirector());
+        moviePageController.movieDescription(movie.getMovieDescription());
+        return moviePageController;
     }
 
 }

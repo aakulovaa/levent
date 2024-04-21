@@ -1,18 +1,18 @@
-package cinema;
+package posts;
 
 import java.io.BufferedInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
 
-public class LoadMovieImage {
-    public String loadImage(String resourceAsStream, Integer iterator) {
+public class LoadImage {
+    public String loadImage(String resourceAsStream, Integer iterator, String pageName) {
         String url = resourceAsStream;
         String fileName = "src/main/resources/image/";
         if(!url.isEmpty()) {
             String[] urlArr = url.split("\\.");
             if (urlArr.length >= 1) {
-                fileName += iterator + "." + urlArr[urlArr.length - 1];
+                fileName += pageName + iterator + "." + urlArr[urlArr.length - 1];
                 BufferedInputStream in = null;
                 FileOutputStream fout = null;
                 try {
@@ -45,15 +45,10 @@ public class LoadMovieImage {
                 }
             }
         }else{
-            fileName+="le.jpg";
+            fileName+="le1.png";
         }
         String[] imgLinkSource = fileName.split("resources");
         String imgLinkSrc = imgLinkSource[1];
-//        String[] imgSLinkSources = imgLinkSrc.split("/image/");
-//        if(imgSLinkSources[0].isEmpty())
-//        {
-//            imgLinkSrc+="le.jpg";
-//        }
 
         return imgLinkSrc;
     }

@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="добавление возможности просмотра полной информации">
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="редактирование внешнего вида + изменения для отображения результатов поиска">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/le1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cinemaDB/CinemasConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/cinemaDB/CinemasConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cinemaDB/MoviesConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/cinemaDB/MoviesConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cinema/LoadMovieImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posts/LoadImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/cinemaDB/DBHandlerCinema.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/EventsPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/MovieItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MovieItemController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/MoviePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MoviePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchResultPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchResultPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/HomePage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/pages/MoviePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/MoviePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/SearchResultPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/SearchResultPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/movieForChoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/movieForChoice.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/sortDatePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/sortDatePage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,10 +79,11 @@
       <recent name="$PROJECT_DIR$/src/main/resources/pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/image/movie" />
+      <recent name="$PROJECT_DIR$/src/main/resources/image" />
       <recent name="$PROJECT_DIR$/src/main/resources/pages" />
       <recent name="$PROJECT_DIR$/src/main/resources/assets" />
       <recent name="$PROJECT_DIR$/src/main/java/homePage" />
-      <recent name="$PROJECT_DIR$/src/main/resources/homePage" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="homePage" />
@@ -123,14 +119,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00006" summary="работа с страницей выбора мероприятия&#10;&#10;добавление возможности возврата на предыдущую страницу">
-      <option name="closed" value="true" />
-      <created>1712431417484</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1712431417484</updated>
     </task>
     <task id="LOCAL-00007" summary="работа с страницей выбора мероприятия&#10;&#10;добавление возможности возврата на предыдущую страницу">
       <option name="closed" value="true" />
@@ -516,7 +504,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713651838569</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="редактирование внешнего вида + изменения для отображения результатов поиска">
+      <option name="closed" value="true" />
+      <created>1713684448866</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1713684448866</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +530,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="работа с страницами&#10;&#10;добавление страницы для отображения результатов поиска" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление названий страниц" />
     <MESSAGE value="работа с страницами" />
     <MESSAGE value="подключение бд" />
@@ -559,6 +554,7 @@
     <MESSAGE value="работа с бд и страницей с каталогом фильмов&#10;&#10;возможность скачивать файл, путь к файлу записывается в бд, вывод фотографий фильмов на странице с каталогом" />
     <MESSAGE value="добавление страницы фильма для просмотра полной информации" />
     <MESSAGE value="добавление возможности просмотра полной информации" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление возможности просмотра полной информации" />
+    <MESSAGE value="редактирование внешнего вида + изменения для отображения результатов поиска" />
+    <option name="LAST_COMMIT_MESSAGE" value="редактирование внешнего вида + изменения для отображения результатов поиска" />
   </component>
 </project>

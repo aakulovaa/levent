@@ -2,7 +2,7 @@ package pages;
 
 import cinema.Movie;
 import db.cinemaDB.MoviesConst;
-import db.DBHandler;
+import db.cinemaDB.DBHandlerCinema;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
@@ -34,7 +34,7 @@ public class CinemaPageController {
     private List<Movie> getData() {
         List<Movie> movies = new ArrayList<>();
         Movie movie;
-        DBHandler db = new DBHandler();
+        DBHandlerCinema db = new DBHandlerCinema();
         ResultSet resultSet = db.moviesGetting();
         try {
             for (int i = 0; i < iterator; i++) {//добавляет нужное количество карточек
@@ -48,6 +48,7 @@ public class CinemaPageController {
                     movie.setMovieAgeLimit(resultSet.getString(MoviesConst.MOVIE_AGE_LIMIT));
                     movie.setMovieDirector(resultSet.getString(MoviesConst.MOVIE_DIRECTOR));
                     movie.setMovieDescription(resultSet.getString(MoviesConst.MOVIE_DESCRIPTION));
+                    movie.setMovieImageLink(resultSet.getString(MoviesConst.MOVIE_IMAGE_LINK));
                     movie.setMovieImageSource(resultSet.getString(MoviesConst.MOVIE_IMAGE_SOURCE));
                     movies.add(movie);
 
@@ -86,7 +87,7 @@ public class CinemaPageController {
 
     public Integer gettingID() {
         int count = 0;
-        DBHandler db = new DBHandler();
+        DBHandlerCinema db = new DBHandlerCinema();
         ResultSet resultSet = db.moviesGetting();
         try {
             while (resultSet.next()) {

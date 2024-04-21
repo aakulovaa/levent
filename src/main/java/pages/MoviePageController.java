@@ -71,6 +71,8 @@ public class MoviePageController {
 
     public void movieImage(Image movieImageChoisedMovie) {
         movieImage.setImage(movieImageChoisedMovie);
+        movieImage.setFitWidth(528);
+        movieImage.setFitHeight(150);
     }
 
     @FXML
