@@ -1,4 +1,4 @@
-package db;
+package db.theatreDB;
 
 public class TheatersConst {
     public static final String THEATERS_TABLE = "theaters";
@@ -9,14 +9,6 @@ public class TheatersConst {
     public static final String THEATER_PERFORMANCE_ID = "theater_performance_id";
     public static final String THEATER_THEATERS_SESSIONS_ID = "theater_theaters_sessions_id";
 
-    public static final String PERFORMANCES_TABLE = "performances";
-
-    public static final String PERFORMANCE_ID = "performance_id";
-    public static final String PERFORMANCE_NAME = "performance_name";
-    public static final String PERFORMANCE_KIND = "performance_kind";
-    public static final String PERFORMANCE_LENGTH = "performance_length";
-    public static final String PERFORMANCE_AGE_LIMIT = "performance_age_limit";
-    public static final String PERFORMANCE_DESCRIPTION = "performance_description";
 
     public static final String THEATERS_SESSIONS_TABLE = "theaters_sessions";
 

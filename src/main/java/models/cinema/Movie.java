@@ -1,4 +1,4 @@
-package cinema;
+package models.cinema;
 
 public class Movie {
     private String movieName;

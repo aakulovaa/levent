@@ -1,14 +1,18 @@
 package pages;
 
+import db.theatreDB.DBHandlerTheatre;
 import parser.LoadImage;
-import cinema.Movie;
+import models.cinema.Movie;
 import db.cinemaDB.DBHandlerCinema;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import parser.MovieParser;
-import posts.MoviePost;
+import parser.PerformanceParser;
+import posts.cinema.MoviePost;
+import posts.theatre.PerformancePost;
+import models.theatre.Performance;
 
 import java.io.IOException;
 import java.util.List;
@@ -51,6 +55,36 @@ public class HomePage extends Application {
                     movieLength,movieAgeLimit,movieGenre,movieDirector,movieDescription,movieImageLink,movieImageSource);
 
             db.moviesFilling(movie);
+
+        }
+    }
+
+    private static void fillingPerformances() {
+        DBHandlerTheatre db = new DBHandlerTheatre();
+        String imgSource;
+        String pageName = "theatre/";
+        PerformanceParser performanceParser = new PerformanceParser();
+        List<PerformancePost> parser = performanceParser.parser();
+        for (int i = 0; i<parser.getLast().getPerformanceID(); i++)
+        {
+            PerformancePost parsingCounting = parser.get(i);
+            String performanceName = parsingCounting.getName().replaceAll("\u0000", "");
+            String performanceDateRelease = parsingCounting.getYearRelease().replaceAll("\u0000", "");
+            String performanceLength = parsingCounting.getLength().replaceAll("\u0000", "");
+            String performanceAgeLimit = parsingCounting.getAge().replaceAll("\u0000", "");
+            String performanceGenre = parsingCounting.getGenre().replaceAll("\u0000", "");
+            String performanceDirector = parsingCounting.getDirector().replaceAll("\u0000", "");
+            String performanceDescription = parsingCounting.getDescription().replaceAll("\u0000", "");
+            String performanceImageLink = parsingCounting.getImageLink().replaceAll("\u0000", "");
+            LoadImage loadMovieImage = new LoadImage();
+            imgSource = loadMovieImage.loadImage(performanceImageLink,i,pageName);
+            String performanceImageSource = imgSource;
+            System.out.println(imgSource);
+
+            Performance performance = new Performance(performanceName,performanceDateRelease,
+                    performanceLength,performanceAgeLimit,performanceGenre,performanceDirector,performanceDescription,performanceImageLink,performanceImageSource);
+
+            db.performancesFilling(performance);
 
         }
     }

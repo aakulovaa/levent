@@ -1,6 +1,6 @@
 package db.cinemaDB;
 
-import cinema.Movie;
+import models.cinema.Movie;
 import db.Configs;
 import db.DBHandler;
 

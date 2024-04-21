@@ -1,4 +1,4 @@
-package posts;
+package posts.cinema;
 
 public class DirectorPost {
     private String directorFirstName;

@@ -1,6 +1,6 @@
 package pages;
 
-import cinema.Movie;
+import models.cinema.Movie;
 import db.cinemaDB.MoviesConst;
 import db.cinemaDB.DBHandlerCinema;
 import javafx.fxml.FXML;

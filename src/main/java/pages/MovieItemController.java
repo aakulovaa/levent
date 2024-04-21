@@ -1,6 +1,6 @@
 package pages;
 
-import cinema.Movie;
+import models.cinema.Movie;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

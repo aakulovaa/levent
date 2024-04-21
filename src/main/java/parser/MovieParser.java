@@ -4,8 +4,8 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import posts.DirectorPost;
-import posts.MoviePost;
+import posts.cinema.DirectorPost;
+import posts.cinema.MoviePost;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package posts;
+package posts.cinema;
 
 import java.util.Arrays;
 
