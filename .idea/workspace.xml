@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="добавление страницы фильма для просмотра полной информации">
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="добавление возможности просмотра полной информации">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cinema/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cinema/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cinemaDB/CinemasConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/cinemaDB/CinemasConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cinemaDB/MoviesConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/cinemaDB/MoviesConst.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/DBHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/MovieItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MovieItemController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/MoviePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MoviePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchResultPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchResultPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/pages/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/HomePage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/pages/MoviePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/MoviePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/SearchResultPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/SearchResultPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/movieForChoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/movieForChoice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/sortDatePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/sortDatePage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,22 +123,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00004" summary="работа с страницей выбора по дате">
-      <option name="closed" value="true" />
-      <created>1712424830414</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1712424830414</updated>
-    </task>
-    <task id="LOCAL-00005" summary="работа с страницей выбора мероприятия">
-      <option name="closed" value="true" />
-      <created>1712429578205</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1712429578205</updated>
     </task>
     <task id="LOCAL-00006" summary="работа с страницей выбора мероприятия&#10;&#10;добавление возможности возврата на предыдущую страницу">
       <option name="closed" value="true" />
@@ -509,7 +500,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713639912251</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="добавление возможности просмотра полной информации">
+      <option name="closed" value="true" />
+      <created>1713651754660</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1713651754660</updated>
+    </task>
+    <task id="LOCAL-00054" summary="добавление возможности просмотра полной информации">
+      <option name="closed" value="true" />
+      <created>1713651838569</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1713651838569</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +534,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="работа с страницами&#10;&#10;добавление возможности перемещения по страницам" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление страницы для отображения результатов поиска" />
     <MESSAGE value="работа с страницами&#10;&#10;добавление названий страниц" />
     <MESSAGE value="работа с страницами" />
@@ -552,6 +558,7 @@
     <MESSAGE value="добавление возможности скачивать фотографии фильмов" />
     <MESSAGE value="работа с бд и страницей с каталогом фильмов&#10;&#10;возможность скачивать файл, путь к файлу записывается в бд, вывод фотографий фильмов на странице с каталогом" />
     <MESSAGE value="добавление страницы фильма для просмотра полной информации" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление страницы фильма для просмотра полной информации" />
+    <MESSAGE value="добавление возможности просмотра полной информации" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление возможности просмотра полной информации" />
   </component>
 </project>

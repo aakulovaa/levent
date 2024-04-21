@@ -1,4 +1,4 @@
-package cinemaDB;
+package db.cinemaDB;
 
 public class MoviesConst {
     public static final String MOVIES_TABLE = "movies";

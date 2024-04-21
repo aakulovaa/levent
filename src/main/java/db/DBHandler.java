@@ -1,8 +1,8 @@
 package db;
 
 import cinema.Movie;
-import cinemaDB.CinemasConst;
-import cinemaDB.MoviesConst;
+import db.cinemaDB.CinemasConst;
+import db.cinemaDB.MoviesConst;
 
 import java.sql.*;
 
@@ -71,6 +71,24 @@ public class DBHandler extends Configs{
         String select = "SELECT * FROM " + MoviesConst.MOVIES_TABLE;
         try {
             PreparedStatement prSt = getDBConnection().prepareStatement(select);
+
+            resSet = prSt.executeQuery();
+
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+        return resSet;
+    }
+
+    public ResultSet getMovie(Movie movie){
+
+        ResultSet resSet = null;
+
+        String select = "SELECT * FROM " + MoviesConst.MOVIES_TABLE + " WHERE " + MoviesConst.MOVIE_NAME + " =?";
+        try {
+            PreparedStatement prSt = getDBConnection().prepareStatement(select);
+            prSt.setString(1,movie.getMovieName());
 
             resSet = prSt.executeQuery();
 

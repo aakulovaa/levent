@@ -12,7 +12,7 @@ module homePage {
     opens db to javafx.fxml;
     exports posts;
     opens posts to javafx.fxml;
-    exports cinemaDB;
-    opens cinemaDB to javafx.fxml;
+    exports db.cinemaDB;
+    opens db.cinemaDB to javafx.fxml;
 
 }

@@ -2,7 +2,6 @@ package pages;
 
 import cinema.LoadMovieImage;
 import cinema.Movie;
-import cinemaDB.MoviesConst;
 import db.DBHandler;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,7 +12,6 @@ import posts.MoviePost;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Scanner;
 
 public class HomePage extends Application {
     @Override

@@ -1,8 +1,7 @@
 package pages;
 
-import cinema.LoadMovieImage;
 import cinema.Movie;
-import cinemaDB.MoviesConst;
+import db.cinemaDB.MoviesConst;
 import db.DBHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +9,6 @@ import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;

@@ -1,8 +1,6 @@
 package pages;
 
 import cinema.Movie;
-import cinemaDB.MoviesConst;
-import db.DBHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
