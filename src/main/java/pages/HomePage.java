@@ -3,16 +3,13 @@ package pages;
 import db.concertDB.DBHandlerConcert;
 import db.theatreDB.DBHandlerTheatre;
 import models.concert.Concert;
-import parser.ConcertParser;
-import parser.LoadImage;
+import parser.*;
 import models.cinema.Movie;
 import db.cinemaDB.DBHandlerCinema;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import parser.MovieParser;
-import parser.PerformanceParser;
 import posts.cinema.MoviePost;
 import posts.concert.ConcertPost;
 import posts.theatre.PerformancePost;
@@ -143,5 +140,6 @@ public class HomePage extends Application {
         }
 
         launch();
+
     }
 }

@@ -4,25 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с театром&#10;&#10;отображение информации о мероприятиях &quot;театр&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/concertDB/DBHandlerConcert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/concert/Concert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ConcertItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ConcertPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/parser/ConcertParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/posts/concert/ConcertPost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pages/ConcertPage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pages/concertForChoice.fxml" afterDir="false" />
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с концертами&#10;&#10;парсинг станицы + заполнение бд + вывод информации в приложение">
+      <change afterPath="$PROJECT_DIR$/src/main/java/parser/QuestParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/posts/quest/QuestPost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/ConcertsConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/concertDB/ConcertsConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/theatreDB/DBHandlerTheatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/theatreDB/DBHandlerTheatre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PerformanceItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PerformanceItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PerformancePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PerformancePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/ConcertsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/ConcertsPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/PerformancePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/PerformancePage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,14 +114,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00014" summary="работа с страницами&#10;&#10;добавление возможности перемещения по страницам">
-      <option name="closed" value="true" />
-      <created>1712439555490</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1712439555490</updated>
     </task>
     <task id="LOCAL-00015" summary="работа с страницами&#10;&#10;добавление страницы для отображения результатов поиска">
       <option name="closed" value="true" />
@@ -521,7 +499,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713701274206</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="работа с концертами&#10;&#10;парсинг станицы + заполнение бд + вывод информации в приложение">
+      <option name="closed" value="true" />
+      <created>1713707614131</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1713707614131</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="работа с бд&#10;&#10;добавление таблиц" />
     <MESSAGE value="работа с бд&#10;&#10;подключение" />
     <MESSAGE value="работа с бд&#10;&#10;добавлние классов для таблиц бд" />
     <MESSAGE value="работа с бд&#10;&#10;добавлние метода обработки страницы сайта" />
@@ -564,6 +549,7 @@
     <MESSAGE value="редактирование кода&#10;&#10;расширение кода для других мероприятий" />
     <MESSAGE value="работа с театром&#10;&#10;парсинг страниц с представлениями, заполнение бд" />
     <MESSAGE value="работа с театром&#10;&#10;отображение информации о мероприятиях &quot;театр&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="работа с театром&#10;&#10;отображение информации о мероприятиях &quot;театр&quot;" />
+    <MESSAGE value="работа с концертами&#10;&#10;парсинг станицы + заполнение бд + вывод информации в приложение" />
+    <option name="LAST_COMMIT_MESSAGE" value="работа с концертами&#10;&#10;парсинг станицы + заполнение бд + вывод информации в приложение" />
   </component>
 </project>
