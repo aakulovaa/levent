@@ -1,23 +1,81 @@
 package pages;
 
+import db.concertDB.ConcertsConst;
+import db.concertDB.DBHandlerConcert;
+import db.questDB.DBHandlerQuest;
+import db.questDB.QuestsConst;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Region;
 import javafx.stage.Stage;
+import models.quest.Quest;
 
 import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class QuestsPageController {
 
     @FXML
-    private Button questsBackButton;
+    private Button backButton;
+
+    @FXML
+    private GridPane grid;
+
+    @FXML
+    private AnchorPane pane;
+
+    @FXML
+    private ScrollPane scroll;
+
+    private List<Quest> quests = new ArrayList<>();
+
+    private Integer iterator = gettingID();
+
+    private List<Quest> getData() {
+        List<Quest> concerts = new ArrayList<>();
+        Quest quest;
+        DBHandlerQuest db = new DBHandlerQuest();
+        ResultSet resultSet = db.questsGetting();
+        try {
+            for (int i = 0; i < iterator; i++) {//добавляет нужное количество карточек
+                if (resultSet.next()) {
+                    quest = new Quest();
+
+                    quest.setQuestName(resultSet.getString(QuestsConst.QUEST_NAME));
+                    quest.setQuestCountPlayers(resultSet.getString(QuestsConst.QUEST_COUNT_PLAYER));
+                    quest.setQuestAgeLimit(resultSet.getString(QuestsConst.QUEST_AGE_LIMIT));
+                    quest.setQuestDescription(resultSet.getString(QuestsConst.QUEST_DESCRIPTION));
+                    quest.setQuestLocation(resultSet.getString(QuestsConst.QUEST_LOCATION));
+                    quest.setQuestImageLink(resultSet.getString(QuestsConst.QUEST_IMAGE_LINK));
+                    quest.setQuestImageSource(resultSet.getString(QuestsConst.QUEST_IMAGE_SOURCE));
+                    quests.add(quest);
+
+                }
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return concerts;
+    }
+
 
     @FXML
     void initialize() {
-        questsBackButton.setOnAction(event1 -> {
-            questsBackButton.getScene().getWindow().hide();
+
+        createQuestChoice();
+
+        backButton.setOnAction(event1 -> {
+            backButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("EventsPage.fxml"));
 
@@ -33,5 +91,53 @@ public class QuestsPageController {
             stage.setTitle("Events");
             stage.show();
         });
+    }
+
+    public Integer gettingID() {
+        int count = 0;
+        DBHandlerQuest db = new DBHandlerQuest();
+        ResultSet resultSet = db.questsGetting();
+        try {
+            while (resultSet.next()) {
+                count = resultSet.getInt(QuestsConst.QUEST_ID);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return count;
+    }
+
+    public void createQuestChoice() {
+        quests.addAll(getData());
+        int column = 1;
+        int row = 1;
+        try {
+            for(int i = 0; i < quests.size(); i++) {
+                FXMLLoader fxmlLoader = new FXMLLoader();
+                fxmlLoader.setLocation(getClass().getResource("questForChoice.fxml"));
+
+                AnchorPane anchorPane = fxmlLoader.load();
+
+                QuestItemController itemController = fxmlLoader.getController();
+                itemController.setData(quests.get(i));
+                if (column == 3) {
+                    column = 1;
+                    row++;
+                }
+                grid.add(anchorPane, column++, row);
+
+                grid.setMinWidth(Region.USE_COMPUTED_SIZE);
+                grid.setPrefWidth(Region.USE_COMPUTED_SIZE);
+                grid.setMaxWidth(Region.USE_PREF_SIZE);
+
+                grid.setMinHeight(Region.USE_COMPUTED_SIZE);
+                grid.setPrefHeight(Region.USE_COMPUTED_SIZE);
+                grid.setMaxHeight(Region.USE_PREF_SIZE);
+
+                GridPane.setMargin(anchorPane, new Insets(10));
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

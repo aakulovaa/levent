@@ -51,7 +51,7 @@ public class QuestParser {
 
                 posts.add(questPost);
             }
-            posts.forEach(System.out::println);
+            //posts.forEach(System.out::println);
 
         } catch (IOException e) {
             throw new RuntimeException(e);

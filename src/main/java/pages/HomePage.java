@@ -1,8 +1,10 @@
 package pages;
 
 import db.concertDB.DBHandlerConcert;
+import db.questDB.DBHandlerQuest;
 import db.theatreDB.DBHandlerTheatre;
 import models.concert.Concert;
+import models.quest.Quest;
 import parser.*;
 import models.cinema.Movie;
 import db.cinemaDB.DBHandlerCinema;
@@ -12,6 +14,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import posts.cinema.MoviePost;
 import posts.concert.ConcertPost;
+import posts.quest.QuestPost;
 import posts.theatre.PerformancePost;
 import models.theatre.Performance;
 
@@ -103,8 +106,8 @@ public class HomePage extends Application {
             String concertAgeLimit = parsingCounting.getAge().replaceAll("\u0000", "");
             String concertDescription = parsingCounting.getDescription().replaceAll("\u0000", "");
             String concertImageLink = parsingCounting.getImageLink().replaceAll("\u0000", "");
-            LoadImage loadTheatreImage = new LoadImage();
-            imgSource = loadTheatreImage.loadImage(concertImageLink,i,pageName);
+            LoadImage loadConcertImage = new LoadImage();
+            imgSource = loadConcertImage.loadImage(concertImageLink,i,pageName);
             String concertImageSource = imgSource;
             System.out.println(imgSource);
 
@@ -115,6 +118,35 @@ public class HomePage extends Application {
 
         }
     }
+
+    private static void fillingQuests() {
+        DBHandlerQuest db = new DBHandlerQuest();
+        String imgSource;
+        String pageName = "quest/";
+        QuestParser questParser = new QuestParser();
+        List<QuestPost> parser = questParser.parser();
+        for (int i = 0; i<parser.getLast().getQuestID(); i++)
+        {
+            QuestPost parsingCounting = parser.get(i);
+            String questName = parsingCounting.getName().replaceAll("\u0000", "");
+            String questCountPlayer = parsingCounting.getCountPlayer().replaceAll("\u0000", "");
+            String questAgeLimit = parsingCounting.getAge().replaceAll("\u0000", "");
+            String questDescription = parsingCounting.getDescription().replaceAll("\u0000", "");
+            String questLocation = parsingCounting.getLocation().replaceAll("\u0000", "");
+            String questImageLink = parsingCounting.getImageLink().replaceAll("\u0000", "");
+            LoadImage loadQuestImage = new LoadImage();
+            imgSource = loadQuestImage.loadImage(questImageLink,i,pageName);
+            String questImageSource = imgSource;
+            System.out.println(imgSource);
+
+            Quest quest = new Quest(questName,questCountPlayer,
+                    questAgeLimit,questDescription,questLocation,questImageLink,questImageSource);
+
+            db.questsFilling(quest);
+
+        }
+    }
+
 
 
     public static void main(String[] args){
@@ -135,6 +167,10 @@ public class HomePage extends Application {
             DBHandlerConcert dbHandlerConcert = new DBHandlerConcert();
             dbHandlerConcert.concertsCleaning();
             fillingConcerts();
+
+            DBHandlerQuest dbHandlerQuest = new DBHandlerQuest();
+            dbHandlerQuest.questsCleaning();
+            fillingQuests();
 
             System.out.println("Updated!");
         }

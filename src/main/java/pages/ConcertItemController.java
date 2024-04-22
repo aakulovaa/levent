@@ -27,7 +27,6 @@ public class ConcertItemController {
     private Button concertName;
 
     private Concert concert;
-    private String[] date;
     private String[] genre;
 
     public void setData(Concert concert) {

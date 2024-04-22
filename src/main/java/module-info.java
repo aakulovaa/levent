@@ -24,5 +24,9 @@ module homePage {
     opens db.concertDB to javafx.fxml;
     exports posts.concert;
     opens posts.concert to javafx.fxml;
+    exports db.questDB;
+    opens db.questDB to javafx.fxml;
+    exports posts.quest;
+    opens posts.quest to javafx.fxml;
 
 }
