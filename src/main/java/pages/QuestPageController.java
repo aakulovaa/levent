@@ -6,8 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -25,23 +25,24 @@ public class QuestPageController {
     private Text description;
 
     @FXML
-    private Label location;
-
-    @FXML
-    private Label questCountPerson;
+    private Label questCountPlayers;
 
     @FXML
     private ImageView questImage;
 
     @FXML
+    private Label questLocation;
+
+    @FXML
     private Label questName;
+
 
     public void questGetName(String text) {
         questName.setText(text);
     }
 
-    public void questGetCountPlayers(String questCountPlayers) {
-        questCountPerson.setText(questCountPlayers);
+    public void questGetCountPlayers(String questChoicedCountPlayers) {
+        questCountPlayers.setText(questChoicedCountPlayers);
     }
 
     public void questGetAge(String questAgeLimit) {
@@ -52,8 +53,8 @@ public class QuestPageController {
         description.setText(questDescription);
     }
 
-    public void questGetLocation(String questLocation) {
-        location.setText(questLocation);
+    public void questGetLocation(String questChoicedLocation) {
+        questLocation.setText(questChoicedLocation);
     }
 
     public void questGetImage(Image image) {

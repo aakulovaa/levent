@@ -30,19 +30,15 @@
                                 <Font name="Avenir Black" size="24.0" />
                             </font>
                         </Label>
-                        <Label fx:id="questCountPerson" layoutX="14.0" layoutY="216.0" prefHeight="17.0" prefWidth="275.0" text="CountPerson">
+                        <Label fx:id="questCountPlayers" layoutX="14.0" layoutY="216.0" prefHeight="17.0" prefWidth="275.0" text="CountPerson">
                             <font>
                                 <Font name="Avenir Roman" size="13.0" />
                             </font></Label>
-                        <Label fx:id="age" layoutX="17.0" layoutY="250.0" prefHeight="17.0" prefWidth="79.0" text="Age">
+                        <Label fx:id="age" layoutX="417.0" layoutY="216.0" prefHeight="17.0" prefWidth="79.0" text="Age">
                             <font>
                                 <Font name="Avenir Roman" size="13.0" />
                             </font></Label>
-                        <Label fx:id="location" layoutX="238.0" layoutY="250.0" prefHeight="17.0" prefWidth="202.0" text="Location">
-                            <font>
-                                <Font name="Avenir Roman" size="13.0" />
-                            </font></Label>
-                        <Text fx:id="description" layoutX="16.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="546.21630859375">
+                        <Text fx:id="description" layoutX="16.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="546.21630859375">
                             <font>
                                 <Font name="Avenir Roman" size="13.0" />
                             </font></Text>
@@ -50,19 +46,25 @@
                             <font>
                                 <Font name="Avenir Roman" size="13.0" />
                             </font></Label>
-                        <Label layoutX="241.0" layoutY="232.0" text="Адрес" textFill="DARKGRAY">
+                        <Label layoutX="417.0" layoutY="199.0" text="Возрастное ограничение" textFill="DARKGRAY">
                             <font>
                                 <Font name="Avenir Roman" size="13.0" />
                             </font></Label>
-                        <Label layoutX="9.0" layoutY="232.0" text="Возрастное ограничение" textFill="DARKGRAY">
-                            <font>
-                                <Font name="Avenir Roman" size="13.0" />
-                            </font></Label>
-                        <Label layoutX="14.0" layoutY="266.0" text="Описание" textFill="DARKGRAY">
+                        <Label layoutX="12.0" layoutY="268.0" text="Описание" textFill="DARKGRAY">
                             <font>
                                 <Font name="Avenir Roman" size="18.0" />
                             </font>
                         </Label>
+                  <Label layoutX="16.0" layoutY="235.0" text="Адрес" textFill="DARKGRAY">
+                     <font>
+                        <Font name="Avenir Roman" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="questLocation" layoutX="14.0" layoutY="249.0" prefHeight="19.0" prefWidth="571.0" text="Location">
+                     <font>
+                        <Font name="Avenir Roman" size="13.0" />
+                     </font>
+                  </Label>
                     </children>
                 </AnchorPane>
             </content>

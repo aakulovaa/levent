@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с квестами &#10;&#10;парсинг страниц для получения информации о квестах">
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/questDB/DBHandlerQuest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/QuestItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/QuestPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pages/QuestPage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pages/questForChoice.fxml" afterDir="false" />
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с квестами &#10;&#10;заполнение бд, вывод в приложение">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/QuestsConts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/questDB/QuestsConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/quest/Quest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/quest/Quest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ConcertItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ConcertItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/QuestsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/QuestsPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/QuestParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/QuestParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/QuestsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/QuestsPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/QuestPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/QuestPage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -124,14 +112,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00016" summary="работа с страницами&#10;&#10;добавление страницы для отображения результатов поиска">
-      <option name="closed" value="true" />
-      <created>1712440008841</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1712440008841</updated>
     </task>
     <task id="LOCAL-00017" summary="работа с страницами&#10;&#10;добавление названий страниц">
       <option name="closed" value="true" />
@@ -517,7 +497,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713805116405</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="работа с квестами &#10;&#10;заполнение бд, вывод в приложение">
+      <option name="closed" value="true" />
+      <created>1713809627446</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1713809627446</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="работа с бд&#10;&#10;добавлние классов для таблиц бд" />
     <MESSAGE value="работа с бд&#10;&#10;добавлние метода обработки страницы сайта" />
     <MESSAGE value="page parsing" />
     <MESSAGE value="page parsing&#10;&#10;вывод фильма + ссылки на него" />
@@ -560,6 +547,7 @@
     <MESSAGE value="работа с театром&#10;&#10;отображение информации о мероприятиях &quot;театр&quot;" />
     <MESSAGE value="работа с концертами&#10;&#10;парсинг станицы + заполнение бд + вывод информации в приложение" />
     <MESSAGE value="работа с квестами &#10;&#10;парсинг страниц для получения информации о квестах" />
-    <option name="LAST_COMMIT_MESSAGE" value="работа с квестами &#10;&#10;парсинг страниц для получения информации о квестах" />
+    <MESSAGE value="работа с квестами &#10;&#10;заполнение бд, вывод в приложение" />
+    <option name="LAST_COMMIT_MESSAGE" value="работа с квестами &#10;&#10;заполнение бд, вывод в приложение" />
   </component>
 </project>
