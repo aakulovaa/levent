@@ -150,30 +150,33 @@ public class HomePage extends Application {
 
 
     public static void main(String[] args){
-        System.out.println("Обновить данные приложения? 1 - Да /2 - Нет");
-        Scanner choiceAction = new Scanner(System.in);
-        int choice;
-        choice = choiceAction.nextInt();
-        if(choice == 1){
+//        System.out.println("Обновить данные приложения? 1 - Да /2 - Нет");
+//        Scanner choiceAction = new Scanner(System.in);
+//        int choice;
+//        choice = choiceAction.nextInt();
+//        if(choice == 1){
+//
+//            DBHandlerCinema dbHandlerCinema = new DBHandlerCinema();
+//            dbHandlerCinema.moviesCleaning();
+//            fillingMovies();
+//
+//            DBHandlerTheatre dbHandlerTheatre = new DBHandlerTheatre();
+//            dbHandlerTheatre.performancesCleaning();
+//            fillingPerformances();
+//
+//            DBHandlerConcert dbHandlerConcert = new DBHandlerConcert();
+//            dbHandlerConcert.concertsCleaning();
+//            fillingConcerts();
+//
+//            DBHandlerQuest dbHandlerQuest = new DBHandlerQuest();
+//            dbHandlerQuest.questsCleaning();
+//            fillingQuests();
+//
+//            System.out.println("Updated!");
+//        }
 
-            DBHandlerCinema dbHandlerCinema = new DBHandlerCinema();
-            dbHandlerCinema.moviesCleaning();
-            fillingMovies();
-
-            DBHandlerTheatre dbHandlerTheatre = new DBHandlerTheatre();
-            dbHandlerTheatre.performancesCleaning();
-            fillingPerformances();
-
-            DBHandlerConcert dbHandlerConcert = new DBHandlerConcert();
-            dbHandlerConcert.concertsCleaning();
-            fillingConcerts();
-
-            DBHandlerQuest dbHandlerQuest = new DBHandlerQuest();
-            dbHandlerQuest.questsCleaning();
-            fillingQuests();
-
-            System.out.println("Updated!");
-        }
+        DanceParser danceParser = new DanceParser();
+        danceParser.parser();
 
         launch();
 

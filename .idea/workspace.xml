@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с квестами &#10;&#10;заполнение бд, вывод в приложение">
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с квестами &#10;&#10;вывод в приложение">
+      <change afterPath="$PROJECT_DIR$/src/main/java/parser/DanceParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/posts/sport/DancePost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/QuestPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/QuestPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -112,14 +114,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00017" summary="работа с страницами&#10;&#10;добавление названий страниц">
-      <option name="closed" value="true" />
-      <created>1712441055656</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1712441055656</updated>
     </task>
     <task id="LOCAL-00018" summary="работа с страницами">
       <option name="closed" value="true" />
@@ -505,7 +499,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713809627446</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="работа с квестами &#10;&#10;вывод в приложение">
+      <option name="closed" value="true" />
+      <created>1713812715960</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1713812715961</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,7 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="работа с бд&#10;&#10;добавлние метода обработки страницы сайта" />
     <MESSAGE value="page parsing" />
     <MESSAGE value="page parsing&#10;&#10;вывод фильма + ссылки на него" />
     <MESSAGE value="page parsing&#10;&#10;вывод деталей фильма" />
@@ -548,6 +549,7 @@
     <MESSAGE value="работа с концертами&#10;&#10;парсинг станицы + заполнение бд + вывод информации в приложение" />
     <MESSAGE value="работа с квестами &#10;&#10;парсинг страниц для получения информации о квестах" />
     <MESSAGE value="работа с квестами &#10;&#10;заполнение бд, вывод в приложение" />
-    <option name="LAST_COMMIT_MESSAGE" value="работа с квестами &#10;&#10;заполнение бд, вывод в приложение" />
+    <MESSAGE value="работа с квестами &#10;&#10;вывод в приложение" />
+    <option name="LAST_COMMIT_MESSAGE" value="работа с квестами &#10;&#10;вывод в приложение" />
   </component>
 </project>
