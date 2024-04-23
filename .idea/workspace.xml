@@ -4,24 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с спортом&#10;&#10;получение информации о танцевальных студиях">
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/sportDB/DBHandlerDance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/sportDB/DanceConst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/sport/Dance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DanceItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DancePageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/Group 2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/Group 20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pages/DancePage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pages/danceForChoice.fxml" afterDir="false" />
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа с спортом&#10;&#10;заполнение бд + вывод на экран приложения">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/MatchesConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/sportDB/MatchesConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SportPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SportPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/DanceParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/DanceParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/EventsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/EventsPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/SportPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/SportPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/questDB/QuestsConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/questDB/QuestsConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/QuestItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/QuestItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/QuestPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/QuestPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/QuestsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/QuestsPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/QuestPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/QuestPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/QuestsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/QuestsPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/danceForChoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/danceForChoice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/questForChoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/questForChoice.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -62,7 +54,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;first&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/annakulova/IdeaProjects/levent/src/main/resources/pages&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/annakulova/IdeaProjects/levent/src/main/resources/image/dance&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -83,6 +75,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/image/dance" />
       <recent name="$PROJECT_DIR$/src/main/resources/pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -127,14 +120,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00019" summary="работа с страницами">
-      <option name="closed" value="true" />
-      <created>1712446252169</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1712446252169</updated>
     </task>
     <task id="LOCAL-00020" summary="работа с страницами">
       <option name="closed" value="true" />
@@ -520,7 +505,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713877412577</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="работа с спортом&#10;&#10;заполнение бд + вывод на экран приложения">
+      <option name="closed" value="true" />
+      <created>1713887572563</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1713887572563</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,7 +531,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="page parsing&#10;&#10;вывод фильма + ссылки на него" />
     <MESSAGE value="page parsing&#10;&#10;вывод деталей фильма" />
     <MESSAGE value="исправление предупреждений" />
     <MESSAGE value="обработка значений для добавления в бд" />
@@ -563,6 +555,7 @@
     <MESSAGE value="работа с квестами &#10;&#10;заполнение бд, вывод в приложение" />
     <MESSAGE value="работа с квестами &#10;&#10;вывод в приложение" />
     <MESSAGE value="работа с спортом&#10;&#10;получение информации о танцевальных студиях" />
-    <option name="LAST_COMMIT_MESSAGE" value="работа с спортом&#10;&#10;получение информации о танцевальных студиях" />
+    <MESSAGE value="работа с спортом&#10;&#10;заполнение бд + вывод на экран приложения" />
+    <option name="LAST_COMMIT_MESSAGE" value="работа с спортом&#10;&#10;заполнение бд + вывод на экран приложения" />
   </component>
 </project>

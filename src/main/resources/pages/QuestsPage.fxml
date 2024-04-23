@@ -12,12 +12,12 @@
     <children>
         <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #AFEEEE;">
             <children>
-                <Text fill="#1e6f4f" layoutX="240.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Квесты">
+                <Text fill="#1e6f4f" layoutX="255.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Квесты">
                     <font>
                         <Font name="Avenir Black" size="24.0" />
                     </font>
                 </Text>
-                <Button fx:id="backButton" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" style="-fx-background-color: #B0E0E6;" text="Назад">
+                <Button fx:id="questBackButton" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" style="-fx-background-color: #B0E0E6;" text="Назад">
                     <font>
                         <Font name="Avenir Roman" size="14.0" />
                     </font>

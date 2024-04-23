@@ -6,17 +6,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class QuestPageController {
-
-    @FXML
-    private Label age;
 
     @FXML
     private Button backButton;
@@ -35,6 +32,9 @@ public class QuestPageController {
 
     @FXML
     private Label questName;
+
+    @FXML
+    private Label age;
 
 
     public void questGetName(String text) {
@@ -85,4 +85,5 @@ public class QuestPageController {
         });
 
     }
+
 }

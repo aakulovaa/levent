@@ -1,7 +1,5 @@
 package pages;
 
-import db.concertDB.ConcertsConst;
-import db.concertDB.DBHandlerConcert;
 import db.questDB.DBHandlerQuest;
 import db.questDB.QuestsConst;
 import javafx.fxml.FXML;
@@ -26,13 +24,13 @@ import java.util.List;
 public class QuestsPageController {
 
     @FXML
-    private Button backButton;
-
-    @FXML
     private GridPane grid;
 
     @FXML
     private AnchorPane pane;
+
+    @FXML
+    private Button questBackButton;
 
     @FXML
     private ScrollPane scroll;
@@ -74,8 +72,8 @@ public class QuestsPageController {
 
         createQuestChoice();
 
-        backButton.setOnAction(event1 -> {
-            backButton.getScene().getWindow().hide();
+        questBackButton.setOnAction(event1 -> {
+            questBackButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("EventsPage.fxml"));
 
@@ -140,4 +138,5 @@ public class QuestsPageController {
             throw new RuntimeException(e);
         }
     }
+
 }

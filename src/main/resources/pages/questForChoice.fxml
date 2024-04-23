@@ -17,7 +17,7 @@
             <font>
                 <Font name="Avenir Roman" size="13.0" />
             </font></Label>
-        <Button fx:id="questName" layoutX="4.0" layoutY="150.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="207.0" style="-fx-background-color: #B0E0E6;" text="Name">
+        <Button fx:id="questName" layoutX="4.0" layoutY="150.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="207.0" style="-fx-background-color: #B0E0E6;" text="Button">
             <font>
                 <Font name="Avenir Black" size="13.0" />
             </font></Button>
