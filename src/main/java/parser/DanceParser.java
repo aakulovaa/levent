@@ -51,7 +51,7 @@ public class DanceParser {
 
                 posts.add(dancePost);
             }
-            posts.forEach(System.out::println);
+            //posts.forEach(System.out::println);
 
         } catch (IOException e) {
             throw new RuntimeException(e);

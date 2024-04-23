@@ -2,9 +2,11 @@ package pages;
 
 import db.concertDB.DBHandlerConcert;
 import db.questDB.DBHandlerQuest;
+import db.sportDB.DBHandlerDance;
 import db.theatreDB.DBHandlerTheatre;
 import models.concert.Concert;
 import models.quest.Quest;
+import models.sport.Dance;
 import parser.*;
 import models.cinema.Movie;
 import db.cinemaDB.DBHandlerCinema;
@@ -15,6 +17,7 @@ import javafx.stage.Stage;
 import posts.cinema.MoviePost;
 import posts.concert.ConcertPost;
 import posts.quest.QuestPost;
+import posts.sport.DancePost;
 import posts.theatre.PerformancePost;
 import models.theatre.Performance;
 
@@ -147,36 +150,63 @@ public class HomePage extends Application {
         }
     }
 
+    private static void fillingDance() {
+        DBHandlerDance db = new DBHandlerDance();
+        String imgSource;
+        String pageName = "dance/";
+        DanceParser danceParser = new DanceParser();
+        List<DancePost> parser = danceParser.parser();
+        for (int i = 0; i<parser.getLast().getDanceID(); i++)
+        {
+            DancePost parsingCounting = parser.get(i);
+            String danceStudioName = parsingCounting.getNameDanceStudio().replaceAll("\u0000", "");
+            String danceAddress = parsingCounting.getAddress().replaceAll("\u0000", "");
+            String danceDescription = parsingCounting.getDescription().replaceAll("\u0000", "");
+            String danceImageLink = parsingCounting.getImageLink().replaceAll("\u0000", "");
+            LoadImage loadDanceImage = new LoadImage();
+            imgSource = loadDanceImage.loadImage(danceImageLink,i,pageName);
+            String danceImageSource = imgSource;
+            System.out.println(imgSource);
+
+            Dance dance = new Dance(danceStudioName,danceAddress,
+                    danceDescription,danceImageLink,danceImageSource);
+
+            db.danceFilling(dance);
+
+        }
+    }
 
 
     public static void main(String[] args){
-//        System.out.println("Обновить данные приложения? 1 - Да /2 - Нет");
-//        Scanner choiceAction = new Scanner(System.in);
-//        int choice;
-//        choice = choiceAction.nextInt();
-//        if(choice == 1){
-//
-//            DBHandlerCinema dbHandlerCinema = new DBHandlerCinema();
-//            dbHandlerCinema.moviesCleaning();
-//            fillingMovies();
-//
-//            DBHandlerTheatre dbHandlerTheatre = new DBHandlerTheatre();
-//            dbHandlerTheatre.performancesCleaning();
-//            fillingPerformances();
-//
-//            DBHandlerConcert dbHandlerConcert = new DBHandlerConcert();
-//            dbHandlerConcert.concertsCleaning();
-//            fillingConcerts();
-//
-//            DBHandlerQuest dbHandlerQuest = new DBHandlerQuest();
-//            dbHandlerQuest.questsCleaning();
-//            fillingQuests();
-//
-//            System.out.println("Updated!");
-//        }
+        System.out.println("Обновить данные приложения? 1 - Да /2 - Нет");
+        Scanner choiceAction = new Scanner(System.in);
+        int choice;
+        choice = choiceAction.nextInt();
+        if(choice == 1){
 
-        DanceParser danceParser = new DanceParser();
-        danceParser.parser();
+            DBHandlerCinema dbHandlerCinema = new DBHandlerCinema();
+            dbHandlerCinema.moviesCleaning();
+            fillingMovies();
+
+            DBHandlerTheatre dbHandlerTheatre = new DBHandlerTheatre();
+            dbHandlerTheatre.performancesCleaning();
+            fillingPerformances();
+
+            DBHandlerConcert dbHandlerConcert = new DBHandlerConcert();
+            dbHandlerConcert.concertsCleaning();
+            fillingConcerts();
+
+            DBHandlerQuest dbHandlerQuest = new DBHandlerQuest();
+            dbHandlerQuest.questsCleaning();
+            fillingQuests();
+
+            DBHandlerDance dbHandlerDance = new DBHandlerDance();
+            dbHandlerDance.danceCleaning();
+            fillingDance();
+
+            System.out.println("Updated!");
+        }
+
 
         launch();
 

@@ -28,5 +28,9 @@ module homePage {
     opens db.questDB to javafx.fxml;
     exports posts.quest;
     opens posts.quest to javafx.fxml;
+    exports db.sportDB;
+    opens db.sportDB to javafx.fxml;
+    exports posts.sport;
+    opens posts.sport to javafx.fxml;
 
 }

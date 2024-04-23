@@ -1,4 +1,4 @@
-package db;
+package db.sportDB;
 
 public class MatchesConst {
     public static final String STADIUMS_TABLE = "stadiums";
