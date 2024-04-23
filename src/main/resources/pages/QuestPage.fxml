@@ -8,66 +8,72 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.QuestPageController">
-    <children>
-        <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #AFEEEE;">
-            <children>
-                <Button fx:id="backButton" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" style="-fx-background-color: #B0E0E6;" text="Назад">
-                    <font>
-                        <Font name="Avenir Roman" size="14.0" />
-                    </font>
-                </Button>
-            </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.QuestPageController">
+    <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #AFEEEE;">
+        <Button fx:id="backButton" layoutX="14.0" layoutY="6.0" mnemonicParsing="false"
+                style="-fx-background-color: #B0E0E6;" text="Назад">
+            <font>
+                <Font name="Avenir Roman" size="14.0"/>
+            </font>
+        </Button>
+    </AnchorPane>
+    <ScrollPane layoutX="-4.0" layoutY="40.0" prefHeight="360.0" prefWidth="607.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="362.0" prefWidth="592.0"
+                    style="-fx-background-color: #F0FFFF;">
+            <ImageView fx:id="questImage" fitHeight="148.0" fitWidth="528.0" layoutX="35.0" layoutY="10.0"
+                       pickOnBounds="true" preserveRatio="true">
+            </ImageView>
+            <Label fx:id="questName" layoutX="15.0" layoutY="164.0" prefHeight="35.0" prefWidth="563.0"
+                   text="Name">
+                <font>
+                    <Font name="Avenir Black" size="24.0"/>
+                </font>
+            </Label>
+            <Label fx:id="questLocation" layoutX="17.0" layoutY="217.0" prefHeight="19.0" prefWidth="569.0"
+                   text="questLocation">
+                <font>
+                    <Font name="Avenir Roman" size="13.0"/>
+                </font>
+            </Label>
+            <Label fx:id="questCountPlayers" layoutX="18.0" layoutY="255.0" prefHeight="19.0" prefWidth="122.0"
+                   text="CountPlayers">
+                <font>
+                    <Font name="Avenir Roman" size="13.0"/>
+                </font>
+            </Label>
+            <Text fx:id="description" layoutX="17.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                  text="Description" wrappingWidth="557.21630859375">
+                <font>
+                    <Font name="Avenir Roman" size="13.0"/>
+                </font>
+            </Text>
+            <Label layoutX="17.0" layoutY="198.0" text="Локация" textFill="DARKGRAY">
+                <font>
+                    <Font name="Avenir Roman" size="13.0"/>
+                </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="236.0" text="Количество игроков" textFill="DARKGRAY">
+                <font>
+                    <Font name="Avenir Roman" size="13.0"/>
+                </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="268.0" text="Описание" textFill="DARKGRAY">
+                <font>
+                    <Font name="Avenir Roman" size="18.0"/>
+                </font>
+            </Label>
+            <Label layoutX="225.0" layoutY="236.0" text="Возрастное ограничение" textFill="DARKGRAY">
+                <font>
+                    <Font name="Avenir Roman" size="13.0"/>
+                </font>
+            </Label>
+            <Label fx:id="age" layoutX="223.0" layoutY="255.0" prefHeight="17.0" prefWidth="79.0" text="Age">
+                <font>
+                    <Font name="Avenir Roman" size="13.0"/>
+                </font>
+            </Label>
         </AnchorPane>
-        <ScrollPane layoutX="-4.0" layoutY="40.0" prefHeight="360.0" prefWidth="607.0">
-            <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="362.0" prefWidth="592.0" style="-fx-background-color: #F0FFFF;">
-                    <children>
-                        <ImageView fx:id="questImage" fitHeight="148.0" fitWidth="528.0" layoutX="35.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                        </ImageView>
-                        <Label fx:id="questName" layoutX="15.0" layoutY="164.0" prefHeight="35.0" prefWidth="563.0" text="Name">
-                            <font>
-                                <Font name="Avenir Black" size="24.0" />
-                            </font>
-                        </Label>
-                        <Label fx:id="questLocation" layoutX="17.0" layoutY="217.0" prefHeight="19.0" prefWidth="569.0" text="questLocation">
-                            <font>
-                                <Font name="Avenir Roman" size="13.0" />
-                            </font></Label>
-                        <Label fx:id="questCountPlayers" layoutX="18.0" layoutY="255.0" prefHeight="19.0" prefWidth="122.0" text="CountPlayers">
-                            <font>
-                                <Font name="Avenir Roman" size="13.0" />
-                            </font></Label>
-                        <Text fx:id="description" layoutX="17.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="557.21630859375">
-                            <font>
-                                <Font name="Avenir Roman" size="13.0" />
-                            </font></Text>
-                        <Label layoutX="17.0" layoutY="198.0" text="Локация" textFill="DARKGRAY">
-                            <font>
-                                <Font name="Avenir Roman" size="13.0" />
-                            </font></Label>
-                        <Label layoutX="17.0" layoutY="236.0" text="Количество игроков" textFill="DARKGRAY">
-                            <font>
-                                <Font name="Avenir Roman" size="13.0" />
-                            </font></Label>
-                        <Label layoutX="16.0" layoutY="268.0" text="Описание" textFill="DARKGRAY">
-                            <font>
-                                <Font name="Avenir Roman" size="18.0" />
-                            </font>
-                        </Label>
-                  <Label layoutX="225.0" layoutY="236.0" text="Возрастное ограничение" textFill="DARKGRAY">
-                     <font>
-                        <Font name="Avenir Roman" size="13.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="age" layoutX="223.0" layoutY="255.0" prefHeight="17.0" prefWidth="79.0" text="Age">
-                     <font>
-                        <Font name="Avenir Roman" size="13.0" />
-                     </font>
-                  </Label>
-                    </children>
-                </AnchorPane>
-            </content>
-        </ScrollPane>
-    </children>
+    </ScrollPane>
 </AnchorPane>

@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа c квестами">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MovieItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MovieItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PerformanceItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PerformanceItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/QuestsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/QuestsPageController.java" afterDir="false" />
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="редактирование кода">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/QuestsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/QuestsPage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,14 +112,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00022" summary="подключение бд">
-      <option name="closed" value="true" />
-      <created>1712490378521</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1712490378522</updated>
     </task>
     <task id="LOCAL-00023" summary="работа с бд&#10;&#10;добавление таблиц">
       <option name="closed" value="true" />
@@ -511,7 +497,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713894852254</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="редактирование кода">
+      <option name="closed" value="true" />
+      <created>1713895909099</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1713895909099</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="обработка значений для добавления в бд" />
     <MESSAGE value="обработка значений для добавления в бд&#10;&#10;значения для таблицы режиссеров" />
     <MESSAGE value="обработка календаря&#10;&#10;получение выбраной даты в подходящем для парсинга формате" />
     <MESSAGE value="обработка календаря&#10;&#10;получение ссылки на страницу расписания кино с заданой датой" />
@@ -554,6 +547,7 @@
     <MESSAGE value="работа с спортом&#10;&#10;заполнение бд + вывод на экран приложения" />
     <MESSAGE value="работа квестами" />
     <MESSAGE value="работа c квестами" />
-    <option name="LAST_COMMIT_MESSAGE" value="работа c квестами" />
+    <MESSAGE value="редактирование кода" />
+    <option name="LAST_COMMIT_MESSAGE" value="редактирование кода" />
   </component>
 </project>
