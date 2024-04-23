@@ -8,7 +8,6 @@ import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
@@ -27,17 +26,11 @@ public class QuestsPageController {
     private GridPane grid;
 
     @FXML
-    private AnchorPane pane;
-
-    @FXML
     private Button questBackButton;
 
-    @FXML
-    private ScrollPane scroll;
+    private final List<Quest> quests = new ArrayList<>();
 
-    private List<Quest> quests = new ArrayList<>();
-
-    private Integer iterator = gettingID();
+    private final Integer iterator = gettingID();
 
     private List<Quest> getData() {
         List<Quest> concerts = new ArrayList<>();
@@ -94,8 +87,7 @@ public class QuestsPageController {
     public Integer gettingID() {
         int count = 0;
         DBHandlerQuest db = new DBHandlerQuest();
-        ResultSet resultSet = db.questsGetting();
-        try {
+        try (ResultSet resultSet = db.questsGetting()) {
             while (resultSet.next()) {
                 count = resultSet.getInt(QuestsConst.QUEST_ID);
             }
@@ -110,14 +102,14 @@ public class QuestsPageController {
         int column = 1;
         int row = 1;
         try {
-            for(int i = 0; i < quests.size(); i++) {
+            for (Quest quest : quests) {
                 FXMLLoader fxmlLoader = new FXMLLoader();
                 fxmlLoader.setLocation(getClass().getResource("questForChoice.fxml"));
 
                 AnchorPane anchorPane = fxmlLoader.load();
 
                 QuestItemController itemController = fxmlLoader.getController();
-                itemController.setData(quests.get(i));
+                itemController.setData(quest);
                 if (column == 3) {
                     column = 1;
                     row++;

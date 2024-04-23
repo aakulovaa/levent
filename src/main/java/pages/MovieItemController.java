@@ -30,15 +30,13 @@ public class MovieItemController {
     private Label movieYear;
 
     private Movie movie;
-    private String[] date;
-    private String[] genre;
 
     public void setData(Movie movie) {
         this.movie = movie;
         movieName.setText(movie.getMovieName());
-        date = movie.getMovieDateRelease().split(" ");
+        String[] date = movie.getMovieDateRelease().split(" ");
         movieYear.setText(date[date.length - 1]);
-        genre = movie.getMovieGenre().split(" ");
+        String[] genre = movie.getMovieGenre().split(" ");
         movieGenre.setText(genre[0]);
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream(movie.getMovieImageSource())));
         movieImage.setImage(image);

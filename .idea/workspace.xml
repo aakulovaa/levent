@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа квестами">
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/FillingDB.java" afterDir="false" />
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="работа c квестами">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/QuestPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/QuestPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/danceForChoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/danceForChoice.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/questForChoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/questForChoice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MovieItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MovieItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PerformanceItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PerformanceItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/QuestsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/QuestsPageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,14 +118,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00021" summary="подключение бд">
-      <option name="closed" value="true" />
-      <created>1712487580238</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1712487580238</updated>
     </task>
     <task id="LOCAL-00022" summary="подключение бд">
       <option name="closed" value="true" />
@@ -510,7 +503,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713893862714</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="работа c квестами">
+      <option name="closed" value="true" />
+      <created>1713894852254</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1713894852254</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +529,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="исправление предупреждений" />
     <MESSAGE value="обработка значений для добавления в бд" />
     <MESSAGE value="обработка значений для добавления в бд&#10;&#10;значения для таблицы режиссеров" />
     <MESSAGE value="обработка календаря&#10;&#10;получение выбраной даты в подходящем для парсинга формате" />
@@ -553,6 +553,7 @@
     <MESSAGE value="работа с спортом&#10;&#10;получение информации о танцевальных студиях" />
     <MESSAGE value="работа с спортом&#10;&#10;заполнение бд + вывод на экран приложения" />
     <MESSAGE value="работа квестами" />
-    <option name="LAST_COMMIT_MESSAGE" value="работа квестами" />
+    <MESSAGE value="работа c квестами" />
+    <option name="LAST_COMMIT_MESSAGE" value="работа c квестами" />
   </component>
 </project>

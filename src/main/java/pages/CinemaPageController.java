@@ -27,16 +27,16 @@ public class CinemaPageController {
 
     @FXML
     private GridPane grid;
-    private List<Movie> movies = new ArrayList<>();
+    private final List<Movie> movies = new ArrayList<>();
 
-    private Integer iterator = gettingID();
+    private final Integer iterator = gettingID();
 
     private List<Movie> getData() {
         List<Movie> movies = new ArrayList<>();
         Movie movie;
         DBHandlerCinema db = new DBHandlerCinema();
-        ResultSet resultSet = db.moviesGetting();
-        try {
+        try (ResultSet resultSet = db.moviesGetting()) {
+
             for (int i = 0; i < iterator; i++) {//добавляет нужное количество карточек
                 if (resultSet.next()) {
                     movie = new Movie();
@@ -54,6 +54,7 @@ public class CinemaPageController {
 
                 }
             }
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -88,8 +89,7 @@ public class CinemaPageController {
     public Integer gettingID() {
         int count = 0;
         DBHandlerCinema db = new DBHandlerCinema();
-        ResultSet resultSet = db.moviesGetting();
-        try {
+        try (ResultSet resultSet = db.moviesGetting()) {
             while (resultSet.next()) {
                 count = resultSet.getInt(MoviesConst.MOVIE_ID);
             }
@@ -104,14 +104,14 @@ public class CinemaPageController {
         int column = 1;
         int row = 1;
         try {
-            for(int i = 0; i < movies.size(); i++) {
+            for (Movie movie : movies) {
                 FXMLLoader fxmlLoader = new FXMLLoader();
                 fxmlLoader.setLocation(getClass().getResource("movieForChoice.fxml"));
 
                 AnchorPane anchorPane = fxmlLoader.load();
 
                 MovieItemController itemController = fxmlLoader.getController();
-                itemController.setData(movies.get(i));
+                itemController.setData(movie);
                 if (column == 3) {
                     column = 1;
                     row++;

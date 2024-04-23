@@ -10,7 +10,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import models.concert.Concert;
-import models.theatre.Performance;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -27,12 +26,11 @@ public class ConcertItemController {
     private Button concertName;
 
     private Concert concert;
-    private String[] genre;
 
     public void setData(Concert concert) {
         this.concert = concert;
         concertName.setText(concert.getConcertName());
-        genre = concert.getConcertGenre().split(" ");
+        String[] genre = concert.getConcertGenre().split(" ");
         concertGenre.setText(genre[0]);
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream(concert.getConcertImageSource())));
         concertImage.setImage(image);

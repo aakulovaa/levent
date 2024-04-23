@@ -9,7 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-import models.concert.Concert;
+
 import models.sport.Dance;
 
 import java.io.IOException;

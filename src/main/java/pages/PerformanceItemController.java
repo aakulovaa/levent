@@ -25,13 +25,11 @@ public class PerformanceItemController {
     @FXML
     private Button performanceName;
     private Performance performance;
-    private String[] date;
-    private String[] genre;
 
     public void setData(Performance performance) {
         this.performance = performance;
         performanceName.setText(performance.getPerformanceName());
-        genre = performance.getPerformanceGenre().split(" ");
+        String[] genre = performance.getPerformanceGenre().split(" ");
         performanceGenre.setText(genre[0]);
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream(performance.getPerformanceImageSource())));
         performanceImage.setImage(image);

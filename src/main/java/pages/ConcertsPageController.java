@@ -2,8 +2,6 @@ package pages;
 
 import db.concertDB.ConcertsConst;
 import db.concertDB.DBHandlerConcert;
-import db.theatreDB.DBHandlerTheatre;
-import db.theatreDB.PerformancesConst;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
@@ -19,11 +17,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javafx.scene.control.ScrollPane;
+
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import models.concert.Concert;
-import models.theatre.Performance;
 
 
 public class ConcertsPageController {
@@ -34,22 +31,15 @@ public class ConcertsPageController {
     @FXML
     private GridPane grid;
 
-    @FXML
-    private AnchorPane pane;
+    private final List<Concert> concerts = new ArrayList<>();
 
-    @FXML
-    private ScrollPane scroll;
-
-    private List<Concert> concerts = new ArrayList<>();
-
-    private Integer iterator = gettingID();
+    private final Integer iterator = gettingID();
 
     private List<Concert> getData() {
         List<Concert> concerts = new ArrayList<>();
         Concert concert;
         DBHandlerConcert db = new DBHandlerConcert();
-        ResultSet resultSet = db.concertsGetting();
-        try {
+        try (ResultSet resultSet = db.concertsGetting()) {
             for (int i = 0; i < iterator; i++) {//добавляет нужное количество карточек
                 if (resultSet.next()) {
                     concert = new Concert();
@@ -98,8 +88,7 @@ public class ConcertsPageController {
     public Integer gettingID() {
         int count = 0;
         DBHandlerConcert db = new DBHandlerConcert();
-        ResultSet resultSet = db.concertsGetting();
-        try {
+        try (ResultSet resultSet = db.concertsGetting()) {
             while (resultSet.next()) {
                 count = resultSet.getInt(ConcertsConst.CONCERT_ID);
             }
@@ -114,14 +103,14 @@ public class ConcertsPageController {
         int column = 1;
         int row = 1;
         try {
-            for(int i = 0; i < concerts.size(); i++) {
+            for (Concert concert : concerts) {
                 FXMLLoader fxmlLoader = new FXMLLoader();
                 fxmlLoader.setLocation(getClass().getResource("concertForChoice.fxml"));
 
                 AnchorPane anchorPane = fxmlLoader.load();
 
                 ConcertItemController itemController = fxmlLoader.getController();
-                itemController.setData(concerts.get(i));
+                itemController.setData(concert);
                 if (column == 3) {
                     column = 1;
                     row++;
