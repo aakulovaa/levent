@@ -19,18 +19,20 @@ public class DBHandlerConcert {
 
     public void concertsFilling(Concert concert) {
         String insertConcert = "INSERT INTO " + ConcertsConst.CONCERTS_TABLE + "(" +
-                ConcertsConst.CONCERT_GROUP_NAME +"," + ConcertsConst.CONCERT_GENRE +
+                ConcertsConst.CONCERT_GROUP_NAME +"," + ConcertsConst.CONCERT_LINK +
+                "," + ConcertsConst.CONCERT_GENRE +
                  "," +  ConcertsConst.CONCERT_AGE_LIMIT + "," + ConcertsConst.CONCERT_DESCRIPTION +","
                 + ConcertsConst.CONCERT_IMAGE_LINK +"," + ConcertsConst.CONCERT_IMAGE_SOURCE + ")" +
-                "VALUES(?,?,?,?,?,?)";
+                "VALUES(?,?,?,?,?,?,?)";
         try {
             PreparedStatement prSt = getDbConnectionConcert().prepareStatement(insertConcert);
             prSt.setString(1,concert.getConcertName());
-            prSt.setString(2,concert.getConcertGenre());
-            prSt.setString(3,concert.getConcertAgeLimit());
-            prSt.setString(4,concert.getConcertDescription());
-            prSt.setString(5,concert.getConcertImageLink());
-            prSt.setString(6,concert.getConcertImageSource());
+            prSt.setString(2,concert.getConcertLink());
+            prSt.setString(3,concert.getConcertGenre());
+            prSt.setString(4,concert.getConcertAgeLimit());
+            prSt.setString(5,concert.getConcertDescription());
+            prSt.setString(6,concert.getConcertImageLink());
+            prSt.setString(7,concert.getConcertImageSource());
 
             prSt.executeUpdate();
         } catch (SQLException | ClassNotFoundException e) {

@@ -3,6 +3,7 @@ package posts.theatre;
 public class PerformancePost {
     private Integer performanceID;
     private String name;
+    private String performanceLink;
     private String detailsLink;
     private String genre;
     private String age;
@@ -10,6 +11,14 @@ public class PerformancePost {
     private String description;
     private String director;
     private String imageLink;
+
+    public String getPerformanceLink() {
+        return performanceLink;
+    }
+
+    public void setPerformanceLink(String performanceLink) {
+        this.performanceLink = performanceLink;
+    }
 
     public Integer getPerformanceID() {
         return performanceID;
@@ -88,6 +97,7 @@ public class PerformancePost {
         return "PerformancePost{" +
                 "performanceID=" + performanceID +
                 ", name='" + name + '\'' +
+                ", performanceLink='" + performanceLink + '\'' +
                 ", detailsLink='" + detailsLink + '\'' +
                 ", genre='" + genre + '\'' +
                 ", age='" + age + '\'' +

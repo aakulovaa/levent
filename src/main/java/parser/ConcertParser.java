@@ -30,6 +30,7 @@ public class ConcertParser {
 
 
                 Document postDetailsDoc = Jsoup.connect("https://www.afisha.ru" + detailsLink).get();
+                concertPost.setConcertLink("https://www.afisha.ru" + detailsLink);
 
                 Elements title = postDetailsDoc.getElementsByAttributeValue("data-test", "ITEM-NAME");
                 concertPost.setName(title.text());

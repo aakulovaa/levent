@@ -61,6 +61,7 @@ public class FillingDB {
         {
             PerformancePost parsingCounting = parser.get(i);
             String performanceName = parsingCounting.getName().replaceAll("\u0000", "");
+            String performanceLink = parsingCounting.getPerformanceLink().replaceAll("\u0000", "");
             String performanceGenre = parsingCounting.getGenre().replaceAll("\u0000", "");
             String performanceLength = parsingCounting.getLength().replaceAll("\u0000", "");
             String performanceAgeLimit = parsingCounting.getAge().replaceAll("\u0000", "");
@@ -72,7 +73,7 @@ public class FillingDB {
             String performanceImageSource = imgSource;
             System.out.println(imgSource);
 
-            Performance performance = new Performance(performanceName,performanceGenre,
+            Performance performance = new Performance(performanceName,performanceLink,performanceGenre,
                     performanceLength,performanceAgeLimit,performanceDirector,performanceDescription,performanceImageLink,performanceImageSource);
 
             db.performancesFilling(performance);
@@ -90,6 +91,7 @@ public class FillingDB {
         {
             ConcertPost parsingCounting = parser.get(i);
             String concertName = parsingCounting.getName().replaceAll("\u0000", "");
+            String concertLink = parsingCounting.getConcertLink().replaceAll("\u0000", "");
             String concertGenre = parsingCounting.getGenre().replaceAll("\u0000", "");
             String concertAgeLimit = parsingCounting.getAge().replaceAll("\u0000", "");
             String concertDescription = parsingCounting.getDescription().replaceAll("\u0000", "");
@@ -99,7 +101,7 @@ public class FillingDB {
             String concertImageSource = imgSource;
             System.out.println(imgSource);
 
-            Concert concert = new Concert(concertName,concertGenre,
+            Concert concert = new Concert(concertName,concertLink,concertGenre,
                     concertAgeLimit,concertDescription,concertImageLink,concertImageSource);
 
             db.concertsFilling(concert);

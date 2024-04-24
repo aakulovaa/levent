@@ -1,5 +1,6 @@
 package pages;
 
+import db.cinemaDB.MoviesConst;
 import db.concertDB.ConcertsConst;
 import db.concertDB.DBHandlerConcert;
 import javafx.fxml.FXML;
@@ -45,6 +46,7 @@ public class ConcertsPageController {
                     concert = new Concert();
 
                     concert.setConcertName(resultSet.getString(ConcertsConst.CONCERT_GROUP_NAME));
+                    concert.setConcertLink(resultSet.getString(ConcertsConst.CONCERT_LINK));
                     concert.setConcertGenre(resultSet.getString(ConcertsConst.CONCERT_GENRE));
                     concert.setConcertAgeLimit(resultSet.getString(ConcertsConst.CONCERT_AGE_LIMIT));
                     concert.setConcertDescription(resultSet.getString(ConcertsConst.CONCERT_DESCRIPTION));

@@ -71,6 +71,7 @@ public class PerformanceItemController {
     private PerformancePageController getPerformancePageController(FXMLLoader loader) {
         PerformancePageController performancePageController = loader.getController();
         performancePageController.performanceGetName(performanceName.getText());
+        performancePageController.performanceGetLink(performance.getPerformanceLink());
         performancePageController.performanceGetGenre(performance.getPerformanceGenre());
         performancePageController.performanceGetAge(performance.getPerformanceAgeLimit());
         performancePageController.performanceGetLength(performance.getPerformanceLength());

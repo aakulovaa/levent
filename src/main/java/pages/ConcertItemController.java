@@ -72,6 +72,7 @@ public class ConcertItemController {
     private ConcertPageController getConcertPageController(FXMLLoader loader) {
         ConcertPageController concertPageController = loader.getController();
         concertPageController.concertGetName(concertName.getText());
+        concertPageController.concertLink(concert.getConcertLink());
         concertPageController.concertGetGenre(concert.getConcertGenre());
         concertPageController.concertGetAge(concert.getConcertAgeLimit());
         concertPageController.concertGetDescription(concert.getConcertDescription());

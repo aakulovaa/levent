@@ -103,6 +103,7 @@ public class SearchResultPageController {
                 movie = new Movie();
 
                 movie.setMovieName(resultSet.getString(MoviesConst.MOVIE_NAME));
+                movie.setMovieLink(resultSet.getString(MoviesConst.MOVIE_LINK));
                 movie.setMovieGenre(resultSet.getString(MoviesConst.MOVIE_GENRE));
                 movie.setMovieDateRelease(resultSet.getString(MoviesConst.MOVIE_YEAR_RELEASE));
                 movie.setMovieLength(resultSet.getString(MoviesConst.MOVIE_LENGTH));
@@ -167,6 +168,7 @@ public class SearchResultPageController {
                 performance = new Performance();
 
                 performance.setPerformanceName(resultSet.getString(PerformancesConst.PERFORMANCES_NAME));
+                performance.setPerformanceLink(resultSet.getString(PerformancesConst.PERFORMANCES_LINK));
                 performance.setPerformanceGenre(resultSet.getString(PerformancesConst.PERFORMANCES_GENRE));
                 performance.setPerformanceLength(resultSet.getString(PerformancesConst.PERFORMANCES_LENGTH));
                 performance.setPerformanceAgeLimit(resultSet.getString(PerformancesConst.PERFORMANCES_AGE_LIMIT));
@@ -229,6 +231,7 @@ public class SearchResultPageController {
                 concert = new Concert();
 
                 concert.setConcertName(resultSet.getString(ConcertsConst.CONCERT_GROUP_NAME));
+                concert.setConcertLink(resultSet.getString(ConcertsConst.CONCERT_LINK));
                 concert.setConcertGenre(resultSet.getString(ConcertsConst.CONCERT_GENRE));
                 concert.setConcertAgeLimit(resultSet.getString(ConcertsConst.CONCERT_AGE_LIMIT));
                 concert.setConcertDescription(resultSet.getString(ConcertsConst.CONCERT_DESCRIPTION));

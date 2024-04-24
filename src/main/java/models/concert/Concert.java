@@ -2,11 +2,20 @@ package models.concert;
 
 public class Concert {
     private String concertName;
+    private String concertLink;
     private String concertAgeLimit;
     private String concertGenre;
     private String concertDescription;
     private String concertImageLink;
     private String concertImageSource;
+
+    public String getConcertLink() {
+        return concertLink;
+    }
+
+    public void setConcertLink(String concertLink) {
+        this.concertLink = concertLink;
+    }
 
     public String getConcertName() {
         return concertName;
@@ -58,10 +67,11 @@ public class Concert {
     public Concert(){
 
     }
-    public Concert(String concertName, String concertGenre, String concertAgeLimit, String concertDescription, String concertImageLink, String concertImageSource) {
+    public Concert(String concertName, String concertLink, String concertAgeLimit, String concertGenre, String concertDescription, String concertImageLink, String concertImageSource) {
         this.concertName = concertName;
-        this.concertGenre = concertGenre;
+        this.concertLink = concertLink;
         this.concertAgeLimit = concertAgeLimit;
+        this.concertGenre = concertGenre;
         this.concertDescription = concertDescription;
         this.concertImageLink = concertImageLink;
         this.concertImageSource = concertImageSource;

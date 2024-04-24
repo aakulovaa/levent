@@ -2,6 +2,7 @@ package models.theatre;
 
 public class Performance {
     private String performanceName;
+    private String performanceLink;
     private String performanceLength;
     private String performanceAgeLimit;
     private String performanceGenre;
@@ -10,6 +11,14 @@ public class Performance {
 
     private String performanceImageLink;
     private String performanceImageSource;
+
+    public String getPerformanceLink() {
+        return performanceLink;
+    }
+
+    public void setPerformanceLink(String performanceLink) {
+        this.performanceLink = performanceLink;
+    }
 
     public String getPerformanceName() {
         return performanceName;
@@ -83,6 +92,18 @@ public class Performance {
         this.performanceGenre = performanceGenre;
         this.performanceLength = performanceLength;
         this.performanceAgeLimit = performanceAgeLimit;
+        this.performanceDirector = performanceDirector;
+        this.performanceDescription = performanceDescription;
+        this.performanceImageLink = performanceImageLink;
+        this.performanceImageSource = performanceImageSource;
+    }
+
+    public Performance(String performanceName, String performanceLink, String performanceLength, String performanceAgeLimit, String performanceGenre, String performanceDirector, String performanceDescription, String performanceImageLink, String performanceImageSource) {
+        this.performanceName = performanceName;
+        this.performanceLink = performanceLink;
+        this.performanceLength = performanceLength;
+        this.performanceAgeLimit = performanceAgeLimit;
+        this.performanceGenre = performanceGenre;
         this.performanceDirector = performanceDirector;
         this.performanceDescription = performanceDescription;
         this.performanceImageLink = performanceImageLink;

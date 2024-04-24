@@ -4,10 +4,19 @@ public class ConcertPost {
     private Integer concertID;
     private String name;
     private String detailsLink;
+    private String concertLink;
     private String genre;
     private String age;
     private String description;
     private String imageLink;
+
+    public String getConcertLink() {
+        return concertLink;
+    }
+
+    public void setConcertLink(String concertLink) {
+        this.concertLink = concertLink;
+    }
 
     public Integer getConcertID() {
         return concertID;
@@ -71,6 +80,7 @@ public class ConcertPost {
                 "concertID=" + concertID +
                 ", name='" + name + '\'' +
                 ", detailsLink='" + detailsLink + '\'' +
+                ", concertLink='" + concertLink + '\'' +
                 ", genre='" + genre + '\'' +
                 ", age='" + age + '\'' +
                 ", description='" + description + '\'' +

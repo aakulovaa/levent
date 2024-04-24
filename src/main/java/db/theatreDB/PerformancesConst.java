@@ -5,6 +5,7 @@ public class PerformancesConst {
 
     public static final String PERFORMANCES_ID = "performance_id";
     public static final String PERFORMANCES_NAME = "performance_name";
+    public static final String PERFORMANCES_LINK = "performance_link";
     public static final String PERFORMANCES_DIRECTOR = "performance_director";
     public static final String PERFORMANCES_LENGTH = "performance_length";
     public static final String PERFORMANCES_AGE_LIMIT = "performance_age_limit";
