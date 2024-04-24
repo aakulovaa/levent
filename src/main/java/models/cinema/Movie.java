@@ -2,15 +2,23 @@ package models.cinema;
 
 public class Movie {
     private String movieName;
+    private String movieLink;
     private String movieDateRelease;
     private String movieLength;
     private String movieAgeLimit;
     private String movieGenre;
     private String movieDirector;
     private String movieDescription;
-
     private String movieImageLink;
     private String movieImageSource;
+
+    public String getMovieLink() {
+        return movieLink;
+    }
+
+    public void setMovieLink(String movieLink) {
+        this.movieLink = movieLink;
+    }
 
     public String getMovieImageSource() {
         return movieImageSource;
@@ -90,7 +98,7 @@ public class Movie {
         this.movieDescription = movieDescription;
     }
 
-    public Movie(String movieName, String movieDateRelease, String movieLength, String movieAgeLimit, String movieGenre, String movieDirector, String movieDescription, String movieImageSource) {
+    public Movie(String movieName, String movieDateRelease, String movieLength, String movieAgeLimit, String movieGenre, String movieDirector, String movieDescription, String movieImageLink, String movieImageSource) {
         this.movieName = movieName;
         this.movieDateRelease = movieDateRelease;
         this.movieLength = movieLength;
@@ -98,11 +106,13 @@ public class Movie {
         this.movieGenre = movieGenre;
         this.movieDirector = movieDirector;
         this.movieDescription = movieDescription;
+        this.movieImageLink = movieImageLink;
         this.movieImageSource = movieImageSource;
     }
 
-    public Movie(String movieName, String movieDateRelease, String movieLength, String movieAgeLimit, String movieGenre, String movieDirector, String movieDescription, String movieImageLink, String movieImageSource) {
+    public Movie(String movieName, String movieLink, String movieDateRelease, String movieLength, String movieAgeLimit, String movieGenre, String movieDirector, String movieDescription, String movieImageLink, String movieImageSource) {
         this.movieName = movieName;
+        this.movieLink = movieLink;
         this.movieDateRelease = movieDateRelease;
         this.movieLength = movieLength;
         this.movieAgeLimit = movieAgeLimit;

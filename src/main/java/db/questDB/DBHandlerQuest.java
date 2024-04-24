@@ -57,6 +57,25 @@ public class DBHandlerQuest {
         return resSet;
     }
 
+    public ResultSet getQuest(Quest quest){
+
+        ResultSet resSet = null;
+
+        String select = "SELECT * FROM " + QuestsConst.QUESTS_TABLE + " WHERE " + QuestsConst.QUEST_NAME + " =?";
+        try {
+            PreparedStatement prSt = getDbConnectionQuest().prepareStatement(select);
+            prSt.setString(1,quest.getQuestName());
+
+
+            resSet = prSt.executeQuery();
+
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+        return resSet;
+    }
+
     public void questsCleaning(){
 
         String delete = "DELETE FROM " + QuestsConst.QUESTS_TABLE;

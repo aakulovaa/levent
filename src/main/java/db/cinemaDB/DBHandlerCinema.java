@@ -35,23 +35,24 @@ public class DBHandlerCinema extends Configs {
 
     public void moviesFilling(Movie movie){
         String insertMovie = "INSERT INTO " + MoviesConst.MOVIES_TABLE + "(" +
-                MoviesConst.MOVIE_NAME +
+                MoviesConst.MOVIE_NAME +"," + MoviesConst.MOVIE_LINK +
                 "," + MoviesConst.MOVIE_YEAR_RELEASE +"," + MoviesConst.MOVIE_LENGTH  +
                 "," +  MoviesConst.MOVIE_AGE_LIMIT + "," + MoviesConst.MOVIE_GENRE +
                 "," + MoviesConst.MOVIE_DIRECTOR + "," + MoviesConst.MOVIE_DESCRIPTION +","
                 + MoviesConst.MOVIE_IMAGE_LINK +"," + MoviesConst.MOVIE_IMAGE_SOURCE + ")" +
-                "VALUES(?,?,?,?,?,?,?,?,?)";
+                "VALUES(?,?,?,?,?,?,?,?,?,?)";
         try {
             PreparedStatement prSt = getDbConnectionCinema().prepareStatement(insertMovie);
             prSt.setString(1,movie.getMovieName());
-            prSt.setString(2, movie.getMovieDateRelease());
-            prSt.setString(3,movie.getMovieLength());
-            prSt.setString(4,movie.getMovieAgeLimit());
-            prSt.setString(5,movie.getMovieGenre());
-            prSt.setString(6,movie.getMovieDirector());
-            prSt.setString(7,movie.getMovieDescription());
-            prSt.setString(8,movie.getMovieImageLink());
-            prSt.setString(9,movie.getMovieImageSource());
+            prSt.setString(2, movie.getMovieLink());
+            prSt.setString(3, movie.getMovieDateRelease());
+            prSt.setString(4,movie.getMovieLength());
+            prSt.setString(5,movie.getMovieAgeLimit());
+            prSt.setString(6,movie.getMovieGenre());
+            prSt.setString(7,movie.getMovieDirector());
+            prSt.setString(8,movie.getMovieDescription());
+            prSt.setString(9,movie.getMovieImageLink());
+            prSt.setString(10,movie.getMovieImageSource());
 
             prSt.executeUpdate();
         } catch (SQLException | ClassNotFoundException e) {

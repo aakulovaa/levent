@@ -30,6 +30,7 @@ public class FillingDB {
         {
             MoviePost parsingCounting = parser.get(i);
             String movieName = parsingCounting.getTitle().replaceAll("\u0000", "");
+            String movieLink = parsingCounting.getMovieLink().replaceAll("\u0000", "");
             String movieDateRelease = parsingCounting.getYearRelease().replaceAll("\u0000", "");
             String movieLength = parsingCounting.getLength().replaceAll("\u0000", "");
             String movieAgeLimit = parsingCounting.getAge().replaceAll("\u0000", "");
@@ -42,7 +43,7 @@ public class FillingDB {
             String movieImageSource = imgSource;
             System.out.println(imgSource);
 
-            Movie movie = new Movie(movieName,movieDateRelease,
+            Movie movie = new Movie(movieName,movieLink,movieDateRelease,
                     movieLength,movieAgeLimit,movieGenre,movieDirector,movieDescription,movieImageLink,movieImageSource);
 
             db.moviesFilling(movie);

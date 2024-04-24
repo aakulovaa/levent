@@ -54,6 +54,25 @@ public class DBHandlerDance {
         return resSet;
     }
 
+    public ResultSet getSport(Dance dance){
+
+        ResultSet resSet = null;
+
+        String select = "SELECT * FROM " + DanceConst.DANCE_TABLE + " WHERE " + DanceConst.DANCE_STUDIO_NAME + " =?";
+        try {
+            PreparedStatement prSt = getDbConnectionDance().prepareStatement(select);
+            prSt.setString(1,dance.getDanceStudioName());
+
+
+            resSet = prSt.executeQuery();
+
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+        return resSet;
+    }
+
     public void danceCleaning(){
 
         String delete = "DELETE FROM " + DanceConst.DANCE_TABLE;

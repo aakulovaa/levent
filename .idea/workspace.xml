@@ -4,21 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="редактирование кода">
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="добавление кнопки для возможности перехода на главный экран">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/FillingDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/FillingDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/db/cinemaDB/DBHandlerCinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/cinemaDB/DBHandlerCinema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/cinemaDB/MoviesConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/cinemaDB/MoviesConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/concertDB/DBHandlerConcert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/concertDB/DBHandlerConcert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/questDB/DBHandlerQuest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/questDB/DBHandlerQuest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/sportDB/DBHandlerDance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/sportDB/DBHandlerDance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/theatreDB/DBHandlerTheatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/theatreDB/DBHandlerTheatre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/cinema/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/cinema/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ConcertPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ConcertPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DancePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DancePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DateSortController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DateSortController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MovieItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MovieItemController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/MoviePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MoviePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PerformancePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PerformancePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/QuestPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/QuestPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchResultPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchResultPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/EventsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/EventsPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/QuestPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/QuestPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/MovieParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/MovieParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/posts/cinema/MoviePost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posts/cinema/MoviePost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/MoviePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/MoviePage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,34 +54,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HomePage.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;first&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/annakulova/IdeaProjects/levent/src/main/resources/image/dance&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Application.HomePage.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "first",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/annakulova/IdeaProjects/levent/src/main/resources/image/dance",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/image/dance" />
@@ -125,14 +129,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00024" summary="работа с бд&#10;&#10;добавление таблиц">
-      <option name="closed" value="true" />
-      <created>1712493606675</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1712493606675</updated>
     </task>
     <task id="LOCAL-00025" summary="работа с бд&#10;&#10;подключение">
       <option name="closed" value="true" />
@@ -518,7 +514,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713896379561</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="добавление кнопки для возможности перехода на главный экран">
+      <option name="closed" value="true" />
+      <created>1713973063231</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1713973063231</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +540,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="обработка значений для добавления в бд&#10;&#10;значения для таблицы режиссеров" />
     <MESSAGE value="обработка календаря&#10;&#10;получение выбраной даты в подходящем для парсинга формате" />
     <MESSAGE value="обработка календаря&#10;&#10;получение ссылки на страницу расписания кино с заданой датой" />
     <MESSAGE value="работа с базой данных + страницы расписания&#10;&#10;заполнение бд с фильмами при выборе мероприятия &quot;кино&quot;" />
@@ -561,6 +564,7 @@
     <MESSAGE value="работа квестами" />
     <MESSAGE value="работа c квестами" />
     <MESSAGE value="редактирование кода" />
-    <option name="LAST_COMMIT_MESSAGE" value="редактирование кода" />
+    <MESSAGE value="добавление кнопки для возможности перехода на главный экран" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление кнопки для возможности перехода на главный экран" />
   </component>
 </project>

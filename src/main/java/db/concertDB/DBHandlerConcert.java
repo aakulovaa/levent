@@ -1,9 +1,7 @@
 package db.concertDB;
 
 import db.DBHandler;
-
 import models.concert.Concert;
-
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -38,6 +36,25 @@ public class DBHandlerConcert {
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public ResultSet getConcert(Concert concert){
+
+        ResultSet resSet = null;
+
+        String select = "SELECT * FROM " + ConcertsConst.CONCERTS_TABLE + " WHERE " + ConcertsConst.CONCERT_GROUP_NAME + " =?";
+        try {
+            PreparedStatement prSt = getDbConnectionConcert().prepareStatement(select);
+            prSt.setString(1,concert.getConcertName());
+
+
+            resSet = prSt.executeQuery();
+
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+        return resSet;
     }
 
     public ResultSet concertsGetting(){

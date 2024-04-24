@@ -4,6 +4,7 @@ module homePage {
     requires java.sql;
     requires jdk.jdi;
     requires org.jsoup;
+    requires java.desktop;
 
 
     opens pages to javafx.fxml;

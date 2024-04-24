@@ -2,6 +2,7 @@ package db.theatreDB;
 
 import db.Configs;
 import db.DBHandler;
+
 import models.theatre.Performance;
 
 import java.sql.Connection;
@@ -59,6 +60,25 @@ public class DBHandlerTheatre extends Configs {
         return resSet;
     }
 
+
+    public ResultSet getTheate(Performance performance){
+
+        ResultSet resSet = null;
+
+        String select = "SELECT * FROM " + PerformancesConst.PERFORMANCES_TABLE + " WHERE " + PerformancesConst.PERFORMANCES_NAME + " =?";
+        try {
+            PreparedStatement prSt = getDbConnectionTheatre().prepareStatement(select);
+            prSt.setString(1,performance.getPerformanceName());
+
+
+            resSet = prSt.executeQuery();
+
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+        return resSet;
+    }
     public void performancesCleaning(){
 
         String delete = "DELETE FROM " + PerformancesConst.PERFORMANCES_TABLE;

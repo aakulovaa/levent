@@ -41,6 +41,7 @@ public class CinemaPageController {
                     movie = new Movie();
 
                     movie.setMovieName(resultSet.getString(MoviesConst.MOVIE_NAME));
+                    movie.setMovieLink(resultSet.getString(MoviesConst.MOVIE_LINK));
                     movie.setMovieGenre(resultSet.getString(MoviesConst.MOVIE_GENRE));
                     movie.setMovieDateRelease(resultSet.getString(MoviesConst.MOVIE_YEAR_RELEASE));
                     movie.setMovieLength(resultSet.getString(MoviesConst.MOVIE_LENGTH));

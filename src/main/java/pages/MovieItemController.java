@@ -62,7 +62,12 @@ public class MovieItemController {
                 throw new RuntimeException(e);
             }
 
-            MoviePageController moviePageController = getMoviePageController(loader);
+            MoviePageController moviePageController = null;
+            try {
+                moviePageController = getMoviePageController(loader);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
             Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream(movie.getMovieImageSource())));
             moviePageController.movieImage(image);
 
@@ -75,9 +80,10 @@ public class MovieItemController {
         });
     }
 
-    private MoviePageController getMoviePageController(FXMLLoader loader) {
+    private MoviePageController getMoviePageController(FXMLLoader loader) throws IOException {
         MoviePageController moviePageController = loader.getController();
         moviePageController.movieName(movieName.getText());
+        moviePageController.movieLink(movie.getMovieLink());
         moviePageController.movieGenre(movie.getMovieGenre());
         moviePageController.movieAge(movie.getMovieAgeLimit());
         moviePageController.movieLength(movie.getMovieLength());

@@ -24,17 +24,17 @@ public class HomePage extends Application {
 
 
     public static void main(String[] args){
-//        System.out.println("Обновить данные приложения? 1 - Да /2 - Нет");
-//        Scanner choiceAction = new Scanner(System.in);
-//        int choice;
-//        choice = choiceAction.nextInt();
-//        if(choice == 1){
-//
-//            FillingDB fillingDB = new FillingDB();
-//            fillingDB.filling();
-//
-//            System.out.println("Updated!");
-//        }
+        System.out.println("Обновить данные приложения? 1 - Да /2 - Нет");
+        Scanner choiceAction = new Scanner(System.in);
+        int choice;
+        choice = choiceAction.nextInt();
+        if(choice == 1){
+
+            FillingDB fillingDB = new FillingDB();
+            fillingDB.filling();
+
+            System.out.println("Updated!");
+        }
 
 
         launch();

@@ -6,6 +6,7 @@ public class MoviePost {
     private Integer movieID;
     private String title;
     private String detailsLink;
+    private String movieLink;
     private String genre;
     private String age;
     private String yearRelease;
@@ -13,7 +14,14 @@ public class MoviePost {
     private String description;
     private String director;
     private String imageLink;
-    private String[] SheduleMovie;
+
+    public String getMovieLink() {
+        return movieLink;
+    }
+
+    public void setMovieLink(String movieLink) {
+        this.movieLink = movieLink;
+    }
 
     public String getImageLink() {
         return imageLink;
@@ -101,6 +109,7 @@ public class MoviePost {
                 "movieID=" + movieID +
                 ", title='" + title + '\'' +
                 ", detailsLink='" + detailsLink + '\'' +
+                ", movieLink='" + movieLink + '\'' +
                 ", genre='" + genre + '\'' +
                 ", age='" + age + '\'' +
                 ", yearRelease='" + yearRelease + '\'' +
