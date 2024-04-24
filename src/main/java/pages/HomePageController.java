@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.time.format.DateTimeFormatter;
 
 
+
 public class HomePageController {
 
     @FXML
@@ -38,6 +39,7 @@ public class HomePageController {
             searchEvent.getScene().getWindow().hide();
 
             FXMLLoader loader = new FXMLLoader();
+
             loader.setLocation(getClass().getResource("/pages/SearchResultPage.fxml"));
 
             try {
@@ -45,6 +47,8 @@ public class HomePageController {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
+            SearchResultPageController searchResultPageController = loader.getController();
+            searchResultPageController.searchName(searchEvent.getText());
 
             Parent root = loader.getRoot();
             Stage stage = new Stage();

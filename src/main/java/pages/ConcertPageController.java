@@ -32,6 +32,8 @@ public class ConcertPageController {
 
     @FXML
     private Text description;
+    @FXML
+    private Button homeButton;
 
     public void concertGetImage(Image image) {
         concertImage.setImage(image);
@@ -73,6 +75,24 @@ public class ConcertPageController {
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.setTitle("Concert");
+            stage.show();
+        });
+
+        homeButton.setOnAction(event1 -> {
+            homeButton.getScene().getWindow().hide();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("HomePage.fxml"));
+
+            try {
+                loader.load();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+            Parent root = loader.getRoot();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Let's Event!");
             stage.show();
         });
 

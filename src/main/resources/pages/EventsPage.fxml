@@ -12,12 +12,12 @@
    <children>
       <ImageView fitHeight="344.0" fitWidth="395.0" layoutX="-114.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/Group%202.png" />
+            <Image url="@../image/Group 2.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="236.0" fitWidth="242.0" layoutX="407.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/Group%2020.png" />
+            <Image url="@../image/Group 20.png" />
          </image>
       </ImageView>
       <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #AFEEEE;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">

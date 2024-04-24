@@ -36,6 +36,8 @@ public class QuestPageController {
     @FXML
     private Label age;
 
+    @FXML
+    private Button homeButton;
 
     public void questGetName(String text) {
         questName.setText(text);
@@ -81,6 +83,24 @@ public class QuestPageController {
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.setTitle("Quests");
+            stage.show();
+        });
+
+        homeButton.setOnAction(event1 -> {
+            homeButton.getScene().getWindow().hide();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("HomePage.fxml"));
+
+            try {
+                loader.load();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+            Parent root = loader.getRoot();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Let's Event!");
             stage.show();
         });
 

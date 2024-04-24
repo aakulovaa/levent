@@ -29,6 +29,8 @@ public class DancePageController {
 
     @FXML
     private Text description;
+    @FXML
+    private Button homeButton;
 
     public void danceGetName(String text) {
         danceName.setText(text);
@@ -66,6 +68,24 @@ public class DancePageController {
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.setTitle("Sport");
+            stage.show();
+        });
+
+        homeButton.setOnAction(event1 -> {
+            homeButton.getScene().getWindow().hide();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("HomePage.fxml"));
+
+            try {
+                loader.load();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+            Parent root = loader.getRoot();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Let's Event!");
             stage.show();
         });
 

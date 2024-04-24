@@ -38,7 +38,8 @@ public class PerformancePageController {
 
     @FXML
     private Label performanceName;
-
+    @FXML
+    private Button homeButton;
     public void performanceGetImage(Image image) {
         performanceImage.setImage(image);
         performanceImage.setFitWidth(528);
@@ -87,6 +88,24 @@ public class PerformancePageController {
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.setTitle("Theatre");
+            stage.show();
+        });
+
+        homeButton.setOnAction(event1 -> {
+            homeButton.getScene().getWindow().hide();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("HomePage.fxml"));
+
+            try {
+                loader.load();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
+            Parent root = loader.getRoot();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Let's Event!");
             stage.show();
         });
 

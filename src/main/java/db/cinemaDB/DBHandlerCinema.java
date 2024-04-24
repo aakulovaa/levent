@@ -86,6 +86,7 @@ public class DBHandlerCinema extends Configs {
             PreparedStatement prSt = getDbConnectionCinema().prepareStatement(select);
             prSt.setString(1,movie.getMovieName());
 
+
             resSet = prSt.executeQuery();
 
         } catch (SQLException | ClassNotFoundException e) {

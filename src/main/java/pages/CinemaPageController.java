@@ -36,7 +36,6 @@ public class CinemaPageController {
         Movie movie;
         DBHandlerCinema db = new DBHandlerCinema();
         try (ResultSet resultSet = db.moviesGetting()) {
-
             for (int i = 0; i < iterator; i++) {//добавляет нужное количество карточек
                 if (resultSet.next()) {
                     movie = new Movie();

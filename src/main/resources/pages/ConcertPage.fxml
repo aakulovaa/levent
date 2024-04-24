@@ -17,6 +17,11 @@
                         <Font name="Avenir Roman" size="14.0" />
                     </font>
                 </Button>
+            <Button fx:id="homeButton" layoutX="550.0" layoutY="6.0" mnemonicParsing="false" style="-fx-background-color: #B0E0E6;" text="H">
+               <font>
+                  <Font name="Avenir Roman" size="14.0" />
+               </font>
+            </Button>
             </children>
         </AnchorPane>
         <ScrollPane layoutX="-4.0" layoutY="40.0" prefHeight="360.0" prefWidth="607.0">
