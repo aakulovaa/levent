@@ -21,6 +21,11 @@ public class PerformanceItemController {
 
     @FXML
     private ImageView performanceImage;
+    @FXML
+    private Label address;
+
+    @FXML
+    private Label date;
 
     @FXML
     private Button performanceName;
@@ -31,6 +36,8 @@ public class PerformanceItemController {
         performanceName.setText(performance.getPerformanceName());
         String[] genre = performance.getPerformanceGenre().split(" ");
         performanceGenre.setText(genre[0]);
+        date.setText(performance.getPerformanceDate());
+        address.setText(performance.getPerformanceAddress());
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream(performance.getPerformanceImageSource())));
         performanceImage.setImage(image);
 

@@ -52,6 +52,8 @@ public class TheatrePageController {
 
                     performance.setPerformanceName(resultSet.getString(PerformancesConst.PERFORMANCES_NAME));
                     performance.setPerformanceLink(resultSet.getString(PerformancesConst.PERFORMANCES_LINK));
+                    performance.setPerformanceDate(resultSet.getString(PerformancesConst.PERFORMANCES_DATE));
+                    performance.setPerformanceAddress(resultSet.getString(PerformancesConst.PERFORMANCES_ADDRESS));
                     performance.setPerformanceGenre(resultSet.getString(PerformancesConst.PERFORMANCES_GENRE));
                     performance.setPerformanceLength(resultSet.getString(PerformancesConst.PERFORMANCES_LENGTH));
                     performance.setPerformanceAgeLimit(resultSet.getString(PerformancesConst.PERFORMANCES_AGE_LIMIT));

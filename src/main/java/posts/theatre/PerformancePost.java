@@ -5,12 +5,30 @@ public class PerformancePost {
     private String name;
     private String performanceLink;
     private String detailsLink;
+    private String dateRelease;
+    private String addressTheatre;
     private String genre;
     private String age;
     private String length;
     private String description;
     private String director;
     private String imageLink;
+
+    public String getDateRelease() {
+        return dateRelease;
+    }
+
+    public void setDateRelease(String dateRelease) {
+        this.dateRelease = dateRelease;
+    }
+
+    public String getAddressTheatre() {
+        return addressTheatre;
+    }
+
+    public void setAddressTheatre(String addressTheatre) {
+        this.addressTheatre = addressTheatre;
+    }
 
     public String getPerformanceLink() {
         return performanceLink;
@@ -99,6 +117,8 @@ public class PerformancePost {
                 ", name='" + name + '\'' +
                 ", performanceLink='" + performanceLink + '\'' +
                 ", detailsLink='" + detailsLink + '\'' +
+                ", dateRelease='" + dateRelease + '\'' +
+                ", addressTheatre='" + addressTheatre + '\'' +
                 ", genre='" + genre + '\'' +
                 ", age='" + age + '\'' +
                 ", length='" + length + '\'' +

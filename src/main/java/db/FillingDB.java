@@ -62,6 +62,8 @@ public class FillingDB {
             PerformancePost parsingCounting = parser.get(i);
             String performanceName = parsingCounting.getName().replaceAll("\u0000", "");
             String performanceLink = parsingCounting.getPerformanceLink().replaceAll("\u0000", "");
+            String performanceDate = parsingCounting.getDateRelease().replaceAll("\u0000", "");
+            String performanceAddress = parsingCounting.getAddressTheatre().replaceAll("\u0000", "");
             String performanceGenre = parsingCounting.getGenre().replaceAll("\u0000", "");
             String performanceLength = parsingCounting.getLength().replaceAll("\u0000", "");
             String performanceAgeLimit = parsingCounting.getAge().replaceAll("\u0000", "");
@@ -73,7 +75,7 @@ public class FillingDB {
             String performanceImageSource = imgSource;
             System.out.println(imgSource);
 
-            Performance performance = new Performance(performanceName,performanceLink,performanceGenre,
+            Performance performance = new Performance(performanceName,performanceLink,performanceDate,performanceAddress,performanceGenre,
                     performanceLength,performanceAgeLimit,performanceDirector,performanceDescription,performanceImageLink,performanceImageSource);
 
             db.performancesFilling(performance);

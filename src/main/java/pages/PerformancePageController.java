@@ -125,5 +125,6 @@ public class PerformancePageController {
     public void performanceGetLink(String performanceLink) {
         link.setAccessibleText(performanceLink);
     }
+
 }
 

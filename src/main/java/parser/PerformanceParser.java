@@ -8,11 +8,14 @@ import posts.theatre.PerformancePost;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public class PerformanceParser {
     private int countPerformance = 0;
     private String directorPerformance;
+    private String date = "";
     public List<PerformancePost> parser() {
         List<PerformancePost> posts;
         try {
@@ -28,6 +31,19 @@ public class PerformanceParser {
                 String imageDetailsLink = imageLinkElement.attr("src");
                 performancePost.setImageLink(imageDetailsLink);
 
+                Element releaseElement = doc.getElementsByAttributeValue("data-test", "ITEM-META ITEM-NOTICE").get(countPerformance);
+                String release = releaseElement.text();
+                String[] releaseArray = release.split(",");
+
+                if(!Objects.equals(releaseArray[0], releaseArray[releaseArray.length - 2])) {
+                    date = releaseArray[0] +','+ releaseArray[releaseArray.length - 2];
+                }
+                else {
+                    date = releaseArray[0];
+                }
+                performancePost.setDateRelease(date);
+
+                performancePost.setAddressTheatre(releaseArray[releaseArray.length - 1]);
 
                 Document postDetailsDoc = Jsoup.connect("https://www.afisha.ru" + detailsLink).get();
                 performancePost.setPerformanceLink("https://www.afisha.ru" + detailsLink);
