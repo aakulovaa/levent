@@ -1,25 +1,13 @@
 package pages;
 
-import db.cinemaDB.DBHandlerCinema;
-import db.cinemaDB.MoviesConst;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Region;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import models.cinema.Movie;
-
 import java.io.IOException;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class DateSortController {
 
@@ -53,6 +41,4 @@ public class DateSortController {
             stage.show();
         });
     }
-
-
 }
