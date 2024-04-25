@@ -24,12 +24,18 @@ public class ConcertItemController {
 
     @FXML
     private Button concertName;
+    @FXML
+    private Label address;
+    @FXML
+    private Label date;
 
     private Concert concert;
 
     public void setData(Concert concert) {
         this.concert = concert;
         concertName.setText(concert.getConcertName());
+        date.setText(concert.getConcertDate());
+        address.setText(concert.getConcertAddress());
         String[] genre = concert.getConcertGenre().split(" ");
         concertGenre.setText(genre[0]);
         Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream(concert.getConcertImageSource())));

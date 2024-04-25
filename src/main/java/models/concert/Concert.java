@@ -3,11 +3,29 @@ package models.concert;
 public class Concert {
     private String concertName;
     private String concertLink;
+    private String concertDate;
+    private String concertAddress;
     private String concertAgeLimit;
     private String concertGenre;
     private String concertDescription;
     private String concertImageLink;
     private String concertImageSource;
+
+    public String getConcertDate() {
+        return concertDate;
+    }
+
+    public void setConcertDate(String concertDate) {
+        this.concertDate = concertDate;
+    }
+
+    public String getConcertAddress() {
+        return concertAddress;
+    }
+
+    public void setConcertAddress(String concertAddress) {
+        this.concertAddress = concertAddress;
+    }
 
     public String getConcertLink() {
         return concertLink;
@@ -72,6 +90,18 @@ public class Concert {
         this.concertLink = concertLink;
         this.concertAgeLimit = concertAgeLimit;
         this.concertGenre = concertGenre;
+        this.concertDescription = concertDescription;
+        this.concertImageLink = concertImageLink;
+        this.concertImageSource = concertImageSource;
+    }
+
+    public Concert(String concertName, String concertLink, String concertDate, String concertAddress, String concertGenre, String concertAgeLimit, String concertDescription, String concertImageLink, String concertImageSource) {
+        this.concertName = concertName;
+        this.concertLink = concertLink;
+        this.concertDate = concertDate;
+        this.concertAddress = concertAddress;
+        this.concertGenre = concertGenre;
+        this.concertAgeLimit = concertAgeLimit;
         this.concertDescription = concertDescription;
         this.concertImageLink = concertImageLink;
         this.concertImageSource = concertImageSource;

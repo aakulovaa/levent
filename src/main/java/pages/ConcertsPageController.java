@@ -47,6 +47,8 @@ public class ConcertsPageController {
 
                     concert.setConcertName(resultSet.getString(ConcertsConst.CONCERT_GROUP_NAME));
                     concert.setConcertLink(resultSet.getString(ConcertsConst.CONCERT_LINK));
+                    concert.setConcertDate(resultSet.getString(ConcertsConst.CONCERT_DATE));
+                    concert.setConcertAddress(resultSet.getString(ConcertsConst.CONCERT_ADDRESS));
                     concert.setConcertGenre(resultSet.getString(ConcertsConst.CONCERT_GENRE));
                     concert.setConcertAgeLimit(resultSet.getString(ConcertsConst.CONCERT_AGE_LIMIT));
                     concert.setConcertDescription(resultSet.getString(ConcertsConst.CONCERT_DESCRIPTION));

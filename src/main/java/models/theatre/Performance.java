@@ -117,14 +117,14 @@ public class Performance {
         this.performanceImageSource = performanceImageSource;
     }
 
-    public Performance(String performanceName, String performanceLink, String performanceDate, String performanceAddress, String performanceLength, String performanceAgeLimit, String performanceGenre, String performanceDirector, String performanceDescription, String performanceImageLink, String performanceImageSource) {
+    public Performance(String performanceName, String performanceLink, String performanceDate, String performanceAddress, String performanceGenre, String performanceLength, String performanceAgeLimit, String performanceDirector, String performanceDescription, String performanceImageLink, String performanceImageSource) {
         this.performanceName = performanceName;
         this.performanceLink = performanceLink;
         this.performanceDate = performanceDate;
         this.performanceAddress = performanceAddress;
+        this.performanceGenre = performanceGenre;
         this.performanceLength = performanceLength;
         this.performanceAgeLimit = performanceAgeLimit;
-        this.performanceGenre = performanceGenre;
         this.performanceDirector = performanceDirector;
         this.performanceDescription = performanceDescription;
         this.performanceImageLink = performanceImageLink;

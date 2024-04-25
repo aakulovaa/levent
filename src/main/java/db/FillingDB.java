@@ -94,6 +94,8 @@ public class FillingDB {
             ConcertPost parsingCounting = parser.get(i);
             String concertName = parsingCounting.getName().replaceAll("\u0000", "");
             String concertLink = parsingCounting.getConcertLink().replaceAll("\u0000", "");
+            String concertDate = parsingCounting.getDateRelease().replaceAll("\u0000", "");
+            String concertAddress = parsingCounting.getAddressConcert().replaceAll("\u0000", "");
             String concertGenre = parsingCounting.getGenre().replaceAll("\u0000", "");
             String concertAgeLimit = parsingCounting.getAge().replaceAll("\u0000", "");
             String concertDescription = parsingCounting.getDescription().replaceAll("\u0000", "");
@@ -103,7 +105,7 @@ public class FillingDB {
             String concertImageSource = imgSource;
             System.out.println(imgSource);
 
-            Concert concert = new Concert(concertName,concertLink,concertGenre,
+            Concert concert = new Concert(concertName,concertLink,concertDate,concertAddress,concertGenre,
                     concertAgeLimit,concertDescription,concertImageLink,concertImageSource);
 
             db.concertsFilling(concert);

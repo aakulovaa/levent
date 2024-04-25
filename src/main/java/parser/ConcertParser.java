@@ -10,9 +10,11 @@ import posts.theatre.PerformancePost;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class ConcertParser {
     private int countConcert = 0;
+    private String date = "";
     public List<ConcertPost> parser() {
         List<ConcertPost> posts;
         try {
@@ -28,6 +30,19 @@ public class ConcertParser {
                 String imageDetailsLink = imageLinkElement.attr("src");
                 concertPost.setImageLink(imageDetailsLink);
 
+                Element releaseElement = doc.getElementsByAttributeValue("data-test", "ITEM-META ITEM-NOTICE").get(countConcert);
+                String release = releaseElement.text();
+                String[] releaseArray = release.split(",");
+
+                if(!Objects.equals(releaseArray[0], releaseArray[releaseArray.length - 2])) {
+                    date = releaseArray[0] +','+ releaseArray[releaseArray.length - 2];
+                }
+                else {
+                    date = releaseArray[0];
+                }
+                concertPost.setDateRelease(date);
+
+                concertPost.setAddressConcert(releaseArray[releaseArray.length - 1]);
 
                 Document postDetailsDoc = Jsoup.connect("https://www.afisha.ru" + detailsLink).get();
                 concertPost.setConcertLink("https://www.afisha.ru" + detailsLink);

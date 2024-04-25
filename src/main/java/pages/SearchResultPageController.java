@@ -169,6 +169,8 @@ public class SearchResultPageController {
 
                 performance.setPerformanceName(resultSet.getString(PerformancesConst.PERFORMANCES_NAME));
                 performance.setPerformanceLink(resultSet.getString(PerformancesConst.PERFORMANCES_LINK));
+                performance.setPerformanceDate(resultSet.getString(PerformancesConst.PERFORMANCES_DATE));
+                performance.setPerformanceAddress(resultSet.getString(PerformancesConst.PERFORMANCES_ADDRESS));
                 performance.setPerformanceGenre(resultSet.getString(PerformancesConst.PERFORMANCES_GENRE));
                 performance.setPerformanceLength(resultSet.getString(PerformancesConst.PERFORMANCES_LENGTH));
                 performance.setPerformanceAgeLimit(resultSet.getString(PerformancesConst.PERFORMANCES_AGE_LIMIT));
@@ -232,6 +234,8 @@ public class SearchResultPageController {
 
                 concert.setConcertName(resultSet.getString(ConcertsConst.CONCERT_GROUP_NAME));
                 concert.setConcertLink(resultSet.getString(ConcertsConst.CONCERT_LINK));
+                concert.setConcertDate(resultSet.getString(ConcertsConst.CONCERT_DATE));
+                concert.setConcertAddress(resultSet.getString(ConcertsConst.CONCERT_ADDRESS));
                 concert.setConcertGenre(resultSet.getString(ConcertsConst.CONCERT_GENRE));
                 concert.setConcertAgeLimit(resultSet.getString(ConcertsConst.CONCERT_AGE_LIMIT));
                 concert.setConcertDescription(resultSet.getString(ConcertsConst.CONCERT_DESCRIPTION));

@@ -36,8 +36,7 @@ public class HomePage extends Application {
 
             System.out.println("Updated!");
         }
-PerformanceParser performanceParser = new PerformanceParser();
-        performanceParser.parser();
+
         launch();
 
     }

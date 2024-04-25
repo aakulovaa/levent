@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="205.0" prefWidth="214.0" style="-fx-background-color: #B0E0E6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.ConcertItemController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="241.0" prefWidth="214.0" style="-fx-background-color: #B0E0E6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.ConcertItemController">
     <children>
         <ImageView fx:id="concertImage" fitHeight="150.0" fitWidth="214.0" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -21,5 +21,15 @@
             <font>
                 <Font name="Avenir Black" size="13.0" />
             </font></Button>
+      <Label fx:id="date" layoutX="4.0" layoutY="201.0" prefHeight="19.0" prefWidth="207.0" text="Date">
+         <font>
+            <Font name="Avenir Roman" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="address" layoutX="4.0" layoutY="218.0" prefHeight="19.0" prefWidth="207.0" text="Address">
+         <font>
+            <Font name="Avenir Roman" size="13.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

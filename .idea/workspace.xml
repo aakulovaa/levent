@@ -4,19 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment=" добовление перехода на сайт">
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment=" добовление в театры даты и места">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/db/FillingDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/FillingDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/theatreDB/DBHandlerTheatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/theatreDB/DBHandlerTheatre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/theatreDB/PerformancesConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/theatreDB/PerformancesConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/concertDB/ConcertsConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/concertDB/ConcertsConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/concertDB/DBHandlerConcert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/concertDB/DBHandlerConcert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/concert/Concert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/concert/Concert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/theatre/Performance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/theatre/Performance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ConcertItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ConcertItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PerformanceItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PerformanceItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PerformancePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PerformancePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/TheatrePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/TheatrePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/PerformanceParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/PerformanceParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/posts/theatre/PerformancePost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posts/theatre/PerformancePost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/performanceForChoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/performanceForChoice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchResultPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchResultPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/ConcertParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/ConcertParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/posts/concert/ConcertPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posts/concert/ConcertPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/concertForChoice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/concertForChoice.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,14 +124,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00027" summary="работа с бд&#10;&#10;добавлние классов для таблиц бд">
-      <option name="closed" value="true" />
-      <created>1712497999141</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1712497999141</updated>
     </task>
     <task id="LOCAL-00028" summary="работа с бд&#10;&#10;добавлние метода обработки страницы сайта">
       <option name="closed" value="true" />
@@ -516,7 +509,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713986996619</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary=" добовление в театры даты и места">
+      <option name="closed" value="true" />
+      <created>1714061671172</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1714061671173</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +535,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="работа с базой данных + страницы расписания&#10;&#10;заполнение бд с фильмами при выборе мероприятия &quot;кино&quot;" />
     <MESSAGE value="работа с базой данных + страницы расписания" />
     <MESSAGE value="работа с базой данных &#10;&#10;изменение места обновления данных" />
     <MESSAGE value="работа с каталогом фильмов" />
@@ -559,6 +559,7 @@
     <MESSAGE value="добавление кнопки для возможности перехода на главный экран" />
     <MESSAGE value="поиск по названию + добовление перехода на сайт" />
     <MESSAGE value=" добовление перехода на сайт" />
-    <option name="LAST_COMMIT_MESSAGE" value=" добовление перехода на сайт" />
+    <MESSAGE value=" добовление в театры даты и места" />
+    <option name="LAST_COMMIT_MESSAGE" value=" добовление в театры даты и места" />
   </component>
 </project>
