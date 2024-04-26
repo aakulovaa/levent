@@ -78,5 +78,4 @@ public class QuestItemController {
         return questPageController;
     }
 
-
 }

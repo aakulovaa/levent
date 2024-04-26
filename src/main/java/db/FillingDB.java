@@ -4,17 +4,20 @@ import db.cinemaDB.DBHandlerCinema;
 import db.concertDB.DBHandlerConcert;
 import db.questDB.DBHandlerQuest;
 import db.sportDB.DBHandlerDance;
+import db.sportDB.DBHandlerRun;
 import db.theatreDB.DBHandlerTheatre;
 import models.cinema.Movie;
 import models.concert.Concert;
 import models.quest.Quest;
 import models.sport.Dance;
+import models.sport.Run;
 import models.theatre.Performance;
 import parser.*;
 import posts.cinema.MoviePost;
 import posts.concert.ConcertPost;
 import posts.quest.QuestPost;
 import posts.sport.DancePost;
+import posts.sport.SportPost;
 import posts.theatre.PerformancePost;
 
 import java.util.List;
@@ -167,6 +170,35 @@ public class FillingDB {
         }
     }
 
+    private void fillingRun() {
+        DBHandlerRun db = new DBHandlerRun();
+        String imgSource;
+        String pageName = "run/";
+        RunParser runParser = new RunParser();
+        List<SportPost> parser = runParser.parser();
+        for (int i = 0; i<parser.getLast().getSportID(); i++)
+        {
+            SportPost parsingCounting = parser.get(i);
+            String runName = parsingCounting.getName().replaceAll("\u0000", "");
+            String runLogo = parsingCounting.getLogeDesc().replaceAll("\u0000", "");
+            String runLink = parsingCounting.getSportLink().replaceAll("\u0000", "");
+            String runAddress = parsingCounting.getAddress().replaceAll("\u0000", "");
+            String runDate = parsingCounting.getDateStart().replaceAll("\u0000", "");
+            String runDescription = parsingCounting.getDescription().replaceAll("\u0000", "");
+            String runImageLink = parsingCounting.getImageLink().replaceAll("\u0000", "");
+            LoadImage loadDanceImage = new LoadImage();
+            imgSource = loadDanceImage.loadImage(runImageLink,i,pageName);
+            String runImageSource = imgSource;
+            System.out.println(imgSource);
+
+            Run run = new Run(runName,runLogo,runLink,runAddress,runDate,
+                    runDescription,runImageLink,runImageSource);
+
+            db.runFilling(run);
+
+        }
+    }
+
     public void filling(){
         DBHandlerCinema dbHandlerCinema = new DBHandlerCinema();
         dbHandlerCinema.moviesCleaning();
@@ -187,6 +219,10 @@ public class FillingDB {
         DBHandlerDance dbHandlerDance = new DBHandlerDance();
         dbHandlerDance.danceCleaning();
         fillingDance();
+
+        DBHandlerRun dbHandlerRun = new DBHandlerRun();
+        dbHandlerRun.runCleaning();
+        fillingRun();
     }
 
 }

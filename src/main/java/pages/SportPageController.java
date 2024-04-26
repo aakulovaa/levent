@@ -1,9 +1,9 @@
 package pages;
 
 import db.sportDB.DBHandlerDance;
+import db.sportDB.DBHandlerRun;
 import db.sportDB.DanceConst;
-import db.theatreDB.DBHandlerTheatre;
-import db.theatreDB.PerformancesConst;
+import db.sportDB.RunConst;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
@@ -16,6 +16,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
 import javafx.stage.Stage;
 import models.sport.Dance;
+import models.sport.Run;
 import models.theatre.Performance;
 
 import java.io.IOException;
@@ -39,6 +40,7 @@ public class SportPageController {
     private ScrollPane scroll;
 
     private List<Dance> dances = new ArrayList<>();
+    private List<Run> runs = new ArrayList<>();
 
     private Integer iterator = gettingID();
 
@@ -68,10 +70,74 @@ public class SportPageController {
         return dances1;
     }
 
+    private List<Run> getRunData() {
+        List<Run> runs = new ArrayList<>();
+        Run run;
+        DBHandlerRun db = new DBHandlerRun();
+        ResultSet resultSet = db.runGetting();
+        try {
+            //for (int i = 0; i < iterator; i++) {//добавляет нужное количество карточек
+                if (resultSet.next()) {
+                    run = new Run();
+
+                    run.setRunName(resultSet.getString(RunConst.RUN_NAME));
+                    run.setRunLogo(resultSet.getString(RunConst.RUN_LOGO));
+                    run.setRunLink(resultSet.getString(RunConst.RUN_LINK));
+                    run.setRunAddress(resultSet.getString(RunConst.RUN_ADDRESS));
+                    run.setRunDate(resultSet.getString(RunConst.RUN_DATE));
+                    run.setRunDescription(resultSet.getString(RunConst.RUN_DESCRIPTION));
+                    run.setRunImageLink(resultSet.getString(RunConst.RUN_IMAGE_LINK));
+                    run.setRunImageSource(resultSet.getString(RunConst.RUN_IMAGE_SOURCE));
+
+                    runs.add(run);
+
+                }
+            //}
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return runs;
+    }
+
+
+    public void createRunChoice() {
+        runs.addAll(getRunData());
+        int column = 1;
+        int row = 1;
+        try {
+            for (Run run : runs) {
+                FXMLLoader fxmlLoader = new FXMLLoader();
+                fxmlLoader.setLocation(getClass().getResource("runForChoice.fxml"));
+
+                AnchorPane anchorPane = fxmlLoader.load();
+
+                RunItemController itemController = fxmlLoader.getController();
+                itemController.setData(run);
+                if (column == 3) {
+                    column = 1;
+                    row++;
+                }
+                grid.add(anchorPane, column++, row);
+
+                grid.setMinWidth(Region.USE_COMPUTED_SIZE);
+                grid.setPrefWidth(Region.USE_COMPUTED_SIZE);
+                grid.setMaxWidth(Region.USE_PREF_SIZE);
+
+                grid.setMinHeight(Region.USE_COMPUTED_SIZE);
+                grid.setPrefHeight(Region.USE_COMPUTED_SIZE);
+                grid.setMaxHeight(Region.USE_PREF_SIZE);
+
+                GridPane.setMargin(anchorPane, new Insets(10));
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 
     @FXML
     void initialize() {
-        createDanceChoice();
+        createSportChoice();
 
         backButton.setOnAction(event1 -> {
             backButton.getScene().getWindow().hide();
@@ -139,4 +205,69 @@ public class SportPageController {
             throw new RuntimeException(e);
         }
     }
+
+    public void createSportChoice() {
+        dances.addAll(getData());
+        int column = 1;
+        int row = 1;
+        try {
+            for(int i = 0; i < dances.size(); i++) {
+                FXMLLoader fxmlLoader = new FXMLLoader();
+                fxmlLoader.setLocation(getClass().getResource("danceForChoice.fxml"));
+
+                AnchorPane anchorPane = fxmlLoader.load();
+
+                DanceItemController itemController = fxmlLoader.getController();
+                itemController.setData(dances.get(i));
+                if (column == 3) {
+                    column = 1;
+                    row++;
+                }
+                grid.add(anchorPane, column++, row);
+
+                grid.setMinWidth(Region.USE_COMPUTED_SIZE);
+                grid.setPrefWidth(Region.USE_COMPUTED_SIZE);
+                grid.setMaxWidth(Region.USE_PREF_SIZE);
+
+                grid.setMinHeight(Region.USE_COMPUTED_SIZE);
+                grid.setPrefHeight(Region.USE_COMPUTED_SIZE);
+                grid.setMaxHeight(Region.USE_PREF_SIZE);
+
+                GridPane.setMargin(anchorPane, new Insets(10));
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        runs.addAll(getRunData());
+        try {
+            for (Run run : runs) {
+                FXMLLoader fxmlLoader = new FXMLLoader();
+                fxmlLoader.setLocation(getClass().getResource("runForChoice.fxml"));
+
+                AnchorPane anchorPane = fxmlLoader.load();
+
+                RunItemController itemController = fxmlLoader.getController();
+                itemController.setData(run);
+                if (column == 3) {
+                    column = 1;
+                    row++;
+                }
+                grid.add(anchorPane, column++, row);
+
+                grid.setMinWidth(Region.USE_COMPUTED_SIZE);
+                grid.setPrefWidth(Region.USE_COMPUTED_SIZE);
+                grid.setMaxWidth(Region.USE_PREF_SIZE);
+
+                grid.setMinHeight(Region.USE_COMPUTED_SIZE);
+                grid.setPrefHeight(Region.USE_COMPUTED_SIZE);
+                grid.setMaxHeight(Region.USE_PREF_SIZE);
+
+                GridPane.setMargin(anchorPane, new Insets(10));
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 }
