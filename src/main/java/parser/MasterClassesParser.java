@@ -5,8 +5,6 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import posts.master_classes.MasterClassesPost;
-import posts.quest.QuestPost;
-import posts.sport.SportPost;
 
 import java.io.IOException;
 import java.util.ArrayList;
