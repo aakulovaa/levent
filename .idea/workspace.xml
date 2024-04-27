@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="если название разных мероприятий совпадают">
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/sportDB/DBHandlerRun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/sportDB/RunConst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/sport/Run.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RunItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/RunPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/parser/RunParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/posts/sport/SportPost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pages/RunPage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pages/runForChoice.fxml" afterDir="false" />
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="добавление бега в категрию спорт">
+      <change afterPath="$PROJECT_DIR$/src/main/java/parser/MasterClassesParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/FillingDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/FillingDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/db/sportDB/MatchesConst.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/QuestItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/QuestItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SportPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SportPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/posts/master_classes/MasterClassesPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posts/master_classes/MasterClassesPost.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -126,14 +115,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00030" summary="page parsing&#10;&#10;вывод фильма + ссылки на него">
-      <option name="closed" value="true" />
-      <created>1712587929284</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1712587929284</updated>
     </task>
     <task id="LOCAL-00031" summary="page parsing&#10;&#10;вывод деталей фильма">
       <option name="closed" value="true" />
@@ -519,7 +500,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714071317547</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="добавление бега в категрию спорт">
+      <option name="closed" value="true" />
+      <created>1714160075734</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1714160075735</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,7 +526,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="работа с каталогом фильмов" />
     <MESSAGE value="работа с каталогом фильмов&#10;&#10;парсинг страниц для получения ссылки на фото фильма и занесение ее в бд" />
     <MESSAGE value="добавление возможности скачивать фотографии фильмов" />
     <MESSAGE value="работа с бд и страницей с каталогом фильмов&#10;&#10;возможность скачивать файл, путь к файлу записывается в бд, вывод фотографий фильмов на странице с каталогом" />
@@ -562,6 +550,7 @@
     <MESSAGE value=" добовление в театры даты и места" />
     <MESSAGE value=" добовление в концерты даты и места" />
     <MESSAGE value="если название разных мероприятий совпадают" />
-    <option name="LAST_COMMIT_MESSAGE" value="если название разных мероприятий совпадают" />
+    <MESSAGE value="добавление бега в категрию спорт" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление бега в категрию спорт" />
   </component>
 </project>
