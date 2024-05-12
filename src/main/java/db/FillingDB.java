@@ -21,6 +21,7 @@ import posts.sport.SportPost;
 import posts.theatre.PerformancePost;
 
 import java.util.List;
+import java.util.Objects;
 
 public class FillingDB {
     private void fillingMovies() {
@@ -65,7 +66,12 @@ public class FillingDB {
             PerformancePost parsingCounting = parser.get(i);
             String performanceName = parsingCounting.getName().replaceAll("\u0000", "");
             String performanceLink = parsingCounting.getPerformanceLink().replaceAll("\u0000", "");
-            String performanceDate = parsingCounting.getDateRelease().replaceAll("\u0000", "");
+            String date = parsingCounting.getDateRelease().replaceAll("\u0000", "");
+            String[] dateT = date.split(" ");
+            String performanceDate = dateT[0] + " " + dateT[1];
+            if (Objects.equals(dateT[1], "и")){
+                performanceDate = dateT[0] + " " + dateT[dateT.length-1];
+            }
             String performanceAddress = parsingCounting.getAddressTheatre().replaceAll("\u0000", "");
             String performanceGenre = parsingCounting.getGenre().replaceAll("\u0000", "");
             String performanceLength = parsingCounting.getLength().replaceAll("\u0000", "");
@@ -97,7 +103,9 @@ public class FillingDB {
             ConcertPost parsingCounting = parser.get(i);
             String concertName = parsingCounting.getName().replaceAll("\u0000", "");
             String concertLink = parsingCounting.getConcertLink().replaceAll("\u0000", "");
-            String concertDate = parsingCounting.getDateRelease().replaceAll("\u0000", "");
+            String date = parsingCounting.getDateRelease().replaceAll("\u0000", "");
+            String[] dateT = date.split(" ");
+            String concertDate = dateT[0] + " " + dateT[1];
             String concertAddress = parsingCounting.getAddressConcert().replaceAll("\u0000", "");
             String concertGenre = parsingCounting.getGenre().replaceAll("\u0000", "");
             String concertAgeLimit = parsingCounting.getAge().replaceAll("\u0000", "");
@@ -157,8 +165,7 @@ public class FillingDB {
             String danceAddress = parsingCounting.getAddress().replaceAll("\u0000", "");
             String danceDescription = parsingCounting.getDescription().replaceAll("\u0000", "");
             String danceImageLink = parsingCounting.getImageLink().replaceAll("\u0000", "");
-            LoadImage loadDanceImage = new LoadImage();
-            imgSource = loadDanceImage.loadImage(danceImageLink,i,pageName);
+            imgSource = "/image/" + pageName + i + ".jpeg";
             String danceImageSource = imgSource;
             System.out.println(imgSource);
 

@@ -78,6 +78,16 @@
                             </font>
                         </Label>
                   <Hyperlink fx:id="link" layoutX="502.0" layoutY="85.0" onAction="#hyperlink" text="Купить билет" />
+                  <Label layoutX="422.0" layoutY="199.0" text="Дата" textFill="DARKGRAY">
+                     <font>
+                        <Font name="Avenir Roman" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="date" layoutX="420.0" layoutY="216.0" prefHeight="19.0" prefWidth="106.0" text="Date">
+                     <font>
+                        <Font name="Avenir Roman" size="13.0" />
+                     </font>
+                  </Label>
                     </children>
                 </AnchorPane>
             </content>

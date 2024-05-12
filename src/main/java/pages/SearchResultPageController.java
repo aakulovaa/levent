@@ -51,11 +51,11 @@ public class SearchResultPageController {
 
     @FXML
     private Text searchResult;
+    public String name;
 
-
-    public void searchName(String choiceSearch) {
-        searchResult.setText(choiceSearch);
-    }
+//    public void searchName(String choiceSearch) {
+//        searchResult.setText(choiceSearch);
+//    }
 
     private final List<Movie> movies = new ArrayList<>();
     private final List<Performance> performances = new ArrayList<>();
@@ -95,25 +95,25 @@ public class SearchResultPageController {
 
     private List<Movie> getMovieData() {
         List<Movie> movies = new ArrayList<>();
-        Movie movie = new Movie();
-        movie.setMovieName("Карина");
+        Movie movie2 = new Movie();
+        movie2.setMovieName(name);//!!! получать вводимую информацию
         DBHandlerCinema db = new DBHandlerCinema();
-        ResultSet resultSet = db.getMovie(movie);
+        ResultSet resultSet = db.getMovie(movie2);
         try {
             if (resultSet.next()) {
-                movie = new Movie();
+                movie2 = new Movie();
 
-                movie.setMovieName(resultSet.getString(MoviesConst.MOVIE_NAME));
-                movie.setMovieLink(resultSet.getString(MoviesConst.MOVIE_LINK));
-                movie.setMovieGenre(resultSet.getString(MoviesConst.MOVIE_GENRE));
-                movie.setMovieDateRelease(resultSet.getString(MoviesConst.MOVIE_YEAR_RELEASE));
-                movie.setMovieLength(resultSet.getString(MoviesConst.MOVIE_LENGTH));
-                movie.setMovieAgeLimit(resultSet.getString(MoviesConst.MOVIE_AGE_LIMIT));
-                movie.setMovieDirector(resultSet.getString(MoviesConst.MOVIE_DIRECTOR));
-                movie.setMovieDescription(resultSet.getString(MoviesConst.MOVIE_DESCRIPTION));
-                movie.setMovieImageLink(resultSet.getString(MoviesConst.MOVIE_IMAGE_LINK));
-                movie.setMovieImageSource(resultSet.getString(MoviesConst.MOVIE_IMAGE_SOURCE));
-                movies.add(movie);
+                movie2.setMovieName(resultSet.getString(MoviesConst.MOVIE_NAME));
+                movie2.setMovieLink(resultSet.getString(MoviesConst.MOVIE_LINK));
+                movie2.setMovieGenre(resultSet.getString(MoviesConst.MOVIE_GENRE));
+                movie2.setMovieDateRelease(resultSet.getString(MoviesConst.MOVIE_YEAR_RELEASE));
+                movie2.setMovieLength(resultSet.getString(MoviesConst.MOVIE_LENGTH));
+                movie2.setMovieAgeLimit(resultSet.getString(MoviesConst.MOVIE_AGE_LIMIT));
+                movie2.setMovieDirector(resultSet.getString(MoviesConst.MOVIE_DIRECTOR));
+                movie2.setMovieDescription(resultSet.getString(MoviesConst.MOVIE_DESCRIPTION));
+                movie2.setMovieImageLink(resultSet.getString(MoviesConst.MOVIE_IMAGE_LINK));
+                movie2.setMovieImageSource(resultSet.getString(MoviesConst.MOVIE_IMAGE_SOURCE));
+                movies.add(movie2);
 
             }
         } catch (SQLException ex) {
@@ -158,9 +158,9 @@ public class SearchResultPageController {
     }
 
         public void createChoice() {
-        movies.addAll(getMovieData());
         int column = 1;
         int row = 1;
+        movies.addAll(getMovieData());
         try {
             for (Movie movie : movies) {
                 FXMLLoader fxmlLoader = new FXMLLoader();
@@ -314,7 +314,7 @@ public class SearchResultPageController {
     private List<Performance> getTheatreData() {
         List<Performance> performances = new ArrayList<>();
         Performance performance = new Performance();
-        performance.setPerformanceName("Все о мужчинах");
+        performance.setPerformanceName(searchResult.getText());//!!! получать вводимую информацию
         DBHandlerTheatre db = new DBHandlerTheatre();
         ResultSet resultSet = db.getTheate(performance);
         try {
@@ -379,7 +379,7 @@ public class SearchResultPageController {
     private List<Concert> getConcertData() {
         List<Concert> concerts = new ArrayList<>();
         Concert concert = new Concert();
-        concert.setConcertName("Карина");
+        concert.setConcertName("Карина");//!!! получать вводимую информацию
         DBHandlerConcert db = new DBHandlerConcert();
         ResultSet resultSet = db.getConcert(concert);
         try {
@@ -442,7 +442,7 @@ public class SearchResultPageController {
     private List<Quest> getQuestData() {
         List<Quest> quests = new ArrayList<>();
         Quest quest = new Quest();
-        quest.setQuestName("Карина");
+        quest.setQuestName("Карина");//!!! получать вводимую информацию
         DBHandlerQuest db = new DBHandlerQuest();
         ResultSet resultSet = db.getQuest(quest);
         try {
@@ -503,7 +503,7 @@ public class SearchResultPageController {
     private List<Dance> getDanceData() {
         List<Dance> dances = new ArrayList<>();
         Dance dance = new Dance();
-        dance.setDanceStudioName("Карина");
+        dance.setDanceStudioName("Карина");//!!! получать вводимую информацию
         DBHandlerDance db = new DBHandlerDance();
         ResultSet resultSet = db.getSport(dance);
         try {
@@ -558,5 +558,11 @@ public class SearchResultPageController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void initData(Movie movie) {
+        searchResult.setText(movie.getMovieName());
+        System.out.println(movie.getMovieName());
+        System.out.println(searchResult.getText());
     }
 }

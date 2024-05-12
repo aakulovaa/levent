@@ -21,6 +21,8 @@ public class PerformancePageController {
 
     @FXML
     private Label age;
+    @FXML
+    private Label date;
 
     @FXML
     private Button backButton;
@@ -67,6 +69,9 @@ public class PerformancePageController {
 
     public void performanceGetAge(String performanceAgeLimit) {
         age.setText(performanceAgeLimit);
+    }
+    public void performanceGetDate(String performanceDate) {
+        date.setText(performanceDate);
     }
 
     public void performanceGetLength(String performanceLength) {

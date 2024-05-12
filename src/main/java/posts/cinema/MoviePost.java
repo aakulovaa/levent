@@ -1,7 +1,5 @@
 package posts.cinema;
 
-import java.util.Arrays;
-
 public class MoviePost {
     private Integer movieID;
     private String title;

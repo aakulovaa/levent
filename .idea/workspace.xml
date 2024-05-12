@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="добавление бега в категрию спорт">
-      <change afterPath="$PROJECT_DIR$/src/main/java/parser/MasterClassesParser.java" afterDir="false" />
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="парсинг мастер-классов&#10;&#10;проблема с парсингом html страницы">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/FillingDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/FillingDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/posts/master_classes/MasterClassesPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posts/master_classes/MasterClassesPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PerformanceItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PerformanceItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PerformancePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PerformancePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchResultPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchResultPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/LoadImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/LoadImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/MasterClassesParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/posts/cinema/MoviePost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/posts/cinema/MoviePost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/posts/master_classes/MasterClassesPost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/HomePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/PerformancePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/PerformancePage.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +58,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;first&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/annakulova/IdeaProjects/levent/src/main/resources/image/dance&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/annakulova/IdeaProjects/event&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -96,6 +105,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="event" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="event" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -115,22 +137,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00031" summary="page parsing&#10;&#10;вывод деталей фильма">
-      <option name="closed" value="true" />
-      <created>1712598554422</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1712598554422</updated>
-    </task>
-    <task id="LOCAL-00032" summary="page parsing&#10;&#10;вывод деталей фильма">
-      <option name="closed" value="true" />
-      <created>1712600154536</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1712600154536</updated>
     </task>
     <task id="LOCAL-00033" summary="page parsing&#10;&#10;вывод деталей фильма">
       <option name="closed" value="true" />
@@ -508,7 +514,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714160075735</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="парсинг мастер-классов">
+      <option name="closed" value="true" />
+      <created>1714211321024</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1714211321025</updated>
+    </task>
+    <task id="LOCAL-00081" summary="парсинг мастер-классов&#10;&#10;проблема с парсингом html страницы">
+      <option name="closed" value="true" />
+      <created>1714211384407</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1714211384407</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,8 +548,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="работа с каталогом фильмов&#10;&#10;парсинг страниц для получения ссылки на фото фильма и занесение ее в бд" />
-    <MESSAGE value="добавление возможности скачивать фотографии фильмов" />
     <MESSAGE value="работа с бд и страницей с каталогом фильмов&#10;&#10;возможность скачивать файл, путь к файлу записывается в бд, вывод фотографий фильмов на странице с каталогом" />
     <MESSAGE value="добавление страницы фильма для просмотра полной информации" />
     <MESSAGE value="добавление возможности просмотра полной информации" />
@@ -551,6 +571,8 @@
     <MESSAGE value=" добовление в концерты даты и места" />
     <MESSAGE value="если название разных мероприятий совпадают" />
     <MESSAGE value="добавление бега в категрию спорт" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление бега в категрию спорт" />
+    <MESSAGE value="парсинг мастер-классов" />
+    <MESSAGE value="парсинг мастер-классов&#10;&#10;проблема с парсингом html страницы" />
+    <option name="LAST_COMMIT_MESSAGE" value="парсинг мастер-классов&#10;&#10;проблема с парсингом html страницы" />
   </component>
 </project>

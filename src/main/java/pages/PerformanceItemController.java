@@ -80,6 +80,7 @@ public class PerformanceItemController {
         performancePageController.performanceGetName(performanceName.getText());
         performancePageController.performanceGetLink(performance.getPerformanceLink());
         performancePageController.performanceGetGenre(performance.getPerformanceGenre());
+        performancePageController.performanceGetDate(performance.getPerformanceDate());
         performancePageController.performanceGetAge(performance.getPerformanceAgeLimit());
         performancePageController.performanceGetLength(performance.getPerformanceLength());
         performancePageController.performanceGetDirector(performance.getPerformanceDirector());
