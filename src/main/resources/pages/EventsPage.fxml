@@ -8,21 +8,21 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.EventsPageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.EventsPageController">
    <children>
-      <ImageView fitHeight="344.0" fitWidth="395.0" layoutX="-114.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="370.0" fitWidth="374.0" layoutX="-107.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/Group 2.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="236.0" fitWidth="242.0" layoutX="407.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="265.0" fitWidth="269.0" layoutX="501.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/Group 20.png" />
          </image>
       </ImageView>
       <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #AFEEEE;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Text fill="#1e6f4f" layoutX="206.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МЕРОПРИЯТИЯ" AnchorPane.bottomAnchor="4.215999603271484" AnchorPane.topAnchor="4.0">
+            <Text fill="#1e6f4f" layoutX="261.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МЕРОПРИЯТИЯ" AnchorPane.bottomAnchor="6.215999603271484" AnchorPane.topAnchor="2.0">
                <font>
                   <Font name="Avenir Black" size="24.0" />
                </font>
@@ -34,25 +34,25 @@
             </Button>
          </children>
       </AnchorPane>
-      <VBox layoutX="179.0" layoutY="115.0" prefHeight="171.0" prefWidth="242.0" AnchorPane.bottomAnchor="114.0" AnchorPane.topAnchor="115.0">
+      <VBox layoutX="210.0" layoutY="156.0" prefHeight="229.0" prefWidth="301.0" AnchorPane.bottomAnchor="115.0" AnchorPane.topAnchor="156.0">
          <children>
-            <Button fx:id="cinemaButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="256.0" style="-fx-background-color: #48D1CC;" text="КИНО">
+            <Button fx:id="cinemaButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="308.0" style="-fx-background-color: #48D1CC;" text="КИНО">
                <font>
                   <Font name="Avenir Roman" size="14.0" />
                </font></Button>
-            <Button fx:id="theatreButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="256.0" style="-fx-background-color: #48D1CC;" text="ТЕАТРЫ">
+            <Button fx:id="theatreButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="308.0" style="-fx-background-color: #48D1CC;" text="ТЕАТРЫ">
                <font>
                   <Font name="Avenir Roman" size="14.0" />
                </font></Button>
-            <Button fx:id="concertsButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="256.0" style="-fx-background-color: #48D1CC;" text="КОНЦЕРТЫ">
+            <Button fx:id="concertsButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="308.0" style="-fx-background-color: #48D1CC;" text="КОНЦЕРТЫ">
                <font>
                   <Font name="Avenir Roman" size="14.0" />
                </font></Button>
-            <Button fx:id="sportButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="256.0" style="-fx-background-color: #48D1CC;" text="СПОРТ">
+            <Button fx:id="sportButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="308.0" style="-fx-background-color: #48D1CC;" text="СПОРТ">
                <font>
                   <Font name="Avenir Roman" size="14.0" />
                </font></Button>
-            <Button fx:id="questsButton" mnemonicParsing="false" prefHeight="34.0" prefWidth="256.0" style="-fx-background-color: #48D1CC;" text="КВЕСТЫ">
+            <Button fx:id="questsButton" mnemonicParsing="false" prefHeight="45.0" prefWidth="308.0" style="-fx-background-color: #48D1CC;" text="КВЕСТЫ">
                <font>
                   <Font name="Avenir Roman" size="14.0" />
                </font></Button>

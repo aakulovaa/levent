@@ -8,27 +8,23 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-            prefWidth="600.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/21"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.QuestsPageController">
-    <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #AFEEEE;">
-        <Text fill="#1e6f4f" layoutX="255.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Квесты">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.QuestsPageController">
+    <AnchorPane prefHeight="40.0" prefWidth="700.0" style="-fx-background-color: #AFEEEE;">
+        <Text fill="#1e6f4f" layoutX="305.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Квесты">
             <font>
-                <Font name="Avenir Black" size="24.0"/>
+                <Font name="Avenir Black" size="24.0" />
             </font>
         </Text>
-        <Button fx:id="questBackButton" layoutX="14.0" layoutY="6.0" mnemonicParsing="false"
-                style="-fx-background-color: #B0E0E6;" text="Назад">
+        <Button fx:id="questBackButton" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" style="-fx-background-color: #B0E0E6;" text="Назад">
             <font>
-                <Font name="Avenir Roman" size="14.0"/>
+                <Font name="Avenir Roman" size="14.0" />
             </font>
         </Button>
     </AnchorPane>
-    <ScrollPane layoutX="5.0" layoutY="40.0" prefHeight="358.0" prefWidth="590.0"
-                style="-fx-background-color: #E0FFFF;">
+    <ScrollPane layoutY="40.0" prefHeight="461.0" prefWidth="700.0" style="-fx-background-color: #E0FFFF;">
         <GridPane fx:id="grid">
             <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             </columnConstraints>
         </GridPane>
     </ScrollPane>

@@ -9,83 +9,86 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.PerformancePageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.PerformancePageController">
     <children>
-        <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #AFEEEE;">
+        <AnchorPane prefHeight="40.0" prefWidth="700.0" style="-fx-background-color: #AFEEEE;">
             <children>
                 <Button fx:id="backButton" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" style="-fx-background-color: #B0E0E6;" text="Назад">
                     <font>
                         <Font name="Avenir Roman" size="14.0" />
                     </font>
                 </Button>
-            <Button fx:id="homeButton" layoutX="556.0" layoutY="6.0" mnemonicParsing="false" style="-fx-background-color: #B0E0E6;" text="H">
+            <Button fx:id="homeButton" layoutX="662.0" layoutY="6.0" mnemonicParsing="false" style="-fx-background-color: #B0E0E6;" text="H">
                <font>
                   <Font name="Avenir Roman" size="14.0" />
                </font>
             </Button>
             </children>
         </AnchorPane>
-        <ScrollPane layoutX="-4.0" layoutY="40.0" prefHeight="360.0" prefWidth="607.0">
+        <ScrollPane layoutX="-4.0" layoutY="40.0" prefHeight="459.0" prefWidth="700.0">
             <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="362.0" prefWidth="592.0" style="-fx-background-color: #F0FFFF;">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="458.0" prefWidth="682.0" style="-fx-background-color: #F0FFFF;">
                     <children>
-                        <ImageView fx:id="performanceImage" fitHeight="150.0" fitWidth="409.0" layoutX="35.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="performanceImage" fitHeight="150.0" fitWidth="508.0" layoutX="35.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                         </ImageView>
-                        <Label fx:id="performanceName" layoutX="15.0" layoutY="160.0" prefHeight="35.0" prefWidth="563.0" text="Name">
+                        <Label fx:id="performanceName" layoutX="15.0" layoutY="160.0" prefHeight="35.0" prefWidth="656.0" text="Name">
                             <font>
                                 <Font name="Avenir Black" size="24.0" />
                             </font>
                         </Label>
                         <Label fx:id="performanceGenre" layoutX="14.0" layoutY="216.0" prefHeight="17.0" prefWidth="275.0" text="Genre">
                             <font>
-                                <Font name="Avenir Roman" size="13.0" />
+                                <Font name="Avenir Roman" size="14.0" />
                             </font></Label>
-                        <Label fx:id="age" layoutX="440.0" layoutY="250.0" prefHeight="17.0" prefWidth="79.0" text="Age">
+                        <Label fx:id="age" layoutX="440.0" layoutY="258.0" prefHeight="17.0" prefWidth="79.0" text="Age">
                             <font>
-                                <Font name="Avenir Roman" size="13.0" />
+                                <Font name="Avenir Roman" size="14.0" />
                             </font></Label>
-                        <Label fx:id="length" layoutX="238.0" layoutY="250.0" prefHeight="17.0" prefWidth="202.0" text="Length">
+                        <Label fx:id="length" layoutX="235.0" layoutY="258.0" prefHeight="17.0" prefWidth="202.0" text="Length">
                             <font>
-                                <Font name="Avenir Roman" size="13.0" />
+                                <Font name="Avenir Roman" size="14.0" />
                             </font></Label>
-                        <Label fx:id="director" layoutX="15.0" layoutY="250.0" prefHeight="17.0" prefWidth="202.0" text="Director">
+                        <Label fx:id="director" layoutX="19.0" layoutY="259.0" prefHeight="17.0" prefWidth="202.0" text="Director">
                             <font>
-                                <Font name="Avenir Roman" size="13.0" />
+                                <Font name="Avenir Roman" size="14.0" />
                             </font></Label>
-                        <Text fx:id="description" layoutX="16.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="546.21630859375">
+                        <Text fx:id="description" layoutX="18.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="637.7030029296875">
                             <font>
-                                <Font name="Avenir Roman" size="13.0" />
+                                <Font name="Avenir Roman" size="14.0" />
                             </font></Text>
                         <Label layoutX="13.0" layoutY="199.0" text="Жанры" textFill="DARKGRAY">
                             <font>
-                                <Font name="Avenir Roman" size="13.0" />
+                                <Font name="Avenir Roman" size="14.0" />
                             </font></Label>
-                        <Label layoutX="241.0" layoutY="232.0" text="Продолжительность" textFill="DARKGRAY">
+                        <Label layoutX="239.0" layoutY="241.0" text="Продолжительность" textFill="DARKGRAY">
                             <font>
-                                <Font name="Avenir Roman" size="13.0" />
+                                <Font name="Avenir Roman" size="14.0" />
                             </font></Label>
-                        <Label layoutX="420.0" layoutY="233.0" text="Возрастное ограничение" textFill="DARKGRAY">
+                        <Label layoutX="427.0" layoutY="241.0" text="Возрастное ограничение" textFill="DARKGRAY">
                             <font>
-                                <Font name="Avenir Roman" size="13.0" />
+                                <Font name="Avenir Roman" size="14.0" />
                             </font></Label>
-                        <Label layoutX="14.0" layoutY="232.0" text="Режиссер" textFill="DARKGRAY">
+                        <Label layoutX="20.0" layoutY="241.0" text="Режиссер" textFill="DARKGRAY">
                             <font>
-                                <Font name="Avenir Roman" size="13.0" />
+                                <Font name="Avenir Roman" size="14.0" />
                             </font></Label>
-                        <Label layoutX="14.0" layoutY="266.0" text="Описание" textFill="DARKGRAY">
+                        <Label layoutX="12.0" layoutY="280.0" text="Описание" textFill="DARKGRAY">
                             <font>
                                 <Font name="Avenir Roman" size="18.0" />
                             </font>
                         </Label>
-                  <Hyperlink fx:id="link" layoutX="502.0" layoutY="85.0" onAction="#hyperlink" text="Купить билет" />
+                  <Hyperlink fx:id="link" layoutX="561.0" layoutY="87.0" onAction="#hyperlink" text="Купить билет">
+                     <font>
+                        <Font name="Avenir Roman" size="14.0" />
+                     </font></Hyperlink>
                   <Label layoutX="422.0" layoutY="199.0" text="Дата" textFill="DARKGRAY">
                      <font>
-                        <Font name="Avenir Roman" size="13.0" />
+                        <Font name="Avenir Roman" size="14.0" />
                      </font>
                   </Label>
                   <Label fx:id="date" layoutX="420.0" layoutY="216.0" prefHeight="19.0" prefWidth="106.0" text="Date">
                      <font>
-                        <Font name="Avenir Roman" size="13.0" />
+                        <Font name="Avenir Roman" size="14.0" />
                      </font>
                   </Label>
                     </children>
