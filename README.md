@@ -1,6 +1,6 @@
 # Event
 
-![event - SD 480p](https://github.com/aakulovaa/levent/assets/152773831/11d15584-2121-414b-97ed-c21bd9427f35)
+![event - SD 480p-2](https://github.com/aakulovaa/levent/assets/152773831/aecd64df-7ae1-4c84-884b-793ffb8fc411)
 
 # Description
 
