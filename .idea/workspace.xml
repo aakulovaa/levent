@@ -4,39 +4,131 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="" />
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="изменение размера приложения">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/cinemaDB/CinemasConst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/cinemaDB/DBHandlerCinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/cinemaDB/DBHandlerCinema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/concertDB/ConcertsConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/concertDB/ConcertsConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/theatreDB/TheatersConst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/QuestsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/QuestsPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/ConcertParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/ConcertParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/DanceParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/DanceParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/MovieParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/MovieParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/PerformanceParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/PerformanceParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/QuestParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/QuestParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/RunParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/RunParser.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
-      </MavenGeneralSettings>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2eXjYZfjdjKIb9aIriCTUWh5W3M" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HomePage.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;first&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/annakulova/IdeaProjects/event&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/image/dance" />
+      <recent name="$PROJECT_DIR$/src/main/resources/pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/image/dance" />
+      <recent name="$PROJECT_DIR$/src/main/resources/image" />
+      <recent name="$PROJECT_DIR$/src/main/resources/image/movie" />
+      <recent name="$PROJECT_DIR$/src/main/resources/pages" />
+      <recent name="$PROJECT_DIR$/src/main/resources/assets" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pages" />
+      <recent name="homePage" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pages" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <module name="levent" />
+      <option name="PROGRAM_PARAMETERS" value="--module-path $JAVAFX_PATH$ --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="event" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="event" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -45,7 +137,445 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712057864367</updated>
+      <workItem from="1712488615128" duration="38000" />
+      <workItem from="1712488682900" duration="1737000" />
+      <workItem from="1712490511868" duration="4534000" />
     </task>
+    <task id="LOCAL-00035" summary="исправление предупреждений">
+      <option name="closed" value="true" />
+      <created>1712604554446</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1712604554446</updated>
+    </task>
+    <task id="LOCAL-00036" summary="обработка значений для добавления в бд">
+      <option name="closed" value="true" />
+      <created>1712766589013</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1712766589013</updated>
+    </task>
+    <task id="LOCAL-00037" summary="обработка значений для добавления в бд">
+      <option name="closed" value="true" />
+      <created>1713288343118</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1713288343118</updated>
+    </task>
+    <task id="LOCAL-00038" summary="обработка значений для добавления в бд&#10;&#10;значения для таблицы режиссеров">
+      <option name="closed" value="true" />
+      <created>1713292224166</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1713292224166</updated>
+    </task>
+    <task id="LOCAL-00039" summary="обработка значений для добавления в бд&#10;&#10;значения для таблицы режиссеров">
+      <option name="closed" value="true" />
+      <created>1713339318528</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1713339318528</updated>
+    </task>
+    <task id="LOCAL-00040" summary="обработка значений для добавления в бд&#10;&#10;значения для таблицы режиссеров">
+      <option name="closed" value="true" />
+      <created>1713339462650</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1713339462650</updated>
+    </task>
+    <task id="LOCAL-00041" summary="обработка календаря&#10;&#10;получение выбраной даты в подходящем для парсинга формате">
+      <option name="closed" value="true" />
+      <created>1713341389925</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1713341389925</updated>
+    </task>
+    <task id="LOCAL-00042" summary="обработка календаря&#10;&#10;получение ссылки на страницу расписания кино с заданой датой">
+      <option name="closed" value="true" />
+      <created>1713346183405</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1713346183405</updated>
+    </task>
+    <task id="LOCAL-00043" summary="работа с базой данных + страницы расписания&#10;&#10;заполнение бд с фильмами при выборе мероприятия &quot;кино&quot;">
+      <option name="closed" value="true" />
+      <created>1713516656444</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1713516656444</updated>
+    </task>
+    <task id="LOCAL-00044" summary="работа с базой данных + страницы расписания">
+      <option name="closed" value="true" />
+      <created>1713527760765</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1713527760765</updated>
+    </task>
+    <task id="LOCAL-00045" summary="работа с базой данных + страницы расписания">
+      <option name="closed" value="true" />
+      <created>1713527766509</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1713527766509</updated>
+    </task>
+    <task id="LOCAL-00046" summary="работа с базой данных &#10;&#10;изменение места обновления данных">
+      <option name="closed" value="true" />
+      <created>1713535403856</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1713535403856</updated>
+    </task>
+    <task id="LOCAL-00047" summary="работа с каталогом фильмов">
+      <option name="closed" value="true" />
+      <created>1713549416282</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1713549416282</updated>
+    </task>
+    <task id="LOCAL-00048" summary="работа с каталогом фильмов&#10;&#10;парсинг страниц для получения ссылки на фото фильма и занесение ее в бд">
+      <option name="closed" value="true" />
+      <created>1713611453376</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1713611453376</updated>
+    </task>
+    <task id="LOCAL-00049" summary="добавление возможности скачивать фотографии фильмов">
+      <option name="closed" value="true" />
+      <created>1713622121158</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1713622121158</updated>
+    </task>
+    <task id="LOCAL-00050" summary="работа с бд и страницей с каталогом фильмов&#10;&#10;возможность скачивать файл, путь к файлу записывается в бд, вывод фотографий фильмов на странице с каталогом">
+      <option name="closed" value="true" />
+      <created>1713629123622</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1713629123622</updated>
+    </task>
+    <task id="LOCAL-00051" summary="работа с бд и страницей с каталогом фильмов&#10;&#10;возможность скачивать файл, путь к файлу записывается в бд, вывод фотографий фильмов на странице с каталогом">
+      <option name="closed" value="true" />
+      <created>1713630000899</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1713630000899</updated>
+    </task>
+    <task id="LOCAL-00052" summary="добавление страницы фильма для просмотра полной информации">
+      <option name="closed" value="true" />
+      <created>1713639912251</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1713639912251</updated>
+    </task>
+    <task id="LOCAL-00053" summary="добавление возможности просмотра полной информации">
+      <option name="closed" value="true" />
+      <created>1713651754660</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1713651754660</updated>
+    </task>
+    <task id="LOCAL-00054" summary="добавление возможности просмотра полной информации">
+      <option name="closed" value="true" />
+      <created>1713651838569</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1713651838569</updated>
+    </task>
+    <task id="LOCAL-00055" summary="редактирование внешнего вида + изменения для отображения результатов поиска">
+      <option name="closed" value="true" />
+      <created>1713684448866</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1713684448866</updated>
+    </task>
+    <task id="LOCAL-00056" summary="редактирование кода&#10;&#10;расширение кода для других мероприятий">
+      <option name="closed" value="true" />
+      <created>1713688883836</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1713688883836</updated>
+    </task>
+    <task id="LOCAL-00057" summary="редактирование кода&#10;&#10;расширение кода для других мероприятий">
+      <option name="closed" value="true" />
+      <created>1713688893291</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1713688893291</updated>
+    </task>
+    <task id="LOCAL-00058" summary="редактирование кода&#10;&#10;расширение кода для других мероприятий">
+      <option name="closed" value="true" />
+      <created>1713688977575</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1713688977575</updated>
+    </task>
+    <task id="LOCAL-00059" summary="работа с театром&#10;&#10;парсинг страниц с представлениями, заполнение бд">
+      <option name="closed" value="true" />
+      <created>1713691492947</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1713691492947</updated>
+    </task>
+    <task id="LOCAL-00060" summary="работа с театром&#10;&#10;парсинг страниц с представлениями, заполнение бд">
+      <option name="closed" value="true" />
+      <created>1713693862457</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1713693862457</updated>
+    </task>
+    <task id="LOCAL-00061" summary="работа с театром&#10;&#10;отображение информации о мероприятиях &quot;театр&quot;">
+      <option name="closed" value="true" />
+      <created>1713698596371</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1713698596372</updated>
+    </task>
+    <task id="LOCAL-00062" summary="работа с театром&#10;&#10;отображение информации о мероприятиях &quot;театр&quot;">
+      <option name="closed" value="true" />
+      <created>1713701274206</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1713701274206</updated>
+    </task>
+    <task id="LOCAL-00063" summary="работа с концертами&#10;&#10;парсинг станицы + заполнение бд + вывод информации в приложение">
+      <option name="closed" value="true" />
+      <created>1713707614131</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1713707614131</updated>
+    </task>
+    <task id="LOCAL-00064" summary="работа с квестами &#10;&#10;парсинг страниц для получения информации о квестах">
+      <option name="closed" value="true" />
+      <created>1713805116405</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1713805116405</updated>
+    </task>
+    <task id="LOCAL-00065" summary="работа с квестами &#10;&#10;заполнение бд, вывод в приложение">
+      <option name="closed" value="true" />
+      <created>1713809627446</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1713809627446</updated>
+    </task>
+    <task id="LOCAL-00066" summary="работа с квестами &#10;&#10;вывод в приложение">
+      <option name="closed" value="true" />
+      <created>1713812715960</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1713812715961</updated>
+    </task>
+    <task id="LOCAL-00067" summary="работа с спортом&#10;&#10;получение информации о танцевальных студиях">
+      <option name="closed" value="true" />
+      <created>1713877412577</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1713877412577</updated>
+    </task>
+    <task id="LOCAL-00068" summary="работа с спортом&#10;&#10;заполнение бд + вывод на экран приложения">
+      <option name="closed" value="true" />
+      <created>1713887572563</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1713887572563</updated>
+    </task>
+    <task id="LOCAL-00069" summary="работа квестами">
+      <option name="closed" value="true" />
+      <created>1713893862714</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1713893862714</updated>
+    </task>
+    <task id="LOCAL-00070" summary="работа c квестами">
+      <option name="closed" value="true" />
+      <created>1713894852254</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1713894852254</updated>
+    </task>
+    <task id="LOCAL-00071" summary="редактирование кода">
+      <option name="closed" value="true" />
+      <created>1713895909099</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1713895909099</updated>
+    </task>
+    <task id="LOCAL-00072" summary="редактирование кода">
+      <option name="closed" value="true" />
+      <created>1713896379561</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1713896379561</updated>
+    </task>
+    <task id="LOCAL-00073" summary="добавление кнопки для возможности перехода на главный экран">
+      <option name="closed" value="true" />
+      <created>1713973063231</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1713973063231</updated>
+    </task>
+    <task id="LOCAL-00074" summary="поиск по названию + добовление перехода на сайт">
+      <option name="closed" value="true" />
+      <created>1713984419982</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1713984419982</updated>
+    </task>
+    <task id="LOCAL-00075" summary=" добовление перехода на сайт">
+      <option name="closed" value="true" />
+      <created>1713986996619</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1713986996619</updated>
+    </task>
+    <task id="LOCAL-00076" summary=" добовление в театры даты и места">
+      <option name="closed" value="true" />
+      <created>1714061671172</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1714061671173</updated>
+    </task>
+    <task id="LOCAL-00077" summary=" добовление в концерты даты и места">
+      <option name="closed" value="true" />
+      <created>1714064005660</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1714064005660</updated>
+    </task>
+    <task id="LOCAL-00078" summary="если название разных мероприятий совпадают">
+      <option name="closed" value="true" />
+      <created>1714071317547</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1714071317547</updated>
+    </task>
+    <task id="LOCAL-00079" summary="добавление бега в категрию спорт">
+      <option name="closed" value="true" />
+      <created>1714160075734</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1714160075735</updated>
+    </task>
+    <task id="LOCAL-00080" summary="парсинг мастер-классов">
+      <option name="closed" value="true" />
+      <created>1714211321024</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1714211321025</updated>
+    </task>
+    <task id="LOCAL-00081" summary="парсинг мастер-классов&#10;&#10;проблема с парсингом html страницы">
+      <option name="closed" value="true" />
+      <created>1714211384407</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1714211384407</updated>
+    </task>
+    <task id="LOCAL-00082" summary="поиск + календарь">
+      <option name="closed" value="true" />
+      <created>1715526780535</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1715526780535</updated>
+    </task>
+    <task id="LOCAL-00083" summary="изменение размера приложения">
+      <option name="closed" value="true" />
+      <created>1715783617262</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1715783617263</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="добавление возможности просмотра полной информации" />
+    <MESSAGE value="редактирование внешнего вида + изменения для отображения результатов поиска" />
+    <MESSAGE value="редактирование кода&#10;&#10;расширение кода для других мероприятий" />
+    <MESSAGE value="работа с театром&#10;&#10;парсинг страниц с представлениями, заполнение бд" />
+    <MESSAGE value="работа с театром&#10;&#10;отображение информации о мероприятиях &quot;театр&quot;" />
+    <MESSAGE value="работа с концертами&#10;&#10;парсинг станицы + заполнение бд + вывод информации в приложение" />
+    <MESSAGE value="работа с квестами &#10;&#10;парсинг страниц для получения информации о квестах" />
+    <MESSAGE value="работа с квестами &#10;&#10;заполнение бд, вывод в приложение" />
+    <MESSAGE value="работа с квестами &#10;&#10;вывод в приложение" />
+    <MESSAGE value="работа с спортом&#10;&#10;получение информации о танцевальных студиях" />
+    <MESSAGE value="работа с спортом&#10;&#10;заполнение бд + вывод на экран приложения" />
+    <MESSAGE value="работа квестами" />
+    <MESSAGE value="работа c квестами" />
+    <MESSAGE value="редактирование кода" />
+    <MESSAGE value="добавление кнопки для возможности перехода на главный экран" />
+    <MESSAGE value="поиск по названию + добовление перехода на сайт" />
+    <MESSAGE value=" добовление перехода на сайт" />
+    <MESSAGE value=" добовление в театры даты и места" />
+    <MESSAGE value=" добовление в концерты даты и места" />
+    <MESSAGE value="если название разных мероприятий совпадают" />
+    <MESSAGE value="добавление бега в категрию спорт" />
+    <MESSAGE value="парсинг мастер-классов" />
+    <MESSAGE value="парсинг мастер-классов&#10;&#10;проблема с парсингом html страницы" />
+    <MESSAGE value="поиск + календарь" />
+    <MESSAGE value="изменение размера приложения" />
+    <option name="LAST_COMMIT_MESSAGE" value="изменение размера приложения" />
   </component>
 </project>
