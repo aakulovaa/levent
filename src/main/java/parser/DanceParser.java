@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DanceParser {
+public class DanceParser implements Parser {
     private int countDanceStudio = 0;
     private int countDesc = 1;
     public List<DancePost> parser() {

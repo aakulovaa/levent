@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class QuestParser {
+public class QuestParser implements Parser{
     private int countQuest = 0;
     public List<QuestPost> parser() {
         List<QuestPost> posts;

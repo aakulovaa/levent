@@ -38,7 +38,7 @@ public class QuestsPageController {
         DBHandlerQuest db = new DBHandlerQuest();
         ResultSet resultSet = db.questsGetting();
         try {
-            for (int i = 0; i < iterator; i++) {//добавляет нужное количество карточек
+            for (int i = 0; i < iterator; i++) {
                 if (resultSet.next()) {
                     quest = new Quest();
 

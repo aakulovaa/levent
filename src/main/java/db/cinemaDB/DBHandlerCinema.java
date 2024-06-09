@@ -16,23 +16,6 @@ public class DBHandlerCinema extends Configs {
         return dbHandler.getDBConnection(dbConnectionCinema);
     }
 
-    public void cinemasFilling(Integer cinemaID, String cinemaName, String cinemaAddress){
-        String insertCinema = "INSERT INTO " + CinemasConst.CINEMAS_TABLE + "(" +
-                CinemasConst.CINEMA_NAME + "," + CinemasConst.CINEMA_ADDRESS + ")" +
-                "VALUES(?,?)";
-        try {
-            PreparedStatement prSt = getDbConnectionCinema().prepareStatement(insertCinema);
-            prSt.setInt(1,cinemaID);
-            prSt.setString(2,cinemaName);
-            prSt.setString(3,cinemaAddress);
-
-            prSt.executeUpdate();
-        } catch (SQLException | ClassNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-
-    }
-
     public void moviesFilling(Movie movie){
         String insertMovie = "INSERT INTO " + MoviesConst.MOVIES_TABLE + "(" +
                 MoviesConst.MOVIE_NAME +"," + MoviesConst.MOVIE_LINK +

@@ -41,7 +41,7 @@ public class ConcertsPageController {
         Concert concert;
         DBHandlerConcert db = new DBHandlerConcert();
         try (ResultSet resultSet = db.concertsGetting()) {
-            for (int i = 0; i < iterator; i++) {//добавляет нужное количество карточек
+            for (int i = 0; i < iterator; i++) {
                 if (resultSet.next()) {
                     concert = new Concert();
 

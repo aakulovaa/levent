@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class ConcertParser {
+public class ConcertParser implements Parser{
     private int countConcert = 0;
     private String date = "";
     public List<ConcertPost> parser() {

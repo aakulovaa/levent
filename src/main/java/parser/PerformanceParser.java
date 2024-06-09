@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
-public class PerformanceParser {
+public class PerformanceParser implements Parser{
     private int countPerformance = 0;
     private String directorPerformance;
     private String date = "";

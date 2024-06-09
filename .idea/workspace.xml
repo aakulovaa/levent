@@ -4,20 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="поиск + календарь">
+    <list default="true" id="caf1bdc1-8cac-4a0c-984f-34541e9ce008" name="Changes" comment="изменение размера приложения">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/cinemaDB/CinemasConst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/cinemaDB/DBHandlerCinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/cinemaDB/DBHandlerCinema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/concertDB/ConcertsConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/concertDB/ConcertsConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/db/theatreDB/TheatersConst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CinemaPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ConcertsPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/CinemaPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/CinemaPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/ConcertPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/ConcertPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/ConcertsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/ConcertsPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/DancePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/DancePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/EventsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/EventsPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/HomePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/MoviePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/MoviePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/PerformancePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/PerformancePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/QuestPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/QuestPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/QuestsPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/QuestsPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pages/RunPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pages/RunPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/QuestsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/QuestsPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/ConcertParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/ConcertParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/DanceParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/DanceParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/MovieParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/MovieParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/PerformanceParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/PerformanceParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/QuestParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/QuestParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/parser/RunParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/RunParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -64,7 +67,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
@@ -137,14 +140,6 @@
       <workItem from="1712488615128" duration="38000" />
       <workItem from="1712488682900" duration="1737000" />
       <workItem from="1712490511868" duration="4534000" />
-    </task>
-    <task id="LOCAL-00034" summary="page parsing&#10;&#10;вывод деталей фильма">
-      <option name="closed" value="true" />
-      <created>1712604382845</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1712604382845</updated>
     </task>
     <task id="LOCAL-00035" summary="исправление предупреждений">
       <option name="closed" value="true" />
@@ -530,7 +525,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715526780535</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="изменение размера приложения">
+      <option name="closed" value="true" />
+      <created>1715783617262</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1715783617263</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +551,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добавление страницы фильма для просмотра полной информации" />
     <MESSAGE value="добавление возможности просмотра полной информации" />
     <MESSAGE value="редактирование внешнего вида + изменения для отображения результатов поиска" />
     <MESSAGE value="редактирование кода&#10;&#10;расширение кода для других мероприятий" />
@@ -573,6 +575,7 @@
     <MESSAGE value="парсинг мастер-классов" />
     <MESSAGE value="парсинг мастер-классов&#10;&#10;проблема с парсингом html страницы" />
     <MESSAGE value="поиск + календарь" />
-    <option name="LAST_COMMIT_MESSAGE" value="поиск + календарь" />
+    <MESSAGE value="изменение размера приложения" />
+    <option name="LAST_COMMIT_MESSAGE" value="изменение размера приложения" />
   </component>
 </project>

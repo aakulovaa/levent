@@ -10,8 +10,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RunParser {
-    public List<SportPost> parser() {
+public class RunParser implements Parser{
+    public List<SportPost> parser(){
         List<SportPost> posts;
         try {
             posts = new ArrayList<>();
